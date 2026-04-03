@@ -1,0 +1,7 @@
+interface:
+  display_name: "Algopam Velog Automation"
+  short_description: "Turn BOJ solutions into researched Velog drafts"
+  default_prompt: "Use $algopam-velog-automation to turn a solved BOJ problem into a researched Velog draft and stage it for review."
+
+policy:
+  allow_implicit_invocation: true

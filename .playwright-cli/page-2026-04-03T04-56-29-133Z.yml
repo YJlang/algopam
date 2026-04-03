@@ -1,0 +1,779 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "회원가입" [ref=e8] [cursor=pointer]:
+          - /url: /register
+      - listitem [ref=e9]
+      - listitem [ref=e10]:
+        - link "로그인" [ref=e11] [cursor=pointer]:
+          - /url: /login?next=%2Fproblem%2F22993
+    - navigation [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]:
+          - button "Toggle navigation " [ref=e15] [cursor=pointer]:
+            - generic [ref=e16]: Toggle navigation
+            - generic [ref=e17]: 
+          - link "Logo" [ref=e18] [cursor=pointer]:
+            - /url: /
+            - img "Logo" [ref=e19]
+        - text:      
+  - generic [ref=e20]:
+    - insertion [ref=e22]:
+      - iframe [ref=e24]:
+        - generic [active] [ref=f3e1]:
+          - generic [ref=f3e3]:
+            - link:
+              - /url: https://googleads.g.doubleclick.net/aclk?sa=l&ai=CHK6NfEjPaZbbK8yD0PEPkOurac-fzZqGAYvZhoXLFdnZHhABIPG4wSxgm9vmhLgpoAHN5onfKMgBAqkC-YJmBEjMBj6oAwHIA8kEqgSVAk_QBNUpOwPg7jUylCOGKbRHmkFH5odfFg5QiE9x5gmjOnFpc1N44xIh7J4LcnCyUvLB6lh0dUmtrVCXdZ76L950rJIXB7oCQYJLaQb3RrJiAuVVj0Tp-bvjh_pBrzTs5nA6R4f3jmnGsTnYolLQCMnFHiOlqj64aYemqZwJxlxBEtDFX6mMAdKIPYmPvF3fOc-428LW72R3w9RJSCm9LtW18SeZ2sdMBQC0HNv3WiBWvAhyDK9LdiHVWEZgBZAcLlhNTxQaObV9DTCU86Z2mN9L8w24nhuMmjpXoJeUOLG-eZASgibf57PAmOgw1pupg0tR6WuWIFCm39u6bUVQmvm3f_q_vUaPjotka1ZaU7dkpfV-BJPABLn85vbIBYgFyv26wVegBgKAB82e2r4DqAenzLECqAfi2LECqAemvhuoB8zOsQKoB_PRG6gHltgbqAeqm7ECqAeOzhuoB5PYG6gH8OAbqAfulrECqAf-nrECqAevvrECqAfVyRuoB9m2sQKoB5oGqAf_nrECqAffn7ECqAf4wrECqAf7wrEC2AcB0ggvCIBhEAEYnwMyCIqCgICAgIAIOg2AQIDAgICAgKiAAqgDSL39wTpY-YjBnvLQkwOxCSbU3L-4nCbHgAoBmAsByAsBogwDkAEBqg0CS1LIDQHqDRMImI_EnvLQkwMVzAE0CB2Q9SoN8A0CiA4J2BMN0BUBmBYByhYCCgD4FgGAFwGyFxAYASoKMTEyOTU4NTI4OVAGuhcCOAGqGBcJAAAAAPBn8kASCjExMjk1ODUyODkYAbIYCRICsFMYAiIBANAYAegYAcIZAggB&ae=1&gclid=EAIaIQobChMIlonEnvLQkwMVzAE0CB2Q9SoNEAEYASAAEgJUTPD_BwE&num=1&cid=CAQS5AEABaugff3n3bArNazLYCN4v2WAeQGjugItdHyqdOLPsuDcur1_7mEL7yEwURjHhoJvYRReyXZMK237zyUtTcG6AONnI8s87bDWhmtJ4vzTwcTs1vfgxP4Aj-rCEYlgvRxELBXj48lQ1uu3cate0aDck1b8sCNx6VvGaxb6o40SengiE9SlXPwlvDJoZL_nuXT1EbgysICmtA4irAVNB_Gg_FyUvomV-76AukNf5-JP6vmImvk8M8s71lvvrshHWCKqVRoz7y5K0bUah8nsvW1N6Wgkm47bmWuDlSRX_Yuhkp_23eoYAQ&sig=AOD64_1KSx2Ho95i4GSrSQ3SQVXKj6EpiA&client=ca-pub-8806842758252812&rf=2&nb=2&adurl=https://maplestoryworlds.nexon.com/ko/play/7444bdb413274a1c9665ea815aa4c1ba/%3Futm_source%3Dgoogle_gdn%26utm_campaign%3D3-17_piktramon_kr_260128%26utm_medium%3Dgoogle_gdn_mapleip%26utm_term%3Dimg_mapleland_cross%26utm_content%3Dpc_kr%26gad_source%3D5%26gad_campaignid%3D23491165898%26gclid%3DEAIaIQobChMIlonEnvLQkwMVzAE0CB2Q9SoNEAEYASAAEgJUTPD_BwE
+            - img [ref=f3e7] [cursor=pointer]
+            - button [ref=f3e9] [cursor=pointer]:
+              - img [ref=f3e10]
+          - iframe
+    - generic [ref=e25]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link "22993번" [ref=e30] [cursor=pointer]:
+            - /url: /problem/22993
+        - listitem [ref=e31]:
+          - link "제출" [ref=e32] [cursor=pointer]:
+            - /url: /submit/22993
+        - listitem [ref=e33]:
+          - link "맞힌 사람" [ref=e34] [cursor=pointer]:
+            - /url: /problem/status/22993
+        - listitem [ref=e35]:
+          - link "숏코딩" [ref=e36] [cursor=pointer]:
+            - /url: /short/status/22993
+        - listitem [ref=e37]:
+          - link "재채점 결과" [ref=e38] [cursor=pointer]:
+            - /url: /problem/history/22993
+        - listitem [ref=e39]:
+          - link "채점 현황" [ref=e40] [cursor=pointer]:
+            - /url: /status?from_problem=1&problem_id=22993
+        - listitem [ref=e41]:
+          - link "질문 게시판" [ref=e42] [cursor=pointer]:
+            - /url: /board/search/all/problem/22993
+      - heading "서든어택 3" [level=1] [ref=e45]: 서든어택 3
+      - table [ref=e48]:
+        - rowgroup [ref=e49]:
+          - row "시간 제한 메모리 제한 제출 정답 맞힌 사람 정답 비율" [ref=e50]:
+            - columnheader "시간 제한" [ref=e51]
+            - columnheader "메모리 제한" [ref=e52]
+            - columnheader "제출" [ref=e53]
+            - columnheader "정답" [ref=e54]
+            - columnheader "맞힌 사람" [ref=e55]
+            - columnheader "정답 비율" [ref=e56]
+        - rowgroup [ref=e57]:
+          - row "2 초 (추가 시간 없음) 1024 MB 3545 1255 1021 34.954%" [ref=e58]:
+            - cell "2 초 (추가 시간 없음)" [ref=e59]
+            - cell "1024 MB" [ref=e60]
+            - cell "3545" [ref=e61]
+            - cell "1255" [ref=e62]
+            - cell "1021" [ref=e63]
+            - cell "34.954%" [ref=e64]
+      - generic [ref=e65]:
+        - generic [ref=e67]:
+          - heading "문제" [level=2] [ref=e69]
+          - generic [ref=e70]:
+            - blockquote [ref=e71]:
+              - paragraph [ref=e72]:
+                - emphasis [ref=e73]: 지스타를 준비하기 시작한 작년 여름 이후 CBT와 런칭 준비를 한 오늘까지. 평일 저녁에 가족이 깨어 있는 것을 거의 본 적이 없다.
+              - paragraph [ref=e74]:
+                - emphasis [ref=e75]: 이제 본격적인 정식오픈을 이틀 앞 둔 오늘. 바람소리와 스산한 빗소리가 사무실 창밖을 때린다.
+              - paragraph [ref=e76]:
+                - emphasis [ref=e77]: 폭풍전야.
+              - paragraph [ref=e78]:
+                - emphasis [ref=e79]: 블라인드에서 서든3을 비웃던, 지금도 비웃는 이들에게 반박글을 달지 않았다.
+              - paragraph [ref=e80]:
+                - emphasis [ref=e81]:
+                  - strong [ref=e82]: 니들이 허접한지, 우리가 허접한지는 결과가 말해줄 것이다.
+            - paragraph [ref=e83]: 넥슨의 게임 개발자 준원이는 서든어택 3의 출시를 앞두고 게임 테스트를 하고 있다.
+            - paragraph [ref=e84]:
+              - text: 맵에는 준원이를 포함해
+              - generic [ref=e85]:
+                - generic [ref=e88]: "N"
+                - math [ref=e90]:
+                  - generic [ref=e91]: "N"
+              - text: 명의 플레이어가 있다. 준원이의 공격력은
+              - generic [ref=e92]:
+                - generic [ref=e94]:
+                  - generic [ref=e96]: A
+                  - generic [ref=e99]: "1"
+                - math [ref=e101]:
+                  - generic [ref=e102]:
+                    - generic [ref=e103]: A
+                    - generic [ref=e104]: "1"
+              - text: 이고, 나머지 사람들의 공격력은
+              - generic [ref=e105]:
+                - generic [ref=e106]:
+                  - generic [ref=e107]:
+                    - generic [ref=e109]: A
+                    - generic [ref=e112]: "2"
+                  - generic [ref=e114]: ","
+                  - generic [ref=e116]: ⋯
+                  - generic [ref=e118]: ","
+                  - generic [ref=e119]:
+                    - generic [ref=e121]: A
+                    - generic [ref=e124]: "N"
+                - math [ref=e126]:
+                  - generic [ref=e127]:
+                    - generic [ref=e128]: A
+                    - generic [ref=e129]: "2"
+                  - generic [ref=e130]: ","
+                  - generic [ref=e131]: ⋯
+                  - generic [ref=e132]: ","
+                  - generic [ref=e133]:
+                    - generic [ref=e134]: A
+                    - generic [ref=e135]: "N"
+              - text: 이다.
+            - paragraph [ref=e136]: 전투가 시작되면 누구나 누구든 공격할 수 있게 된다! 죽은 사람은 공격하거나 공격받지 못하고, 두 사람이 동시에 공격하는 일은 일어나지 않는다.
+            - paragraph [ref=e137]:
+              - text: 공격력이
+              - generic [ref=e138]:
+                - generic [ref=e141]: X
+                - math [ref=e143]:
+                  - generic [ref=e144]: X
+              - text: 인 플레이어 A가 공격력이
+              - generic [ref=e145]:
+                - generic [ref=e148]: "Y"
+                - math [ref=e150]:
+                  - generic [ref=e151]: "Y"
+              - text: 인 플레이어 B를 공격하면,
+            - list [ref=e152]:
+              - listitem [ref=e153]:
+                - generic [ref=e154]:
+                  - generic [ref=e155]:
+                    - generic [ref=e157]: X
+                    - generic [ref=e159]: ">"
+                    - generic [ref=e161]: "Y"
+                  - math [ref=e163]:
+                    - generic [ref=e164]: X
+                    - generic [ref=e165]: ">"
+                    - generic [ref=e166]: "Y"
+                - text: 이면, B가 죽고 A의 공격력은
+                - generic [ref=e167]:
+                  - generic [ref=e168]:
+                    - generic [ref=e170]: X
+                    - generic [ref=e172]: +
+                    - generic [ref=e174]: "Y"
+                  - math [ref=e176]:
+                    - generic [ref=e177]: X
+                    - generic [ref=e178]: +
+                    - generic [ref=e179]: "Y"
+                - text: 가 된다.
+              - listitem [ref=e180]:
+                - generic [ref=e181]:
+                  - generic [ref=e182]:
+                    - generic [ref=e184]: X
+                    - generic [ref=e186]: <
+                    - generic [ref=e188]: "Y"
+                  - math [ref=e190]:
+                    - generic [ref=e191]: X
+                    - generic [ref=e192]: <
+                    - generic [ref=e193]: "Y"
+                - text: 이면, A가 죽고 B의 공격력은
+                - generic [ref=e194]:
+                  - generic [ref=e195]:
+                    - generic [ref=e197]: X
+                    - generic [ref=e199]: +
+                    - generic [ref=e201]: "Y"
+                  - math [ref=e203]:
+                    - generic [ref=e204]: X
+                    - generic [ref=e205]: +
+                    - generic [ref=e206]: "Y"
+                - text: 가 된다.
+              - listitem [ref=e207]:
+                - generic [ref=e208]:
+                  - generic [ref=e209]:
+                    - generic [ref=e211]: X
+                    - generic [ref=e213]: =
+                    - generic [ref=e215]: "Y"
+                  - math [ref=e217]:
+                    - generic [ref=e218]: X
+                    - generic [ref=e219]: =
+                    - generic [ref=e220]: "Y"
+                - text: 이면, 아무 일도 일어나지 않는다.
+            - paragraph [ref=e221]: 드디어 전투가 시작되었다! 준원이는 최후의 생존자가 될 수 있을까?
+        - generic [ref=e223]:
+          - heading "입력" [level=2] [ref=e225]
+          - generic [ref=e226]:
+            - paragraph [ref=e227]:
+              - text: 첫째 줄에는 준원이를 포함한 플레이어의 수
+              - generic [ref=e228]:
+                - generic [ref=e231]: "N"
+                - math [ref=e233]:
+                  - generic [ref=e234]: "N"
+              - text: 이 주어진다.
+            - paragraph [ref=e235]:
+              - text: 둘째 줄에는 각 플레이어의 공격력
+              - generic [ref=e236]:
+                - generic [ref=e237]:
+                  - generic [ref=e238]:
+                    - generic [ref=e240]: A
+                    - generic [ref=e243]: "1"
+                  - generic [ref=e245]: ","
+                  - generic [ref=e247]: ⋯
+                  - generic [ref=e249]: ","
+                  - generic [ref=e250]:
+                    - generic [ref=e252]: A
+                    - generic [ref=e255]: "N"
+                - math [ref=e257]:
+                  - generic [ref=e258]:
+                    - generic [ref=e259]: A
+                    - generic [ref=e260]: "1"
+                  - generic [ref=e261]: ","
+                  - generic [ref=e262]: ⋯
+                  - generic [ref=e263]: ","
+                  - generic [ref=e264]:
+                    - generic [ref=e265]: A
+                    - generic [ref=e266]: "N"
+              - text: 이 차례대로 공백을 사이에 두고 주어진다.
+        - generic [ref=e268]:
+          - heading "출력" [level=2] [ref=e270]
+          - paragraph [ref=e272]:
+            - text: 좋은 전투 순서가 존재해서 준원이만 생존하고 나머지 플레이어가 모두 죽게 만들 수 있다면
+            - code [ref=e273]: "Yes"
+            - text: 를, 반대로 전투가 어떤 순서로 이루어져도 준원이가 절대 최후의 생존자가 될 수 없다면
+            - code [ref=e274]: "No"
+            - text: 를 출력한다.
+        - generic [ref=e276]:
+          - heading "제한" [level=2] [ref=e278]
+          - list [ref=e280]:
+            - listitem [ref=e281]:
+              - generic [ref=e282]:
+                - generic [ref=e283]:
+                  - generic [ref=e285]: "1"
+                  - generic [ref=e287]: ≤
+                  - generic [ref=e289]: "N"
+                  - generic [ref=e291]: ≤
+                  - generic [ref=e292]:
+                    - generic [ref=e293]: "1"
+                    - generic [ref=e294]: "0"
+                    - generic [ref=e295]: "0"
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: "0"
+                    - generic [ref=e298]: "0"
+                    - generic [ref=e299]: "0"
+                - math [ref=e301]:
+                  - generic [ref=e302]: "1"
+                  - generic [ref=e303]: ≤
+                  - generic [ref=e304]: "N"
+                  - generic [ref=e305]: ≤
+                  - generic [ref=e306]: "100"
+                  - generic [ref=e307]: "000"
+            - listitem [ref=e308]:
+              - generic [ref=e309]:
+                - generic [ref=e310]:
+                  - generic [ref=e312]: "1"
+                  - generic [ref=e314]: ≤
+                  - generic [ref=e315]:
+                    - generic [ref=e317]: A
+                    - generic [ref=e320]: i
+                  - generic [ref=e322]: ≤
+                  - generic [ref=e324]: "1"
+                  - generic [ref=e325]:
+                    - generic [ref=e326]: "0"
+                    - generic [ref=e327]: "0"
+                    - generic [ref=e328]: "0"
+                  - generic [ref=e329]:
+                    - generic [ref=e330]: "0"
+                    - generic [ref=e331]: "0"
+                    - generic [ref=e332]: "0"
+                  - generic [ref=e333]:
+                    - generic [ref=e334]: "0"
+                    - generic [ref=e335]: "0"
+                    - generic [ref=e336]: "0"
+                - math [ref=e338]:
+                  - generic [ref=e339]: "1"
+                  - generic [ref=e340]: ≤
+                  - generic [ref=e341]:
+                    - generic [ref=e342]: A
+                    - generic [ref=e343]: i
+                  - generic [ref=e344]: ≤
+                  - generic [ref=e345]: "1"
+                  - generic [ref=e346]: "000"
+                  - generic [ref=e347]: "000"
+                  - generic [ref=e348]: "000"
+              - text: (
+              - generic [ref=e349]:
+                - generic [ref=e350]:
+                  - generic [ref=e352]: "1"
+                  - generic [ref=e354]: ≤
+                  - generic [ref=e356]: i
+                  - generic [ref=e358]: ≤
+                  - generic [ref=e360]: "N"
+                - math [ref=e362]:
+                  - generic [ref=e363]: "1"
+                  - generic [ref=e364]: ≤
+                  - generic [ref=e365]: i
+                  - generic [ref=e366]: ≤
+                  - generic [ref=e367]: "N"
+              - text: )
+        - generic [ref=e369]:
+          - generic [ref=e371]:
+            - heading "예제 입력 1 복사" [level=2] [ref=e373]:
+              - text: 예제 입력 1
+              - button "복사" [ref=e374] [cursor=pointer]
+            - generic [ref=e375]: 5 2 1 2 3 4
+          - generic [ref=e377]:
+            - heading "예제 출력 1 복사" [level=2] [ref=e379]:
+              - text: 예제 출력 1
+              - button "복사" [ref=e380] [cursor=pointer]
+            - generic [ref=e381]: "Yes"
+        - generic [ref=e383]:
+          - generic [ref=e385]:
+            - heading "예제 입력 2 복사" [level=2] [ref=e387]:
+              - text: 예제 입력 2
+              - button "복사" [ref=e388] [cursor=pointer]
+            - generic [ref=e389]: 5 2 1 1 1 10
+          - generic [ref=e391]:
+            - heading "예제 출력 2 복사" [level=2] [ref=e393]:
+              - text: 예제 출력 2
+              - button "복사" [ref=e394] [cursor=pointer]
+            - generic [ref=e395]: "No"
+      - generic [ref=e398]:
+        - heading "출처" [level=2] [ref=e400]
+        - paragraph [ref=e401]:
+          - link "School" [ref=e402] [cursor=pointer]:
+            - /url: /category/97
+          - text: ">"
+          - link "선린인터넷고등학교" [ref=e403] [cursor=pointer]:
+            - /url: /category/394
+          - text: ">"
+          - link "선린 정보 알고리즘경시대회" [ref=e404] [cursor=pointer]:
+            - /url: /category/1120
+          - text: ">"
+          - link "2021 선린 정보 알고리즘경시대회" [ref=e405] [cursor=pointer]:
+            - /url: /category/detail/2750
+          - text: A번
+        - list [ref=e406]:
+          - listitem [ref=e407]:
+            - text: "문제를 만든 사람:"
+            - link "junie" [ref=e408] [cursor=pointer]:
+              - /url: /user/junie
+          - listitem [ref=e409]:
+            - text: "문제를 검수한 사람:"
+            - link "jhnah917" [ref=e410] [cursor=pointer]:
+              - /url: /user/jhnah917
+            - text: ","
+            - link "kyo20111" [ref=e411] [cursor=pointer]:
+              - /url: /user/kyo20111
+    - insertion [ref=e413]:
+      - iframe [ref=e415]:
+        - generic [ref=f4e3]:
+          - button [ref=f4e4]:
+            - img [ref=f4e5]
+          - generic [ref=f4e7]:
+            - generic [ref=f4e9]:
+              - generic [ref=f4e13]:
+                - button "Play video" [ref=f4e17] [cursor=pointer]:
+                  - img [ref=f4e18]
+                - button "Unmute video" [ref=f4e23] [cursor=pointer]
+              - generic [ref=f4e30]:
+                - button "자세히 알아보기" [ref=f4e32] [cursor=pointer]
+                - button "재생" [ref=f4e34] [cursor=pointer]
+              - img [ref=f4e37]
+            - button "자세히 알아보기" [ref=f4e43] [cursor=pointer]
+  - generic [ref=e416]:
+    - generic [ref=e419]:
+      - generic [ref=e420]:
+        - heading "Baekjoon Online Judge" [level=2] [ref=e422]
+        - list [ref=e423]:
+          - listitem [ref=e424]:
+            - link "소개" [ref=e425] [cursor=pointer]:
+              - /url: /about
+          - listitem [ref=e426]:
+            - link "뉴스" [ref=e427] [cursor=pointer]:
+              - /url: /news
+          - listitem [ref=e428]:
+            - link "생중계" [ref=e429] [cursor=pointer]:
+              - /url: /live
+          - listitem [ref=e430]:
+            - link "설문조사" [ref=e431] [cursor=pointer]:
+              - /url: /poll
+          - listitem [ref=e432]:
+            - link "블로그" [ref=e433] [cursor=pointer]:
+              - /url: /blog
+          - listitem [ref=e434]:
+            - link "디스코드 서버" [ref=e435] [cursor=pointer]:
+              - /url: /board/view/70222
+          - listitem [ref=e436]:
+            - link "기부하기" [ref=e437] [cursor=pointer]:
+              - /url: /donate
+          - listitem [ref=e438]:
+            - link "기능 추가 요청" [ref=e439] [cursor=pointer]:
+              - /url: https://github.com/Startlink/BOJ-Feature-Request
+          - listitem [ref=e440]:
+            - link "스페셜 저지 제작" [ref=e441] [cursor=pointer]:
+              - /url: https://github.com/Startlink/BOJ-spj
+          - listitem [ref=e442]:
+            - link "실험실" [ref=e443] [cursor=pointer]:
+              - /url: /labs
+        - heading "채점 현황" [level=2] [ref=e445]
+        - list [ref=e446]:
+          - listitem [ref=e447]:
+            - link "채점 현황" [ref=e448] [cursor=pointer]:
+              - /url: /status
+      - generic [ref=e449]:
+        - heading "문제" [level=2] [ref=e451]
+        - list [ref=e452]:
+          - listitem [ref=e453]:
+            - link "문제" [ref=e454] [cursor=pointer]:
+              - /url: /problemset
+          - listitem [ref=e455]:
+            - link "단계" [ref=e456] [cursor=pointer]:
+              - /url: /step
+          - listitem [ref=e457]:
+            - link "분류" [ref=e458] [cursor=pointer]:
+              - /url: /problem/tags
+          - listitem [ref=e459]:
+            - link "추가된 문제" [ref=e460] [cursor=pointer]:
+              - /url: /problem/added
+          - listitem [ref=e461]:
+            - link "문제 순위" [ref=e462] [cursor=pointer]:
+              - /url: /problem/ranking
+          - listitem [ref=e463]:
+            - link "최근 제출된 문제" [ref=e464] [cursor=pointer]:
+              - /url: /problem/recent/submit
+          - listitem [ref=e465]:
+            - link "최근 풀린 문제" [ref=e466] [cursor=pointer]:
+              - /url: /problem/recent/accepted
+          - listitem [ref=e467]:
+            - link "재채점 및 문제 수정" [ref=e468] [cursor=pointer]:
+              - /url: /change
+        - heading "유저 대회" [level=2] [ref=e470]
+        - list [ref=e471]:
+          - listitem [ref=e472]:
+            - link "FunctionCup" [ref=e473] [cursor=pointer]:
+              - /url: /category/353
+          - listitem [ref=e474]:
+            - link "Good Bye, BOJ" [ref=e475] [cursor=pointer]:
+              - /url: /category/469
+          - listitem [ref=e476]:
+            - link "IDTcup" [ref=e477] [cursor=pointer]:
+              - /url: /category/476
+          - listitem [ref=e478]:
+            - link "kriiicon" [ref=e479] [cursor=pointer]:
+              - /url: /category/319
+          - listitem [ref=e480]:
+            - link "Semi-Game Cup" [ref=e481] [cursor=pointer]:
+              - /url: /category/489
+          - listitem [ref=e482]:
+            - link "구데기컵" [ref=e483] [cursor=pointer]:
+              - /url: /category/420
+          - listitem [ref=e484]:
+            - link "꼬마컵" [ref=e485] [cursor=pointer]:
+              - /url: /category/358
+          - listitem [ref=e486]:
+            - link "네블컵" [ref=e487] [cursor=pointer]:
+              - /url: /category/421
+          - listitem [ref=e488]:
+            - link "소프트콘" [ref=e489] [cursor=pointer]:
+              - /url: /category/413
+          - listitem [ref=e490]:
+            - link "아니메컵" [ref=e491] [cursor=pointer]:
+              - /url: /category/776
+          - listitem [ref=e492]:
+            - link "월간 향유회" [ref=e493] [cursor=pointer]:
+              - /url: /category/850
+          - listitem [ref=e494]:
+            - link "웰노운컵" [ref=e495] [cursor=pointer]:
+              - /url: /category/416
+          - listitem [ref=e496]:
+            - link "유틸컵" [ref=e497] [cursor=pointer]:
+              - /url: /category/867
+          - listitem [ref=e498]:
+            - link "키파컵" [ref=e499] [cursor=pointer]:
+              - /url: /category/441
+          - listitem [ref=e500]:
+            - link "피갤컵" [ref=e501] [cursor=pointer]:
+              - /url: /category/1045
+          - listitem [ref=e502]:
+            - link "흐즈로컵" [ref=e503] [cursor=pointer]:
+              - /url: /category/829
+          - listitem [ref=e504]:
+            - link "HYEA Cup" [ref=e505] [cursor=pointer]:
+              - /url: /category/detail/1743
+        - heading "고등학교 대회" [level=2] [ref=e507]
+        - list [ref=e508]:
+          - listitem [ref=e509]:
+            - link "NLCS Jeju" [ref=e510] [cursor=pointer]:
+              - /url: /category/836
+          - listitem [ref=e511]:
+            - link "경기과학고등학교" [ref=e512] [cursor=pointer]:
+              - /url: /category/364
+          - listitem [ref=e513]:
+            - link "경기북과학고등학교" [ref=e514] [cursor=pointer]:
+              - /url: /category/630
+          - listitem [ref=e515]:
+            - link "단국대학교부속소프트웨어고등학교" [ref=e516] [cursor=pointer]:
+              - /url: /category/669
+          - listitem [ref=e517]:
+            - link "대구과학고등학교" [ref=e518] [cursor=pointer]:
+              - /url: /category/417
+          - listitem [ref=e519]:
+            - link "대전과학고등학교" [ref=e520] [cursor=pointer]:
+              - /url: /category/1074
+          - listitem [ref=e521]:
+            - link "서울과학고등학교" [ref=e522] [cursor=pointer]:
+              - /url: /category/435
+          - listitem [ref=e523]:
+            - link "선린인터넷고등학교" [ref=e524] [cursor=pointer]:
+              - /url: /category/394
+          - listitem [ref=e525]:
+            - link "세종과학예술영재학교" [ref=e526] [cursor=pointer]:
+              - /url: /category/610
+          - listitem [ref=e527]:
+            - link "송도고등학교" [ref=e528] [cursor=pointer]:
+              - /url: /category/854
+          - listitem [ref=e529]:
+            - link "한국과학영재학교" [ref=e530] [cursor=pointer]:
+              - /url: /category/542
+          - listitem [ref=e531]:
+            - link "한국디지털미디어고등학교" [ref=e532] [cursor=pointer]:
+              - /url: /category/1053
+      - generic [ref=e533]:
+        - heading "출처" [level=2] [ref=e535]
+        - list [ref=e536]:
+          - listitem [ref=e537]:
+            - link "ICPC" [ref=e538] [cursor=pointer]:
+              - /url: /category/1
+          - listitem [ref=e539]:
+            - link "ICPC Korea Regional" [ref=e540] [cursor=pointer]:
+              - /url: /category/211
+          - listitem [ref=e541]:
+            - link "Olympiad" [ref=e542] [cursor=pointer]:
+              - /url: /category/2
+          - listitem [ref=e543]:
+            - link "한국정보올림피아드" [ref=e544] [cursor=pointer]:
+              - /url: /category/55
+          - listitem [ref=e545]:
+            - link "한국정보올림피아드시․도지역본선" [ref=e546] [cursor=pointer]:
+              - /url: /category/57
+          - listitem [ref=e547]:
+            - link "카카오 코드 페스티벌" [ref=e548] [cursor=pointer]:
+              - /url: /category/428
+          - listitem [ref=e549]:
+            - link "Coder's High" [ref=e550] [cursor=pointer]:
+              - /url: /category/215
+          - listitem [ref=e551]:
+            - link "Open Cup" [ref=e552] [cursor=pointer]:
+              - /url: /category/485
+          - listitem [ref=e553]:
+            - link "Petrozavodsk Programming Camp" [ref=e554] [cursor=pointer]:
+              - /url: /category/477
+        - heading "대학교 대회" [level=2] [ref=e556]
+        - list [ref=e557]:
+          - listitem [ref=e558]:
+            - link "DGIST" [ref=e559] [cursor=pointer]:
+              - /url: /category/662
+          - listitem [ref=e560]:
+            - link "KAIST" [ref=e561] [cursor=pointer]:
+              - /url: /category/320
+          - listitem [ref=e562]:
+            - link "POSTECH" [ref=e563] [cursor=pointer]:
+              - /url: /category/426
+          - listitem [ref=e564]:
+            - link "UNIST" [ref=e565] [cursor=pointer]:
+              - /url: /category/461
+          - listitem [ref=e566]:
+            - link "가톨릭대학교" [ref=e567] [cursor=pointer]:
+              - /url: /category/466
+          - listitem [ref=e568]:
+            - link "강원대학교" [ref=e569] [cursor=pointer]:
+              - /url: /category/518
+          - listitem [ref=e570]:
+            - link "건국대학교" [ref=e571] [cursor=pointer]:
+              - /url: /category/454
+          - listitem [ref=e572]:
+            - link "경북대학교" [ref=e573] [cursor=pointer]:
+              - /url: /category/438
+          - listitem [ref=e574]:
+            - link "경인지역 대학 연합" [ref=e575] [cursor=pointer]:
+              - /url: /category/409
+          - listitem [ref=e576]:
+            - link "고려대학교" [ref=e577] [cursor=pointer]:
+              - /url: /category/341
+          - listitem [ref=e578]:
+            - link "광주과학기술원" [ref=e579] [cursor=pointer]:
+              - /url: /category/434
+          - listitem [ref=e580]:
+            - link "국민대학교" [ref=e581] [cursor=pointer]:
+              - /url: /category/361
+          - listitem [ref=e582]:
+            - link "부산대학교" [ref=e583] [cursor=pointer]:
+              - /url: /category/671
+          - listitem [ref=e584]:
+            - link "서강대학교" [ref=e585] [cursor=pointer]:
+              - /url: /category/83
+          - listitem [ref=e586]:
+            - link "서울과학기술대학교" [ref=e587] [cursor=pointer]:
+              - /url: /category/674
+          - listitem [ref=e588]:
+            - link "서울대학교" [ref=e589] [cursor=pointer]:
+              - /url: /category/354
+          - listitem [ref=e590]:
+            - link "서울사이버대학교" [ref=e591] [cursor=pointer]:
+              - /url: /category/709
+          - listitem [ref=e592]:
+            - link "서울시립대학교" [ref=e593] [cursor=pointer]:
+              - /url: /category/1004
+          - listitem [ref=e594]:
+            - link "성균관대학교" [ref=e595] [cursor=pointer]:
+              - /url: /category/468
+          - listitem [ref=e596]:
+            - link "숙명여자대학교" [ref=e597] [cursor=pointer]:
+              - /url: /category/527
+          - listitem [ref=e598]:
+            - link "숭실대학교" [ref=e599] [cursor=pointer]:
+              - /url: /category/352
+          - listitem [ref=e600]:
+            - link "아주대학교" [ref=e601] [cursor=pointer]:
+              - /url: /category/408
+          - listitem [ref=e602]:
+            - link "연세대학교" [ref=e603] [cursor=pointer]:
+              - /url: /category/334
+          - listitem [ref=e604]:
+            - link "연세대학교 미래캠퍼스" [ref=e605] [cursor=pointer]:
+              - /url: /category/541
+          - listitem [ref=e606]:
+            - link "인천대학교" [ref=e607] [cursor=pointer]:
+              - /url: /category/467
+          - listitem [ref=e608]:
+            - link "인하대학교" [ref=e609] [cursor=pointer]:
+              - /url: /category/336
+          - listitem [ref=e610]:
+            - link "전남대학교" [ref=e611] [cursor=pointer]:
+              - /url: /category/925
+          - listitem [ref=e612]:
+            - link "전북대학교" [ref=e613] [cursor=pointer]:
+              - /url: /category/347
+          - listitem [ref=e614]:
+            - link "중앙대학교" [ref=e615] [cursor=pointer]:
+              - /url: /category/400
+          - listitem [ref=e616]:
+            - link "충남대학교" [ref=e617] [cursor=pointer]:
+              - /url: /category/402
+          - listitem [ref=e618]:
+            - link "한국항공대학교" [ref=e619] [cursor=pointer]:
+              - /url: /category/607
+          - listitem [ref=e620]:
+            - link "한양대학교" [ref=e621] [cursor=pointer]:
+              - /url: /category/440
+          - listitem [ref=e622]:
+            - link "한양대학교 ERICA 캠퍼스" [ref=e623] [cursor=pointer]:
+              - /url: /category/418
+          - listitem [ref=e624]:
+            - link "홍익대학교" [ref=e625] [cursor=pointer]:
+              - /url: /category/363
+          - listitem [ref=e626]:
+            - link "전국 대학생 프로그래밍 대회 동아리 연합" [ref=e627] [cursor=pointer]:
+              - /url: /category/318
+          - listitem [ref=e628]:
+            - link "신촌지역 대학생 프로그래밍 대회 동아리 연합" [ref=e629] [cursor=pointer]:
+              - /url: /category/497
+      - generic [ref=e630]:
+        - heading "도움말" [level=2] [ref=e632]:
+          - link "도움말" [ref=e633] [cursor=pointer]:
+            - /url: https://help.acmicpc.net
+        - list [ref=e634]:
+          - listitem [ref=e635]:
+            - link "채점 도움말 및 채점 환경" [ref=e636] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/judge/info
+          - listitem [ref=e637]:
+            - link "재채점 안내" [ref=e638] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/judge/rejudge
+          - listitem [ref=e639]:
+            - link "런타임 에러 도움말" [ref=e640] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/judge/rte
+          - listitem [ref=e641]:
+            - link "문제 스타일 안내" [ref=e642] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/problem/style
+          - listitem [ref=e643]:
+            - link "컴파일 또는 실행 옵션, 컴파일러 버전, 언어 도움말" [ref=e644] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/language/info
+          - listitem [ref=e645]:
+            - link "문제집 도움말" [ref=e646] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/workbook
+          - listitem [ref=e647]:
+            - link "대회 개최 안내" [ref=e648] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/contest/open
+          - listitem [ref=e649]:
+            - link "문제 출제 안내" [ref=e650] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/problem/add
+          - listitem [ref=e651]:
+            - link "이용 규칙" [ref=e652] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/rule
+          - listitem [ref=e653]:
+            - link "통계 도움말" [ref=e654] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/stats
+          - listitem [ref=e655]:
+            - link "질문 도움말" [ref=e656] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/question
+          - listitem [ref=e657]:
+            - link "자주묻는 질문" [ref=e658] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/faq
+          - listitem [ref=e659]:
+            - link "짧은 주소 안내" [ref=e660] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/etc/short
+          - listitem [ref=e661]:
+            - link "광고 안내" [ref=e662] [cursor=pointer]:
+              - /url: https://help.acmicpc.net/ad
+    - generic [ref=e664]:
+      - generic [ref=e665]:
+        - paragraph [ref=e667]:
+          - text: © 2026 All Rights Reserved.
+          - link "주식회사 스타트링크" [ref=e668] [cursor=pointer]:
+            - /url: https://startlink.io
+          - text: "|"
+          - link "서비스 약관" [ref=e669] [cursor=pointer]:
+            - /url: /terms
+          - text: "|"
+          - link "개인정보 보호" [ref=e670] [cursor=pointer]:
+            - /url: /privacy
+          - text: "|"
+          - link "결제 이용 약관" [ref=e671] [cursor=pointer]:
+            - /url: /terms/payment
+          - text: "|"
+          - link "도움말" [ref=e672] [cursor=pointer]:
+            - /url: https://help.acmicpc.net
+          - text: "|"
+          - link "광고 문의" [ref=e673] [cursor=pointer]:
+            - /url: https://help.acmicpc.net/ad
+          - text: "|"
+          - link "업데이트 노트" [ref=e674] [cursor=pointer]:
+            - /url: https://github.com/Startlink/update-note/blob/master/boj.md
+          - text: "|"
+          - link "이슈" [ref=e675] [cursor=pointer]:
+            - /url: https://github.com/Startlink/update-note/blob/master/boj-issues.md
+          - text: "|"
+          - link "TODO" [ref=e676] [cursor=pointer]:
+            - /url: https://github.com/Startlink/update-note/blob/master/boj-todo.md
+        - list [ref=e678]:
+          - listitem [ref=e679]:
+            - link [ref=e680] [cursor=pointer]:
+              - /url: https://www.facebook.com/onlinejudge
+          - listitem [ref=e681]:
+            - link [ref=e682] [cursor=pointer]:
+              - /url: https://startlink.blog
+      - generic [ref=e683]:
+        - generic [ref=e684]:
+          - link:
+            - /url: https://startlink.io
+            - img [ref=e685] [cursor=pointer]
+          - list [ref=e686]:
+            - listitem [ref=e687]: "사업자 등록 번호: 541-88-00682"
+            - listitem [ref=e688]: "대표자명: 최백준"
+            - listitem [ref=e689]: "주소: 서울시 서초구 서초대로74길 29 서초파라곤 412호"
+            - listitem [ref=e690]: "전화번호: 02-521-0487 (이메일로 연락 주세요)"
+            - listitem [ref=e691]:
+              - text: "이메일:"
+              - link "contacts@startlink.io" [ref=e692] [cursor=pointer]:
+                - /url: mailto:contacts@startlink.io
+            - listitem [ref=e693]: "통신판매신고번호: 제 2017-서울서초-2193 호"
+        - paragraph [ref=e695]: 이 사이트는 ACM 또는 ICPC 대회와 무관하며, ACM으로부터 승인이나 지원을 받지 않고 있습니다.
+        - paragraph [ref=e697]:
+          - link "한국어" [ref=e698] [cursor=pointer]:
+            - /url: /lang?lang=0&next=%2Fproblem%2F22993
+          - text: "|"
+          - link "English (Beta)" [ref=e699] [cursor=pointer]:
+            - /url: /lang?lang=1&next=%2Fproblem%2F22993
