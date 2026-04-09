@@ -21,9 +21,21 @@ You are the Algopam writing agent for this repository. Your job is to turn solve
    - what works
    - what is awkward, risky, or incorrect
 6. For the original solution and each improved solution, compute the time complexity in Big-O notation when practical and explain why that complexity is correct.
-7. Provide at least one cleaner or safer alternative solution when possible.
-8. Save a local markdown backup in the same week folder using `boj-<problem_id>-velog-draft.md`.
-9. If the user asks for web staging, use Playwright to paste the markdown into Velog and save as a draft.
+   - define what symbols like `n`, `m`, or `k` mean in this specific problem
+   - point to the repeated work that dominates the runtime
+   - explain the growth in beginner-friendly language, such as "if the input roughly doubles, this part also roughly doubles"
+   - when `O(log n)` or binary search appears, explain that the searchable range is cut roughly in half each step
+7. Explain any non-obvious library, helper function, or data structure in plain language.
+   - do not stop at labels like "binary search", "set", or "hash"
+   - say what the tool returns or does in this exact problem
+   - if helpful, include a tiny concrete example, such as what `bisect_left` returns and why that equals "the count of smaller elements"
+8. When presenting code in the draft, keep it runnable but add short comments that help a beginner follow it.
+   - comment the role of important variables
+   - comment why key loops or branches exist
+   - comment what imported helpers or functions are doing when they are not obvious
+9. Provide at least one cleaner or safer alternative solution when possible.
+10. Save a local markdown backup in the same week folder using `boj-<problem_id>-velog-draft.md`.
+11. If the user asks for web staging, use Playwright to paste the markdown into Velog and save as a draft.
 
 ## Writing rules
 
@@ -44,11 +56,20 @@ You are the Algopam writing agent for this repository. Your job is to turn solve
   - lessons learned
 - Paraphrase long official problem statements instead of copying them wholesale.
 - Keep code blocks runnable and explanations shorter than the code unless the bug analysis needs detail.
+- When showing code in the post, prefer a blog-friendly version with short comments that explain the important lines.
+- If the original submission had no comments, it is okay to re-present the same logic with lightweight explanatory comments for the write-up.
+- Explain imported helpers and library calls in plain language. For example, instead of only saying "`bisect_left` is binary search," explain that it returns "the leftmost insertion index," and in this problem that index equals "how many values are smaller than `x`."
 - Write time complexity with explicit Big-O notation such as `O(1)`, `O(n)`, or `O(n log n)`.
 - Do not stop at the label alone. Briefly explain the reason, for example:
   - one pass over the input so `O(n)`
   - nested loops over `n` and `m` so `O(nm)`
   - only constant-count arithmetic operations so `O(1)`
+- Treat the time complexity section as a teaching section, not a label section.
+  - say what `n`, `m`, or `k` mean in this problem
+  - explain which operation or loop is the bottleneck
+  - explain the growth in plain language, such as how the work changes when the input size grows
+  - if `log n` appears, explicitly describe the "half each step" idea
+- When one solution improves on another, explain not only that it is faster, but which repeated work disappeared or got reduced.
 - If multiple solutions appear in the same post, state the time complexity for each one separately.
 
 ## Browser rules
@@ -69,6 +90,7 @@ You are the Algopam writing agent for this repository. Your job is to turn solve
 - `Compare my first BOJ solution with a cleaner Python version and save a Velog draft.`
 - `Research how people structure algorithm study logs, then draft a post from 4주차/1.py and stage it in Velog.`
 - `Add Big-O complexity and explain why the solution is O(n) in the Velog draft for 3주차/2.py.`
+- `Explain why bisect_left works in 2주차/6.py and make the Big-O section understandable to someone who has never learned binary search before.`
 
 # Context
 

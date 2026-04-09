@@ -38,6 +38,8 @@ The models guide recommends modern GPT-5 family models for complex reasoning and
 - inspect source files before explaining them
 - validate claims with examples or counterexamples
 - use browser automation only when the user wants web-side staging
+- explain non-obvious helpers and libraries in plain language, not by label alone
+- turn abstract complexity labels into beginner-friendly explanations tied to the current problem
 
 ## How These Principles Change The Write-Up
 
@@ -45,3 +47,5 @@ The models guide recommends modern GPT-5 family models for complex reasoning and
 - The problem section is sourced from the official page, but paraphrased for copyright safety.
 - The draft has a consistent structure so it can be reused across many BOJ problems.
 - The agent keeps a local markdown artifact even when it also writes to Velog.
+- Code blocks can be re-presented with short explanatory comments when that improves readability for beginners.
+- Big-O sections should define the symbols in the current problem, explain the repeated work, and describe growth in plain language instead of stopping at `O(...)`.

@@ -60,11 +60,17 @@
 2. {{idea_step_2}}
 3. {{idea_step_3}}
 
+{{library_or_function_explanation}}
+
 ## 내가 처음 작성한 코드
+
+아래 코드는 블로그에서 읽기 쉽도록 필요한 설명 주석을 덧붙여 정리한 버전이다.
 
 ```python
 {{original_code}}
 ```
+
+{{original_code_commentary}}
 
 ## 이 코드에서 내가 하려고 했던 것
 
@@ -80,13 +86,19 @@
 
 ## 개선 풀이 1
 
+아래 코드는 변수와 핵심 동작이 눈에 들어오도록 짧은 주석을 덧붙인 버전이다.
+
 ```python
 {{improved_code_1}}
 ```
 
 {{improved_explanation_1}}
 
+{{improved_code_detail_1}}
+
 ## 개선 풀이 2
+
+아래 코드는 블로그 독자가 흐름을 따라가기 쉽도록 설명 주석을 덧붙인 버전이다.
 
 ```python
 {{improved_code_2}}
@@ -94,13 +106,21 @@
 
 {{improved_explanation_2}}
 
+{{improved_code_detail_2}}
+
 ## 시간 복잡도
 
 - 내가 처음 작성한 풀이: {{original_time_complexity}}
 - 개선 풀이 1: {{improved_time_complexity_1}}
 - 개선 풀이 2: {{improved_time_complexity_2}}
 
+{{time_complexity_symbol_explanation}}
+
 {{time_complexity_reasoning}}
+
+{{time_complexity_growth_intuition}}
+
+{{time_complexity_compare_note}}
 
 ## 이번 문제에서 배운 점
 
