@@ -1,0 +1,684 @@
+===== PAGE 1 =====
+What is web development?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+위 주제로 자유롭게 5분간 저와 토론 하실게요~~
+
+===== PAGE 2 =====
+Today goals
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+1.
+웹이어떻게 동작하는지 이해하기
+2.
+백엔드가 어디서 무슨 역할을 하는지 알기
+3.
+Spring 프로젝트에서 코드가 왜 나뉘는지 감 잡기
+
+===== PAGE 3 =====
+교과서 정석버전 웹 개발의 구조
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+참.. 뭐가 뭔지 모르겠네요..
+너무 어려워요;; 벌써 포기하고 싶어
+
+===== PAGE 4 =====
+웹 개발의 큰 그림
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 5 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 6 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+사용자(우리 입장에선 FrontEnd )
+백엔드(Springboot , 서버등)
+겉으로 보임!!
+겉으로 보이지 않음!!
+요청(Request)
+응답(Response)
+결국 모든 웹/앱 서비스의 매커니즘은 요청과
+응답의 반복이다!!
+
+===== PAGE 7 =====
+우리가 BE 엔지니어로써 할 역할은?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+손님 눈엔 보이지 않는 주방장으로써
+1. 손님이 주문한 메뉴를 잘 받고
+2. 냉장고 재료로 레시피 그대로 요리를 만들고
+3. 웨이터에게 건네주면 됨!!!!!!
+
+===== PAGE 8 =====
+HTTP Method & Status
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 9 =====
+HTTP ?
+Hypertext Transfer Protocol
+웹 브라우저와 서버 간에 데이터를 주고받는 프로토콜
+* 웹 브라우저 : 인터넷 웹 페이지를 볼 수 있게 해주는 프로그램
+* 서버 : 네트워크를 통해 정보나 서비스를 제공해주는 쪽
+* 프로토콜 : 컴퓨터 사이의 데이터 통신을 원활하게 하기 위해 필요한 통신 규약
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 10 =====
+HTTP 메소드
+클라이언트가 웹 서버에게 어떤 종류의 동작을 원하는지를 나타내
+는 방법
+Post, Get, Put, Delete
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 11 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+HTTP 메소드
+Post(create)
+Put(update)
+Get(Read)
+Delete(delete)
+서버에서 정보를 조회 요청
+ex) 인스타 게시글 조회
+클라이언트의 요청 리소스
+생성
+ex) 인스타 새 게시물 등록
+LocalHost & Port
+HTTP
+API & JSON
+리소스의 전체 내용을 갱신
+ex) 인스타 게시글 수정
+리소스 내용 삭제
+Ex) 인스타 게시글 삭제
+
+===== PAGE 12 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+HTTP 메소드
+Post(create)
+Get(Read)
+서버에서 정보를 조회
+오직 데이터 읽는데만 사용됨
+서버에서 리소스 추가
+리소스 생성할 때 사용함
+LocalHost & Port
+HTTP
+API & JSON
+- URL에데이터를포함하여
+   데이터 조회에 적합함
+- 보안 문제
+   주소창에 사용자가입력한정
+보가그대로노출됨
+- URL에 데이터가 포함되지 않
+아
+외부에노출되지않는다.
+- 메시지본문에데이터를포함
+- 바이너리 및대용량데이터
+전송이 가능
+
+===== PAGE 13 =====
+HTTP status
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+1XX | Informational
+요청이 수신되었고프로세스가 계속되는 중
+2XX | Success
+요청이성공적으로 처리됨
+3XX | Redirection
+클라이언트가 요청을 완료하기 위해 추가 동작을 취해야 함
+4XX | Client Error
+클라이언트의요청이 잘못되었거나 완료할 수 없음
+5XX | Server Error
+서버가유효한 요청을 처리하는 데 실패했음
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 14 =====
+HTTP status
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+2XX | Success
+요청이성공적으로 처리됨
+LocalHost & Port
+HTTP
+API & JSON
+200 | OK
+요청이 성공적으로 처리됨. 가장 일반적인 성공 응답→메뉴 나왔
+습니다!
+201 | Created
+요청 성공, 그리고 새로운 리소스가 생성되었음 →메뉴 만들었습니다!
+204 | No Content
+요청은 성공했지만, 응답에 보낼 콘텐츠가 없음→메뉴 만들었는데 아무때나
+가져가주세요!
+
+===== PAGE 15 =====
+HTTP status
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+4XX | Client Error
+클라이언트의요청이 잘못되었거나 완료할 수 없음
+LocalHost & Port
+HTTP
+API & JSON
+400 | Bad Request
+잘못된 문법의 요청 →웨이터가 주문을 잘못 받았다!
+401 | Unauthorized
+인증 필요 →손님 맞으신가요?
+403 | Forbidden
+서버가 요청을 이해했지만 권한이 없어 거부함 →다른 테이블 손
+님이 시킨 음식입니다.
+404 | Not Found
+요청한 리소스를 찾을 수 없음 →죄송하지만 그런 메뉴는 없
+습니다.
+
+===== PAGE 16 =====
+HTTP status
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+500 | Internal Server Error
+서버 내부 처리 중 문제 →냉장고에 해당 재료가 없음..
+501 | Not Implemented
+서버가 그 기능/메서드를 지원하지 않음→다른 주방장 냉장고를 열어보려고 함.
+502 | Bad Gateway
+게이트웨이/프록시 서버가 받은 응답이 유효하지 않음 →주방이 망했는데 주
+문을 받았네 ㅠㅠ
+503 | Service Unavailable
+서버가 과부하 또는 점검 중으로 서비스 불가 →주문
+이 너무 많이 밀렸어!!
+5XX | Server Error
+서버가유효한 요청을 처리하는 데 실패했음
+
+===== PAGE 17 =====
+Localhost & Port
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 18 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+127.0.0.1 →IP주소(숫자)
+- 예시: 전화번호
+localhost →도메인 이름(이름)
+-
+예시: 사람 이름
+결국, 둘 다 내 컴퓨터 자기 자신을 가리킨다.
+Port →상세주소 (번지 수)
+-
+예시: 경기도 안양시 만안구 성결대학교
+“성결관” 성303호
+Localhost & Port
+IP란?:
+→인터넷에서 컴퓨터를 구분하기 위한 ‘주소‘이다.
+→비유: IP = 집주소
+-
+우리가 택배를 보낼 때 주소가 필요하듯이, 인터
+넷에서도 데이터를 보내려면 주소가 필요함.
+
+===== PAGE 19 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+http://127.0.0.1:8080/index.html
+Internet protocol
+Address
+HyperText
+Transfer
+Protocol
+Port
+WEB
+browser
+8080
+6000
+7000
+Web Server
+Game Server
+Chatting Server
+주소
+상세주소
+LocalHost & Port
+HTTP
+API & JSON
+Ex) http://성결대학교:성결관/성303호
+
+===== PAGE 20 =====
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 21 =====
+내부 동작?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+컴퓨터에는 이런 파일이 있음:
+-
+Hosts 파일→여기에 기본적으로 이렇게
+적혀있음: 127.0.0.1 loacalhost
+즉! Localhost라고 입력하면 자동으로 변환됨
+http://localhost:8080
+http://127.0.0.1:8080
+→둘 다 같은 서버로 접속됨.
+아니 근데.. 똑같은데 왜 구분해요??
+
+===== PAGE 22 =====
+쿠키?
+CORS?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+→나중에 더 자세히 배울거지만.. 쿠키/CORS/인
+증문제 때문임!!
+CORS? 쉽게말해 프론트와 백이 연결될 때(매핑),
+특정 요청을 허용해줘야 하는 상황인데 이땐 서로
+다름.
+localhost ≠ 127.0.0.1
+→브라우저는 이걸 다른 도메인으로 취급함.
+예) frontend →http://localhost:3000
+Backend →http://127.0.0.1:8080
+ CORS 에러 발생 가능
+
+===== PAGE 23 =====
+JSON & API
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 24 =====
+JSON
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+JavaScript Object Notation
+데이터를 쉽게 저장하고 교환하기 위한
+텍스트 기반의 교환 표준
+키: 값 형태로 이루어져 있음.
+LocalHost & Port
+HTTP
+API & JSON
+* RESTful API
+: HTTP 기반으로 클라이언트와 서버 간의
+  데이터(JSON 형식) 교환 처리
+
+===== PAGE 25 =====
+JSON
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+JavaScript Object Notation
+LocalHost & Port
+HTTP
+API & JSON
+Object(객체): 중괄호 { }로 감싸며, 키:값
+형태를 가짐.
+Array(배열): 대괄호 [ ]로 감싸며, 값들을
+순서대로 나열함.
+Key: 반드시 큰따옴표(“”)로 묶어야 함.
+Value: 문자열, 숫자, 불리언(true/false),
+null, 배열, 다른 객체가 올 수 있음
+
+===== PAGE 26 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 27 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+Let’s Practice!!
+https://jsonformatter.org/json-editor
+JSON으로 나를 소개하는 객체를 만들어보세요~!
+이름(name), 나이(age), 전공(major), 졸업학교
+(graduation)-->배열로 초등학교부터 나열,  전화
+번호(phone_number)
+
+===== PAGE 28 =====
+API ?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+Application Programming Interface
+운영 체제와 응용 프로그램 사이의 통신에 사용되는 언어/메시지
+형식
+“프론트와 백엔드가 대화하는 약속서.”
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 29 =====
+API
+(주문서)
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+Front
+Back
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 30 =====
+API 명세서
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+swagger
+spreadsheet
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 31 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+API?
+WHO??
+그럼 대체 API 명세서는 누가 작성할까요??
+백? 프론트?
+배운 내용을 토대로 유추해서 맞춰보세요!!
+퀴즈입니다~~
+
+===== PAGE 32 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 33 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+LocalHost & Port
+HTTP
+API & JSON
+
+===== PAGE 34 =====
+Framework
+VS
+Library
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+
+===== PAGE 35 =====
+라이브러리
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+상황: 완전 새로운 집을 지어야 하는 상황
+작업자(개발자)
+공구 및 재료 (라이브러리)
+완성된 집
+즉, 작업자가 직접 공구와 재료를 이용해서
+직접 집을 제작 한다.
+
+===== PAGE 36 =====
+프레임워크
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+상황: 인테리어가 완벽한 집에 입주하다.
+즉, 집의 구조(방 위치, 배관, 전기 배선)는 이미 정
+해져 있음. 나는 안방에는 침대를, 부엌에는 식탁
+을 놓으라는 규칙에 따라야 함. →내가 마음대로
+구조를 바꿀 수 없음.
+
+===== PAGE 37 =====
+
+
+===== PAGE 38 =====
+깜짝퀴즈!
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+우리가 배워볼 Spring은 라이브러리? 프레
+임워크? 맞춰보세요.
+
+===== PAGE 39 =====
+한 눈에 비교하기
+
+===== PAGE 40 =====
+MVC Design
+Pattern
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+
+===== PAGE 41 =====
+디자인 패턴이란??
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+가독성 개구린 코드 →끝없는 중첩for문,
+if에if에if에if문 등등.. 근데 작동은 함.
+아..짜증나네 어떻게 해결하지?
+
+===== PAGE 42 =====
+아 맞다 객체지향!
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+
+===== PAGE 43 =====
+디자인 패턴은?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+객체지향의 특성 중 상속과 인터페이스, 합
+성(객체를 속성으로 사용)을 이용한다.
+아 뭔 말인지 모르겠어;;
+
+===== PAGE 44 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+•
+문제: “김치찌개를 맛있게 끓이고 싶은데 방법
+을 모르겠어.”
+•
+디자인 패턴(레시피): 안성재 선생님의 김치찌
+개 레시피
+•
+적용: 레시피를 보고 따라 하되, 내 입맛(상황)
+에 맞게 재료를 조금 바꾸거나 간을 맞춤.
+비유로 알아보자
+
+===== PAGE 45 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+1. 시행착오 감소
+2. 의사소통 효율
+3. 유지보수
+4. 약속된 암묵적 규율
+디자인 패턴 왜 써야 하나요?
+걍 쉽게 말해서.. 깔끔하게 관리하고 용모
+를 단정하게 하려고!
+
+===== PAGE 46 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+디자인 패턴의 종류
+괜찮아요.. 저도 다 몰라요..
+우리는 MVC 패턴만 알아봅시다..
+하지만, 종류와 쓰임새가 궁금하다면? 구글
+링 ㄱㄱ
+
+===== PAGE 47 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+MVC 디자인 패턴
+
+===== PAGE 48 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+
+===== PAGE 49 =====
+Spring initializer &
+build.gradle
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+
+===== PAGE 50 =====
+Spring initializer - https://start.spring.io/
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+필요한 라이브러리 추가
+팀 이름
+프로젝트 이름
+(자동으로 작성됨)
+(자동으로 작성됨)
+(자동으로 작성됨)
+Java 21  버전
+
+===== PAGE 51 =====
+Spring initializer
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+생성 후 zip파일 C드라이브에 압축풀기!!!
+→운영진들 도움 요청하기~~
+build.gradle – 설정 파일
+dependencies 블록에서는 프로젝트가 정상적으로
+작동하기 위해 필요한 외부 라이브러리, 모듈, 프레임 워크 지정
+
+===== PAGE 52 =====
+Layered Architecture
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+
+===== PAGE 53 =====
+계층구조란?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+MVC배웠어.. 그래서 코드를 어디에 짜라
+는거야? Model에 다 넣으면 되나?
+아니요!! Springboot에선 어떻게 패
+턴을 세분화 하는지 알려드릴게요!
+
+===== PAGE 54 =====
+
+
+===== PAGE 55 =====
+Layered Architecture?
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+= 계층구조
+MVC →큰 틀
+Layered Architecture →실무형 역할분리
+즉, Springboot는 MVC디자인 패턴을
+기본 틀로 한 Layered Architecture를
+따른다.
+
+===== PAGE 56 =====
+Service
+Repository
+DB 접근 로직
+Domain
+데이터 모델
+DB
+ID
+PW
+lion1
+0000
+lion2
+1111
+lion3
+2222
+lion4
+3333
+Controller
+Front
+기능
+구현 로직
+URL 요청
+“/member/add”
+DTO
+DTO
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+
+===== PAGE 57 =====
+SKU x LIKELION
+Official Team
+Official LIKELION at SKU
+프로젝트 루트에서
+Src/main/java/com~/여기다! 오른쪽 패
+키지(폴더 또는디렉토리라고도 함.) 만들
+고 운영진한테 검사맡기!!
+
