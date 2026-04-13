@@ -12,10 +12,11 @@ description: Turn local algorithm-study solutions, especially BOJ Python files i
 3. Paraphrase the problem statement instead of copying long source text verbatim. Always keep the original problem link.
 4. Read 2-3 public algorithm recap or study-log posts to capture a readable section order and tone.
 5. Explain the user's first solution, validate it against examples, and look for at least one counterexample or improvement opportunity.
-6. Determine the time complexity of the original and improved solutions with explicit Big-O notation and prepare a short reason for each complexity.
+6. Determine the time complexity of the original and improved solutions with explicit Big-O notation, using worst-case analysis by default.
 7. Expand the complexity section for beginners:
    - define what symbols like `n`, `m`, or `k` mean in the current problem
    - identify which loop, search, or repeated operation is doing the real work
+   - say what input shape creates the worst case when it is practical to describe
    - explain growth in plain language, such as what happens when the input size roughly doubles
    - when `O(log n)` or binary search is used, explain that the search range is cut roughly in half each step
 8. Rewrite blog code blocks with short explanatory comments when helpful, even if the original submission had no comments.
@@ -77,16 +78,20 @@ Inside those sections, prefer adding two kinds of teaching detail when they matt
 - When a helper's return value is the key idea, say exactly what it returns and why that matters. Example: "`bisect_left(b, x)` returns the leftmost index where `x` could be inserted, and that index is exactly the number of values in `b` that are smaller than `x`."
 - Always include time complexity in Big-O notation for the original and improved solutions when practical.
 - Do not only state `O(...)`. Also explain why, based on the number of passes, loops, recursive calls, or dominant operations in the code.
+- Treat Big-O as worst-case time complexity unless the post explicitly compares best, average, and worst cases.
 - In the Big-O section, explicitly define each symbol in the problem context. Example: "`n` is the length of A, `m` is the length of B."
 - After the formal Big-O label, add a plain-language explanation for beginners:
   - what work repeats
   - what part dominates the runtime
+  - which input shape or branch makes the worst case happen
   - how the runtime changes as input size grows
 - For `O(log n)` explanations, describe the "half each step" intuition.
 - For `O(n log n)` explanations, separate the `O(n)` part from the `O(log n)` part when useful, such as "there are `n` items, and each search cuts the remaining range in half."
 - If one solution is faster than another, explain what repeated work was removed or reduced, not only that the Big-O label improved.
 - For `O(1)` solutions, say explicitly that the code uses only a fixed number of arithmetic or branching operations and does not scale with input size.
 - If several solutions appear, list the complexity for each solution separately so readers can compare them.
+- Keep these details inside the existing "Time complexity" section. Do not add a new top-level section only for worst-case analysis.
+- Prefer one concrete worst-case example over a long theory paragraph. Example: "If every item must be compared with every other item, the nested loops can run about `n * m` checks, so the worst case is `O(nm)`."
 
 ### 6. Velog staging rules
 
@@ -111,6 +116,7 @@ Inside those sections, prefer adding two kinds of teaching detail when they matt
 - At least one improved solution or refactor is presented.
 - Time complexity is shown in Big-O notation and the reason for that complexity is explained.
 - The complexity section defines the meaning of symbols like `n`, `m`, or `k` in the current problem.
+- The complexity section states the worst-case behavior or gives a small worst-case input shape when practical.
 - The complexity section includes a beginner-friendly explanation of how the runtime grows with input size.
 - Non-obvious helpers or data structures are explained in plain language, not only named.
 - Code blocks include short comments where a beginner would otherwise get stuck.

@@ -1,5 +1,5 @@
-#BOJ 100818: 최소, 최대
-#https://www.acmicpc.net/problem/100818
+#BOJ 10818: 최소, 최대
+#https://www.acmicpc.net/problem/10818
 #브론즈3
 import sys
 

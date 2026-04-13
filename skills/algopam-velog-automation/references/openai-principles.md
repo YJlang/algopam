@@ -48,4 +48,4 @@ The models guide recommends modern GPT-5 family models for complex reasoning and
 - The draft has a consistent structure so it can be reused across many BOJ problems.
 - The agent keeps a local markdown artifact even when it also writes to Velog.
 - Code blocks can be re-presented with short explanatory comments when that improves readability for beginners.
-- Big-O sections should define the symbols in the current problem, explain the repeated work, and describe growth in plain language instead of stopping at `O(...)`.
+- Big-O sections should define the symbols in the current problem, explain the repeated work, describe the worst-case input shape when practical, and describe growth in plain language instead of stopping at `O(...)`.

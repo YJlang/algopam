@@ -116,6 +116,8 @@
 
 {{time_complexity_symbol_explanation}}
 
+{{time_complexity_worst_case_explanation}}
+
 {{time_complexity_reasoning}}
 
 {{time_complexity_growth_intuition}}
