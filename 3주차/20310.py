@@ -1,30 +1,28 @@
-#BOJ 20310: 타노스
-#https://www.acmicpc.net/problem/20310
+# BOJ 20310: 타노스
+# https://www.acmicpc.net/problem/20310
 
 import sys
-
 input = sys.stdin.readline
 
-S = input()
-zero = 0 #0의 개수
-one = 0 #1의 개수
-S_prime = ''
+S = input().strip()
 
-for i in S:
-    if i == '0':
-        zero += 1
-    elif i == '1':
-        one += 1
+remove_zero = S.count('0') // 2
+remove_one = S.count('1') // 2
 
-zero = zero // 2
-one = one // 2
+removed = [False] * len(S)
 
+# 1은 앞에서부터 지워야 앞쪽의 큰 문자를 없앨 수 있다
+cnt = 0
+for i in range(len(S)):
+    if S[i] == '1' and cnt < remove_one:
+        removed[i] = True
+        cnt += 1
 
-for j in range(0, zero):
-    S_prime[j] += '0'
+# 0은 뒤에서부터 지워야 앞쪽의 작은 문자를 최대한 남길 수 있다
+cnt = 0
+for i in range(len(S) - 1, -1, -1):
+    if S[i] == '0' and cnt < remove_zero:
+        removed[i] = True
+        cnt += 1
 
-for k in range(0, one):
-    S_prime[k] += '1'
-
-print(S_prime)
-
+print(''.join(S[i] for i in range(len(S)) if not removed[i]))
