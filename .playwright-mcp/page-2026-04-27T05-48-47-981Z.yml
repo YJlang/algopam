@@ -1,0 +1,237 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e9]:
+        - textbox "제목을 입력하세요" [ref=e10]: "[Dreamhack misc] 폭탄 받아라! 풀이 회고 - 압축 폭탄 속 플래그 찾기"
+        - generic [ref=e13]:
+          - generic [ref=e82] [cursor=pointer]: Dreamhack
+          - generic [ref=e385] [cursor=pointer]: CTF
+          - generic [ref=e386] [cursor=pointer]: misc
+          - generic [ref=e387] [cursor=pointer]: writeup
+          - textbox "태그를 입력하세요" [ref=e14]
+      - generic [ref=e15]:
+        - button "H1" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: H1
+        - button "H2" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: H2
+        - button "H3" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: H3
+        - button "H4" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: H4
+        - button [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button [ref=e31] [cursor=pointer]:
+          - img [ref=e32]
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button [ref=e38] [cursor=pointer]:
+          - img [ref=e39]
+        - button [ref=e41] [cursor=pointer]:
+          - img [ref=e42]
+        - button [ref=e44] [cursor=pointer]:
+          - img [ref=e45]
+      - generic [ref=e48]:
+        - textbox [ref=e49]
+        - generic [ref=e52]: "또 하나 재밌었던 점은 압축 해제 결과의 시작과 끝만 보면 전부 `0`이라서 플래그가 없는 것처럼 보인다는 점이다. 이때 샘플링만 하고 끝내면 놓칠 수 있다. 전체에서 `0`이 아닌 바이트의 위치를 세어 보니 중간에 딱 플래그가 숨어 있었다. ## 최종 정리 이번 문제에서 배운 점은 세 가지다. 1. 확장자가 없어도 매직 바이트를 보면 파일 형식을 추측할 수 있다. 2. 압축 파일은 바로 풀기 전에 크기와 형식을 먼저 의심해야 한다. 3. 큰 파일을 다룰 때는 전체를 메모리나 디스크에 올리는 방식보다 스트리밍 분석이 더 안전하다. 풀이 자체는 짧았지만, misc 문제답게 \"도구를 얼마나 많이 아느냐\"보다 \"파일을 어떻게 조심스럽게 관찰하느냐\"를 묻는 문제였다. 다음부터 수상한 파일을 만나면 일단 실행이 아니라 관찰부터 해야겠다. ## 참고 - Dreamhack Wargame 2833: https://dreamhack.io/wargame/challenges/2833 - Python `lzma` 공식 문서: https://docs.python.org/3/library/lzma.html - XZ Utils 파일 형식 문서: https://tukaani.org/xz/xz-file-format.txt"
+    - generic [ref=e55]:
+      - button "나가기" [ref=e56] [cursor=pointer]:
+        - img [ref=e57]
+        - generic [ref=e59]: 나가기
+      - generic [ref=e60]:
+        - button "임시저장" [ref=e61] [cursor=pointer]
+        - button "출간하기" [ref=e62] [cursor=pointer]
+  - generic [ref=e64]:
+    - heading "[Dreamhack misc] 폭탄 받아라! 풀이 회고 - 압축 폭탄 속 플래그 찾기" [level=1] [ref=e81]
+    - generic [ref=e87]:
+      - blockquote [ref=e236]:
+        - paragraph [ref=e237]:
+          - text: 스포일러가 포함되어 있습니다. Dreamhack Wargame 2833번
+          - code [ref=e238]: 폭탄 받아라!
+          - text: 를 직접 풀고 싶은 분은 먼저 파일을 받아 관찰해 본 뒤 읽는 것을 추천합니다.
+      - heading "문제 정보" [level=2] [ref=e239]
+      - list [ref=e240]:
+        - listitem [ref=e241]:
+          - text: "문제 링크:"
+          - link "https://dreamhack.io/wargame/challenges/2833" [ref=e242] [cursor=pointer]:
+            - /url: https://dreamhack.io/wargame/challenges/2833
+        - listitem [ref=e243]: "플랫폼: Dreamhack"
+        - listitem [ref=e244]: "분야: misc"
+        - listitem [ref=e245]: "문제 번호: 2833"
+        - listitem [ref=e246]: "문제 제목: 폭탄 받아라!"
+        - listitem [ref=e247]:
+          - text: "분석 파일:"
+          - code [ref=e248]: bomb
+      - paragraph [ref=e249]:
+        - text: 문제 페이지는 로그인 후 자세히 볼 수 있어서, 이 글에서는 사용자가 받은 로컬 파일
+        - code [ref=e250]: bomb
+        - text: 을 기준으로 분석했다. 처음에는 이름만 보고 CS:APP의 binary bomb 같은 실행 파일을 떠올렸는데, 실제로는 말 그대로 "폭탄"에 가까운 압축 파일이었다.
+      - heading "처음 관찰" [level=2] [ref=e251]
+      - paragraph [ref=e252]:
+        - text: 파일 목록에서 확인한
+        - code [ref=e253]: bomb
+        - text: 의 크기는 약 38KB였다.
+      - code [ref=e255]: Get-Item .\bomb | Format-List Name,Length,FullName
+      - paragraph [ref=e256]: "결과:"
+      - code [ref=e258]: "Name : bomb Length : 39196"
+      - paragraph [ref=e259]: 크기가 작아서 실행 파일일 수도 있고, 압축 파일일 수도 있고, 단순 데이터일 수도 있다. 이럴 때 바로 실행하거나 무작정 압축 해제하기보다 먼저 앞부분의 바이트를 확인하는 것이 좋다.
+      - code [ref=e261]: "$bytes = [IO.File]::ReadAllBytes((Resolve-Path .\\bomb)) ($bytes[0..15] | ForEach-Object { $_.ToString('X2') }) -join ' '"
+      - paragraph [ref=e262]: "결과:"
+      - code [ref=e264]: FD 37 7A 58 5A 00 00 04 E6 D6 B4 46 02 00 21 01
+      - paragraph [ref=e265]:
+        - text: 여기서 중요한 부분은 맨 앞의
+        - code [ref=e266]: FD 37 7A 58 5A 00
+        - text: 이다. 이 값은 XZ 파일의 시그니처, 즉 "이 파일은 XZ 압축 파일입니다"라고 알려주는 매직 바이트다.
+      - paragraph [ref=e267]:
+        - text: 쉽게 말하면 파일 확장자가 없어도 파일 앞부분을 보면 정체를 추측할 수 있다. 이 문제의
+        - code [ref=e268]: bomb
+        - text: 은 이름에는 확장자가 없지만 실제 내용은 XZ 압축 파일이었다.
+      - heading "왜 조심해야 할까?" [level=2] [ref=e269]
+      - paragraph [ref=e270]: 이 파일은 압축 폭탄처럼 동작한다. 압축 파일 자체는 작지만, 압축을 풀면 훨씬 큰 데이터가 나온다.
+      - paragraph [ref=e271]: 이번 파일의 실제 크기는 다음과 같았다.
+      - code [ref=e273]: "압축 전 파일 크기: 39,196 bytes 압축 해제 후 크기: 268,349,468 bytes 압축 해제 비율: 약 6,846배"
+      - paragraph [ref=e274]: 약 38KB짜리 파일이 압축을 풀면 약 256MiB가 된다. 이번 문제에서는 감당 가능한 크기였지만, 같은 방식으로 몇 GB나 몇 TB까지 커지는 파일도 만들 수 있다. 그래서 정체를 모르는 압축 파일은 함부로 더블클릭하거나 전체 해제하지 않는 편이 안전하다.
+      - 'heading "1차 풀이: 일단 풀어서 확인하기" [level=2] [ref=e275]'
+      - paragraph [ref=e276]:
+        - text: 처음에는 Python의
+        - code [ref=e277]: lzma
+        - text: 모듈로 압축을 풀어 임시 파일을 만들었다.
+      - code [ref=e279]: import lzma from pathlib import Path src = Path("bomb") dst = Path("tmp/bomb.unxz") dst.write_bytes(lzma.decompress(src.read_bytes())) print(dst.stat().st_size) print(dst.read_bytes()[:16])
+      - paragraph [ref=e280]: "출력:"
+      - code [ref=e282]: 268349468 b'0000000000000000'
+      - paragraph [ref=e283]:
+        - text: 압축을 풀어 보니 시작 부분은 전부 문자
+        - code [ref=e284]: "0"
+        - text: 이었다. 중간과 끝부분도 샘플링해 봤는데 대부분
+        - code [ref=e285]: "0"
+        - text: 이었다.
+      - code [ref=e287]: "from pathlib import Path p = Path(\"tmp/bomb.unxz\") size = p.stat().st_size for offset in [0, 1024, 1024 * 1024, size // 2, size - 1024]: with p.open(\"rb\") as f: f.seek(offset) data = f.read(32) print(offset, data)"
+      - paragraph [ref=e288]:
+        - text: 처음에는 "그냥 0만 잔뜩 있는 파일인가?" 싶었지만, 전체 바이트를 세어 보니
+        - code [ref=e289]: "0"
+        - text: 이 아닌 값이 아주 조금 섞여 있었다.
+      - code [ref=e291]: "from pathlib import Path from collections import Counter p = Path(\"tmp/bomb.unxz\") counts = Counter() with p.open(\"rb\") as f: while True: chunk = f.read(1024 * 1024) if not chunk: break counts.update(chunk) print(\"전체 크기:\", p.stat().st_size) print(\"서로 다른 바이트 개수:\", len(counts)) print(\"가장 많이 나온 바이트:\", counts.most_common(10))"
+      - paragraph [ref=e292]: "결과:"
+      - code [ref=e294]: "전체 크기: 268349468 서로 다른 바이트 개수: 20 가장 많이 나온 바이트: [(48, 268349440), ...]"
+      - paragraph [ref=e295]:
+        - text: 여기서
+        - code [ref=e296]: "48"
+        - text: 은 ASCII 코드로 문자
+        - code [ref=e297]: "'0'"
+        - text: 이다. 전체 268,349,468바이트 중 268,349,440바이트가
+        - code [ref=e298]: "'0'"
+        - text: 이었다. 즉 거의 전부가
+        - code [ref=e299]: "0"
+        - text: 이고, 딱 28바이트만 다른 문자였다.
+      - heading "플래그 위치 찾기" [level=2] [ref=e300]
+      - paragraph [ref=e301]:
+        - code [ref=e302]: "0"
+        - text: 이 아닌 바이트가 있는 위치를 찾으면 플래그가 나올 가능성이 높다.
+      - code [ref=e304]: "from pathlib import Path p = Path(\"tmp/bomb.unxz\") positions = [] with p.open(\"rb\") as f: offset = 0 while True: chunk = f.read(1024 * 1024) if not chunk: break for i, b in enumerate(chunk): if b != ord(\"0\"): positions.append(offset + i) offset += len(chunk) print(\"0이 아닌 바이트 개수:\", len(positions)) print(\"첫 위치:\", positions[0]) print(\"마지막 위치:\", positions[-1]) start = max(0, positions[0] - 64) end = positions[-1] + 64 with p.open(\"rb\") as f: f.seek(start) context = f.read(end - start) print(context)"
+      - paragraph [ref=e305]: "결과:"
+      - code [ref=e307]: "0이 아닌 바이트 개수: 28 첫 위치: 134131712 마지막 위치: 134131739 b'0000000000000000000000000000000000000000000000000000000000000000AF{BOOM_This_is_a_zip_bomb}\\n000000000000000000000000000000000000000000000000000000000000000'"
+      - paragraph [ref=e308]: "플래그:"
+      - code [ref=e310]: "AF{BOOM_This_is_a_zip_bomb}"
+      - paragraph [ref=e311]:
+        - text: 중간에 정말 작은 문자열 하나를 숨겨 두고, 앞뒤를 전부
+        - code [ref=e312]: "0"
+        - text: 으로 채운 구조였다.
+      - 'heading "더 안전한 풀이: 압축 해제 파일을 만들지 않고 찾기" [level=2] [ref=e313]'
+      - paragraph [ref=e314]: 위 방식은 이해하기 쉽지만, 큰 압축 폭탄을 만나면 위험할 수 있다. 압축 해제 결과를 통째로 디스크에 저장하기 때문이다.
+      - paragraph [ref=e315]:
+        - text: 더 좋은 방법은 압축을 조금씩 풀면서 필요한 정보만 찾는 것이다. 아래 코드는
+        - code [ref=e316]: bomb
+        - text: 을 작은 조각으로 읽고,
+        - code [ref=e317]: lzma.LZMADecompressor
+        - text: 로 스트리밍 해제하면서
+        - code [ref=e318]: "AF{...}"
+        - text: 패턴을 찾는다.
+      - code [ref=e320]: "import lzma from pathlib import Path src = Path(\"bomb\") decompressor = lzma.LZMADecompressor() offset = 0 buffer = b\"\" flag = None with src.open(\"rb\") as f: while True: compressed_chunk = f.read(4096) if not compressed_chunk: break # 압축 데이터를 조금씩 해제한다. chunk = decompressor.decompress(compressed_chunk) # 플래그가 chunk 경계에 걸칠 수 있어서 이전 끝부분을 조금 붙여 둔다. data = buffer + chunk start = data.find(b\"AF{\") if start != -1: end = data.find(b\"}\", start) if end != -1: flag = data[start : end + 1].decode() break # 다음 chunk와 이어 볼 수 있도록 마지막 일부만 보관한다. buffer = data[-100:] offset += len(chunk) print(flag)"
+      - paragraph [ref=e321]: "출력:"
+      - code [ref=e323]: "AF{BOOM_This_is_a_zip_bomb}"
+      - paragraph [ref=e324]: 이 방식의 장점은 압축 해제 결과 전체를 파일로 만들지 않는다는 점이다. 이번 문제처럼 결과가 256MiB 정도면 괜찮지만, 진짜 악성 압축 폭탄이라면 디스크나 메모리를 크게 잡아먹을 수 있다.
+      - heading "사용한 개념 정리" [level=2] [ref=e325]
+      - heading "매직 바이트" [level=3] [ref=e326]
+      - paragraph [ref=e327]: 매직 바이트는 파일 맨 앞에 붙는 고유한 바이트 패턴이다. 운영체제나 분석 도구는 이 값을 보고 파일 형식을 추측한다.
+      - paragraph [ref=e328]: 예를 들어 이번 파일은 다음 값으로 시작했다.
+      - code [ref=e330]: FD 37 7A 58 5A 00
+      - paragraph [ref=e331]: 이 값은 XZ 압축 파일의 시그니처다. 그래서 확장자가 없어도 "이건 XZ 압축 파일이구나"라고 판단할 수 있었다.
+      - heading "XZ와 lzma" [level=3] [ref=e332]
+      - paragraph [ref=e333]:
+        - text: XZ는 압축 파일 형식이고, Python의
+        - code [ref=e334]: lzma
+        - text: 모듈은 XZ/LZMA 압축을 다룰 수 있게 해 주는 표준 라이브러리다.
+      - code [ref=e336]: import lzma data = lzma.decompress(compressed_data)
+      - paragraph [ref=e337]:
+        - text: 이 코드는 압축된 바이트를 받아 원래 바이트로 되돌린다. 다만
+        - code [ref=e338]: decompress()
+        - text: 를 한 번에 쓰면 압축 해제 결과 전체가 메모리에 올라올 수 있다. 그래서 큰 파일이 의심될 때는
+        - code [ref=e339]: LZMADecompressor
+        - text: 처럼 조금씩 처리하는 방식을 쓰는 편이 더 안전하다.
+      - heading "압축 폭탄" [level=3] [ref=e340]
+      - paragraph [ref=e341]: 압축 폭탄은 작은 압축 파일이지만, 압축을 풀면 매우 큰 데이터가 생성되는 파일을 말한다. 보안 문제에서는 "무작정 압축 해제하면 위험하다"는 습관을 묻는 장치로 자주 쓰인다.
+      - paragraph [ref=e342]: 이번 문제의 구조는 단순했다.
+      - code [ref=e344]: 엄청 많은 '0' + 중간의 플래그 문자열 + 다시 엄청 많은 '0'
+      - paragraph [ref=e345]: 반복되는 문자는 압축이 매우 잘 된다. 그래서 원본은 256MiB 정도인데 압축 파일은 38KB 정도까지 줄어든 것이다.
+      - heading "시간 복잡도" [level=2] [ref=e346]
+      - paragraph [ref=e347]:
+        - text: 여기서
+        - code [ref=e348]: "n"
+        - text: 을 압축 해제 후 데이터의 크기라고 하자. 이 문제에서는
+        - code [ref=e349]: n = 268,349,468
+        - text: 바이트다.
+      - paragraph [ref=e350]:
+        - text: 처음 방식처럼 압축을 전부 풀고 전체를 훑으면 시간 복잡도는
+        - code [ref=e351]: O(n)
+        - text: 이다. 압축 해제 결과의 모든 바이트를 한 번씩 확인하기 때문이다. 입력 크기가 두 배가 되면 확인해야 할 바이트 수도 거의 두 배가 된다.
+      - paragraph [ref=e352]: 공간 복잡도는 방식에 따라 다르다.
+      - list [ref=e353]:
+        - listitem [ref=e354]:
+          - text: "압축 해제 결과를 파일로 저장하는 방식: 디스크 공간"
+          - code [ref=e355]: O(n)
+          - text: 이 필요하다.
+        - listitem [ref=e356]:
+          - code [ref=e357]: lzma.decompress()
+          - text: "로 한 번에 메모리에 올리는 방식: 메모리"
+          - code [ref=e358]: O(n)
+          - text: 이 필요할 수 있다.
+        - listitem [ref=e359]:
+          - text: "스트리밍으로 조금씩 확인하는 방식: 작은 버퍼만 유지하므로 추가 메모리는 거의"
+          - code [ref=e360]: O(1)
+          - text: 에 가깝다.
+      - paragraph [ref=e361]: 이 문제에서는 시간 자체보다 공간 사용이 더 중요했다. 압축 폭탄 문제의 핵심은 "얼마나 빨리 푸느냐"보다 "풀다가 내 환경을 터뜨리지 않느냐"에 가깝다.
+      - heading "풀이하면서 헷갈렸던 점" [level=2] [ref=e362]
+      - paragraph [ref=e363]:
+        - text: 처음에는 파일 이름이
+        - code [ref=e364]: bomb
+        - text: 이라서 실행 파일을 분석해야 하는 리버싱 문제처럼 느껴졌다. 그런데 문자열을 뽑아 보니 의미 있는 실행 파일 문자열이 나오지 않았고, 앞부분 매직 바이트를 확인하니 XZ 압축 파일이었다.
+      - paragraph [ref=e365]:
+        - text: 또 하나 재밌었던 점은 압축 해제 결과의 시작과 끝만 보면 전부
+        - code [ref=e366]: "0"
+        - text: 이라서 플래그가 없는 것처럼 보인다는 점이다. 이때 샘플링만 하고 끝내면 놓칠 수 있다. 전체에서
+        - code [ref=e367]: "0"
+        - text: 이 아닌 바이트의 위치를 세어 보니 중간에 딱 플래그가 숨어 있었다.
+      - heading "최종 정리" [level=2] [ref=e368]
+      - paragraph [ref=e369]: 이번 문제에서 배운 점은 세 가지다.
+      - list [ref=e370]:
+        - listitem [ref=e371]: 확장자가 없어도 매직 바이트를 보면 파일 형식을 추측할 수 있다.
+        - listitem [ref=e372]: 압축 파일은 바로 풀기 전에 크기와 형식을 먼저 의심해야 한다.
+        - listitem [ref=e373]: 큰 파일을 다룰 때는 전체를 메모리나 디스크에 올리는 방식보다 스트리밍 분석이 더 안전하다.
+      - paragraph [ref=e374]: 풀이 자체는 짧았지만, misc 문제답게 "도구를 얼마나 많이 아느냐"보다 "파일을 어떻게 조심스럽게 관찰하느냐"를 묻는 문제였다. 다음부터 수상한 파일을 만나면 일단 실행이 아니라 관찰부터 해야겠다.
+      - heading "참고" [level=2] [ref=e375]
+      - list [ref=e376]:
+        - listitem [ref=e377]:
+          - text: "Dreamhack Wargame 2833:"
+          - link "https://dreamhack.io/wargame/challenges/2833" [ref=e378] [cursor=pointer]:
+            - /url: https://dreamhack.io/wargame/challenges/2833
+        - listitem [ref=e379]:
+          - text: Python
+          - code [ref=e380]: lzma
+          - text: "공식 문서:"
+          - link "https://docs.python.org/3/library/lzma.html" [ref=e381] [cursor=pointer]:
+            - /url: https://docs.python.org/3/library/lzma.html
+        - listitem [ref=e382]:
+          - text: "XZ Utils 파일 형식 문서:"
+          - link "https://tukaani.org/xz/xz-file-format.txt" [ref=e383] [cursor=pointer]:
+            - /url: https://tukaani.org/xz/xz-file-format.txt

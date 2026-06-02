@@ -1,0 +1,92 @@
+00003780: endbr64  
+00003784: push     r15
+00003786: lea      r15, [rdi + 8]
+0000378a: push     r14
+0000378c: push     r13
+0000378e: mov      r13, rsi
+00003791: push     r12
+00003793: mov      r12, rdi
+00003796: push     rbp
+00003797: push     rbx
+00003798: sub      rsp, 0x18
+0000379c: mov      rbx, qword ptr [rdi + 0x10]
+000037a0: mov      rbp, qword ptr [rsi]
+000037a3: test     rbx, rbx
+000037a6: jne      0x37b3
+000037a8: jmp      0x3860
+000037ad: nop      dword ptr [rax]
+000037b0: mov      rbx, rax
+000037b3: mov      rdx, qword ptr [rbx + 0x20]
+000037b7: mov      rax, qword ptr [rbx + 0x18]
+000037bb: cmp      rbp, rdx
+000037be: cmovb    rax, qword ptr [rbx + 0x10]
+000037c3: setb     cl
+000037c6: test     rax, rax
+000037c9: jne      0x37b0
+000037cb: mov      r14, rbx
+000037ce: test     cl, cl
+000037d0: jne      0x3830
+000037d2: xor      eax, eax
+000037d4: cmp      rdx, rbp
+000037d7: jae      0x3818
+000037d9: mov      dword ptr [rsp + 0xc], 1
+000037e1: cmp      r15, r14
+000037e4: jne      0x3850
+000037e6: mov      edi, 0x28
+000037eb: call     0x2550
+000037f0: mov      edi, dword ptr [rsp + 0xc]
+000037f4: mov      rcx, r15
+000037f7: mov      rdx, r14
+000037fa: mov      rbx, rax
+000037fd: mov      rax, qword ptr [r13]
+00003801: mov      rsi, rbx
+00003804: mov      qword ptr [rbx + 0x20], rax
+00003808: call     0x23e0
+0000380d: add      qword ptr [r12 + 0x28], 1
+00003813: mov      eax, 1
+00003818: add      rsp, 0x18
+0000381c: movzx    edx, al
+0000381f: mov      rax, rbx
+00003822: pop      rbx
+00003823: pop      rbp
+00003824: pop      r12
+00003826: pop      r13
+00003828: pop      r14
+0000382a: pop      r15
+0000382c: ret      
+0000382d: nop      dword ptr [rax]
+00003830: cmp      qword ptr [r12 + 0x18], rbx
+00003835: je       0x37d9
+00003837: mov      rdi, rbx
+0000383a: mov      r14, rbx
+0000383d: call     0x2580
+00003842: mov      rdx, qword ptr [rax + 0x20]
+00003846: mov      rbx, rax
+00003849: jmp      0x37d2
+0000384b: nop      dword ptr [rax + rax]
+00003850: xor      eax, eax
+00003852: cmp      rbp, qword ptr [r14 + 0x20]
+00003856: setb     al
+00003859: mov      dword ptr [rsp + 0xc], eax
+0000385d: jmp      0x37e6
+0000385f: nop      
+00003860: mov      rbx, r15
+00003863: cmp      r15, qword ptr [rdi + 0x18]
+00003867: jne      0x3837
+00003869: mov      dword ptr [rsp + 0xc], 1
+00003871: mov      r14, r15
+00003874: jmp      0x37e6
+00003879: nop      dword ptr [rax]
+00003880: endbr64  
+00003884: test     rdx, rdx
+00003887: jne      0x3890
+00003889: ret      
+0000388a: nop      word ptr [rax + rax]
+00003890: push     r15
+00003892: mov      r15, rsi
+00003895: push     r14
+00003897: mov      r14, rdi
+0000389a: push     r13
+0000389c: push     r12
+0000389e: push     rbp
+0000389f: push     rbx

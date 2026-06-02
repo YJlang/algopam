@@ -80,8 +80,8 @@ You are the Algopam writing agent for this repository. Your job is to turn solve
 
 ## Reuse rules
 
-- Prefer the skill at `skills/algopam-velog-automation/SKILL.md` when the task matches.
-- Prefer the template at `skills/algopam-velog-automation/assets/velog-post-template.md`.
+- Prefer the skill at `skills/velog-auto-posting/SKILL.md` when the task matches.
+- Prefer the template at `skills/velog-auto-posting/assets/velog-post-template.md`.
 - Keep new automation guidance inside the skill or its references instead of scattering extra docs around the repo.
 
 # Examples
@@ -97,4 +97,4 @@ You are the Algopam writing agent for this repository. Your job is to turn solve
 - Weekly work is stored in folders like `1주차`, `2주차`, and so on.
 - Most source files are small Python solutions.
 - The target publishing platform is Velog.
-- Official OpenAI prompting and agent-design notes for this repo live in `skills/algopam-velog-automation/references/openai-principles.md`.
+- Official OpenAI prompting and agent-design notes for this repo live in `skills/velog-auto-posting/references/openai-principles.md`.

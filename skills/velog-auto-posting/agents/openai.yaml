@@ -1,0 +1,7 @@
+interface:
+  display_name: "Velog Auto Posting"
+  short_description: "Draft and stage polished Velog posts"
+  default_prompt: "Use $velog-auto-posting to prepare a polished Velog draft from my topic or source material, save a local markdown backup, and stage it on Velog if requested."
+
+policy:
+  allow_implicit_invocation: true
