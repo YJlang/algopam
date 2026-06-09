@@ -7,4 +7,4 @@ input = sys.stdin.readline
 
 word = input().split() #split()은 공백을 기준으로 문자열을 분리한다.
 
-print(len(word)) 
+print(len(word))            
