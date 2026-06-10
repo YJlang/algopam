@@ -1,0 +1,5 @@
+[     559ms] [WARNING] [GPT] PubAdsService.clearTargeting is deprecated, use googletag.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://static.velog.io/static/js/20.72815531.chunk.js:1
+[   60840ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+https://goo.gle/gpt-message#155 @ https://static.velog.io/static/js/20.72815531.chunk.js:1
+[  356753ms] [WARNING] react-spring: The "interpolate" function is deprecated in v9 (use "to" instead) @ https://static.velog.io/static/js/20.72815531.chunk.js:1

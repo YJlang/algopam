@@ -1,0 +1,7 @@
+[    2113ms] [LOG] {gtag: , userId: undefined} @ https://assets.velcdn.com/_next/static/chunks/4356-b12ade6b27d7552d.js:12
+[    2776ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://velog.io/curated?_rsc=etmz3:0
+[    3383ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://velog.io/recent?_rsc=etmz3:0
+[  466066ms] [LOG] {gtag: , userId: undefined} @ https://assets.velcdn.com/_next/static/chunks/4356-b12ade6b27d7552d.js:12
+[  466156ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://velog.io/curated?_rsc=etmz3:0
+[  466176ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://velog.io/recent?_rsc=etmz3:0
+[  466239ms] [LOG] GA User ID set: 33d939fc-20eb-463b-8ae3-24e1489232ef @ https://assets.velcdn.com/_next/static/chunks/4356-b12ade6b27d7552d.js:12

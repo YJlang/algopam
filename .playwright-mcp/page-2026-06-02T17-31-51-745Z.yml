@@ -1,0 +1,136 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - link [ref=e7] [cursor=pointer]:
+      - /url: https://velog.io/
+      - img [ref=e8]
+    - generic [ref=e10]:
+      - link "2" [ref=e11] [cursor=pointer]:
+        - /url: https://velog.io/notifications
+        - generic [ref=e12]: "2"
+        - img [ref=e13]
+      - link [ref=e16] [cursor=pointer]:
+        - /url: /search
+        - img [ref=e17]
+      - button "새 글 작성" [ref=e20] [cursor=pointer]
+      - generic [ref=e22] [cursor=pointer]:
+        - img "thumbnail" [ref=e23]
+        - img [ref=e24]
+  - generic [ref=e28]:
+    - link [ref=e30] [cursor=pointer]:
+      - /url: https://velog.io/
+      - img [ref=e31]
+    - generic [ref=e33]:
+      - link "2" [ref=e34] [cursor=pointer]:
+        - /url: https://velog.io/notifications
+        - generic [ref=e35]: "2"
+        - img [ref=e36]
+      - link [ref=e39] [cursor=pointer]:
+        - /url: /search
+        - img [ref=e40]
+      - button "새 글 작성" [ref=e43] [cursor=pointer]
+      - generic [ref=e45] [cursor=pointer]:
+        - img "thumbnail" [ref=e46]
+        - img [ref=e47]
+  - generic [ref=e49]:
+    - heading "임시 글 목록" [level=1] [ref=e50]
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - heading "[알고팜 3주차] 프로그래머스 멀리 뛰기 - 마지막 한 칸만 생각하면 피보나치가 보인다" [level=3] [ref=e53]:
+          - link "[알고팜 3주차] 프로그래머스 멀리 뛰기 - 마지막 한 칸만 생각하면 피보나치가 보인다" [ref=e54] [cursor=pointer]:
+            - /url: /write?id=c2025430-4e6e-4206-9e3c-6e83d039d13d
+        - paragraph [ref=e55]:
+          - 'link "제출은 통과했는데 정작 \"이 코드가 왜 맞는지\"를 설명하지 못했던 문제다. 점화식 f(n) = f(n-1) + f(n-2)를 외워서 쓰긴 했지만 왜 앞 두 개의 합인지, 그리고 a, b = b, a+b 같은 동시대입이 왜 안 깨지는지 몰랐다. 이번에 \"마지막 점프 한 번\"만 따로 떼서 생각하니 전부 풀렸다. 문제 링크: https://school.prog..." [ref=e56] [cursor=pointer]':
+            - /url: /write?id=c2025430-4e6e-4206-9e3c-6e83d039d13d
+        - generic [ref=e57]:
+          - generic [ref=e58]: 방금 전
+          - button "삭제" [ref=e59] [cursor=pointer]
+      - generic [ref=e60]:
+        - heading "[Spring 1] 웹 기초를 식당 비유로 다시 이해해보기" [level=3] [ref=e61]:
+          - link "[Spring 1] 웹 기초를 식당 비유로 다시 이해해보기" [ref=e62] [cursor=pointer]:
+            - /url: /write?id=bef4ec08-d60c-4b49-a239-58f6cb9dc46b
+        - paragraph [ref=e63]:
+          - link "첨부된 spring1.pdf를 다시 읽으면서 만든 리마인드 회고록입니다. > 이번 첫 시간의 핵심은 웹은 요청과 응답의 반복이고, 백엔드 개발자는 그 흐름을 뒤에서 책임지는 사람이라는 점이었습니다. 이 글에서 꼭 가져가면 좋은 한 줄 프론트가 주문을 넣고, 백엔드는 주방처럼 그 주문을 처리하고, DB는 재료 창고처럼 데이터를 보관한다. 그리고 Sprin..." [ref=e64] [cursor=pointer]:
+            - /url: /write?id=bef4ec08-d60c-4b49-a239-58f6cb9dc46b
+        - generic [ref=e65]:
+          - generic [ref=e66]: 2026년 4월 10일
+          - button "삭제" [ref=e67] [cursor=pointer]
+      - generic [ref=e68]:
+        - 'heading "[알고팜 2주차] BOJ 7795 먹을 것인가 먹힐 것인가 - `bisect_left`가 왜 정답 개수가 되는지 이해하기" [level=3] [ref=e69]':
+          - 'link "[알고팜 2주차] BOJ 7795 먹을 것인가 먹힐 것인가 - `bisect_left`가 왜 정답 개수가 되는지 이해하기" [ref=e70] [cursor=pointer]':
+            - /url: /write?id=7aa83de2-ed6e-414e-8368-b4228918f485
+        - paragraph [ref=e71]:
+          - link "이번 문제는 처음 보면 \"A의 각 원소마다 B를 다 비교해야 하나?\" 싶어서 완전탐색부터 떠올리기 쉽다. 그런데 입력 크기를 보면 그렇게 풀기에는 부담이 있고, 정렬과 bisectleft를 이용하면 훨씬 빠르게 풀 수 있다. 이번 글에서는 내가 작성한 코드가 왜 맞는지, 특히 bisectleft(b, x)가 왜 \"x보다 작은 B의 개수\"가 되는지를 초보자 ..." [ref=e72] [cursor=pointer]:
+            - /url: /write?id=7aa83de2-ed6e-414e-8368-b4228918f485
+        - generic [ref=e73]:
+          - generic [ref=e74]: 2026년 4월 10일
+          - button "삭제" [ref=e75] [cursor=pointer]
+      - generic [ref=e76]:
+        - heading "[알고팜 2주차] BOJ 1822 차집합 - list에서 시간초과가 난 이유를 set으로 이해하기" [level=3] [ref=e77]:
+          - link "[알고팜 2주차] BOJ 1822 차집합 - list에서 시간초과가 난 이유를 set으로 이해하기" [ref=e78] [cursor=pointer]:
+            - /url: /write?id=80c3d79c-7957-4748-8bf7-5a05942dc99d
+        - paragraph [ref=e79]:
+          - 'link "이번 문제는 처음에는 \"차집합이니까 A를 돌면서 B에 없는 값만 고르면 되겠지\" 하고 접근했다. 아이디어 자체는 맞았는데, list에서 in을 쓴 부분 때문에 시간초과가 났다. 이번 글에서는 내가 처음 짰던 풀이가 왜 느렸는지, 그리고 왜 set으로 바꾸면 훨씬 빨라지는지를 같이 정리해보려고 한다. 문제 링크: https://www.acmicpc.net/..." [ref=e80] [cursor=pointer]':
+            - /url: /write?id=80c3d79c-7957-4748-8bf7-5a05942dc99d
+        - generic [ref=e81]:
+          - generic [ref=e82]: 2026년 4월 9일
+          - button "삭제" [ref=e83] [cursor=pointer]
+      - generic [ref=e84]:
+        - heading "전역한 지 3년, 왜 요즘 군대가 더 자주 떠오를까" [level=3] [ref=e85]:
+          - link "전역한 지 3년, 왜 요즘 군대가 더 자주 떠오를까" [ref=e86] [cursor=pointer]:
+            - /url: /write?id=a057f6f8-2656-4753-926a-0d606cafc6af
+        - paragraph:
+          - link:
+            - /url: /write?id=a057f6f8-2656-4753-926a-0d606cafc6af
+        - generic [ref=e87]:
+          - generic [ref=e88]: 2026년 3월 28일
+          - button "삭제" [ref=e89] [cursor=pointer]
+      - generic [ref=e90]:
+        - heading "??? ?? ??? ??" [level=3] [ref=e91]:
+          - link "??? ?? ??? ??" [ref=e92] [cursor=pointer]:
+            - /url: /write?id=b875e5eb-9d96-4b44-b771-404f37eebee7
+        - paragraph [ref=e93]:
+          - link "Temp Body" [ref=e94] [cursor=pointer]:
+            - /url: /write?id=b875e5eb-9d96-4b44-b771-404f37eebee7
+        - generic [ref=e95]:
+          - generic [ref=e96]: 2026년 3월 28일
+          - button "삭제" [ref=e97] [cursor=pointer]
+      - generic [ref=e98]:
+        - heading "BlogAuto publish.verify ??" [level=3] [ref=e99]:
+          - link "BlogAuto publish.verify ??" [ref=e100] [cursor=pointer]:
+            - /url: /write?id=66661c3b-b517-4f9e-b129-2a2f16749c7d
+        - paragraph [ref=e101]:
+          - link "Temp Body" [ref=e102] [cursor=pointer]:
+            - /url: /write?id=66661c3b-b517-4f9e-b129-2a2f16749c7d
+        - generic [ref=e103]:
+          - generic [ref=e104]: 2026년 3월 28일
+          - button "삭제" [ref=e105] [cursor=pointer]
+      - generic [ref=e106]:
+        - heading "BlogAuto ??? ?? ?? ??" [level=3] [ref=e107]:
+          - link "BlogAuto ??? ?? ?? ??" [ref=e108] [cursor=pointer]:
+            - /url: /write?id=f8963fcd-cbc3-49e5-93c8-380287d2ab6e
+        - paragraph [ref=e109]:
+          - link "Temp Body" [ref=e110] [cursor=pointer]:
+            - /url: /write?id=f8963fcd-cbc3-49e5-93c8-380287d2ab6e
+        - generic [ref=e111]:
+          - generic [ref=e112]: 2026년 3월 28일
+          - button "삭제" [ref=e113] [cursor=pointer]
+      - generic [ref=e114]:
+        - heading "BlogAuto ??? ?? ?? ??" [level=3] [ref=e115]:
+          - link "BlogAuto ??? ?? ?? ??" [ref=e116] [cursor=pointer]:
+            - /url: /write?id=b7e9e5d1-74d3-4721-86db-5c75a22ea432
+        - paragraph:
+          - link:
+            - /url: /write?id=b7e9e5d1-74d3-4721-86db-5c75a22ea432
+        - generic [ref=e117]:
+          - generic [ref=e118]: 2026년 3월 28일
+          - button "삭제" [ref=e119] [cursor=pointer]
+      - generic [ref=e120]:
+        - 'heading "호떡과 호수공원: 청주 산책기" [level=3] [ref=e121]':
+          - 'link "호떡과 호수공원: 청주 산책기" [ref=e122] [cursor=pointer]':
+            - /url: /write?id=20e29683-fc53-45c4-849c-3baa01b74288
+        - paragraph [ref=e123]:
+          - 'link "호떡과 호수공원: 청주 산책기 오늘 청주에 가서 민영이를 만났다. 오랜만에 만나 이런저런 얘기도 나누고, 맛있는 것도 많이 먹었다. 간단히 돌아다니기 좋은 하루였다. 만남과 먹거리 민영이와 함께 식당들을 둘러보고 이것저것 골라 먹었다. 특히 호떡을 먹은 게 기억에 남는다 — 따끈하고 달콤해서 기분이 좋아졌다. 산책 청주에서 유명한 호수공원을 산책했다...." [ref=e124] [cursor=pointer]':
+            - /url: /write?id=20e29683-fc53-45c4-849c-3baa01b74288
+        - generic [ref=e125]:
+          - generic [ref=e126]: 2026년 3월 28일
+          - button "삭제" [ref=e127] [cursor=pointer]

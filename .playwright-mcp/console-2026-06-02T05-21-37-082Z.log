@@ -1,0 +1,3 @@
+[     164ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://velog.io/write?id=c7bdb8d2-38b4-4802-84a9-0d59dd2af008:0
+[     780ms] [WARNING] [GPT] PubAdsService.clearTargeting is deprecated, use googletag.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://static.velog.io/static/js/20.72815531.chunk.js:1

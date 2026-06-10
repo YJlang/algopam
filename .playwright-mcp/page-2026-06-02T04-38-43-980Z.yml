@@ -1,0 +1,374 @@
+- generic [ref=e4]:
+  - generic [ref=e6]:
+    - generic [ref=e7]:
+      - generic [ref=e9]:
+        - textbox "제목을 입력하세요" [ref=e10]: "[알고리즘 3주차] 프로그래머스 카드 뭉치 - 카드는 앞에서부터 꺼내야 한다"
+        - generic [ref=e13]:
+          - generic [ref=e279] [cursor=pointer]: Python
+          - generic [ref=e280] [cursor=pointer]: 프로그래머스
+          - generic [ref=e281] [cursor=pointer]: 알고리즘
+          - generic [ref=e282] [cursor=pointer]: 자료구조
+          - textbox "태그를 입력하세요" [active] [ref=e14]
+          - generic [ref=e283]:
+            - text: 쉼표 혹은 엔터를 입력하여 태그를 등록 할 수 있습니다.
+            - text: 등록된 태그를 클릭하면 삭제됩니다.
+      - generic [ref=e15]:
+        - button "H1" [ref=e16] [cursor=pointer]:
+          - generic [ref=e17]: H1
+        - button "H2" [ref=e18] [cursor=pointer]:
+          - generic [ref=e19]: H2
+        - button "H3" [ref=e20] [cursor=pointer]:
+          - generic [ref=e21]: H3
+        - button "H4" [ref=e22] [cursor=pointer]:
+          - generic [ref=e23]: H4
+        - button [ref=e25] [cursor=pointer]:
+          - img [ref=e26]
+        - button [ref=e28] [cursor=pointer]:
+          - img [ref=e29]
+        - button [ref=e31] [cursor=pointer]:
+          - img [ref=e32]
+        - button [ref=e35] [cursor=pointer]:
+          - img [ref=e36]
+        - button [ref=e38] [cursor=pointer]:
+          - img [ref=e39]
+        - button [ref=e41] [cursor=pointer]:
+          - img [ref=e42]
+        - button [ref=e44] [cursor=pointer]:
+          - img [ref=e45]
+      - generic [ref=e48]:
+        - textbox [ref=e49]
+        - generic [ref=e52]: "## 시간 / 공간 복잡도 여기서 `n`은 `goal`의 길이다. (제한상 `n`은 최대 `cards1 길이 + cards2 길이`, 즉 최대 20 정도로 아주 작다.) - 오답(뒤에서부터): `O(n)` - 정답(앞에서부터): `O(n)` 두 풀이 모두 `goal`을 딱 한 번만 훑고, 각 단계에서 하는 일은 길이 10 이하의 단어 한두 번 비교가 전부다. 단어 비교는 길이가 상수(≤10)로 묶여 있어 상수 시간으로 본다. 그래서 입력이 커져도 `goal` 길이에 정비례하는 `O(n)`이다. 입력이 대략 두 배가 되면 비교 횟수도 대략 두 배가 되는 정도이고, 중첩 반복으로 모든 쌍을 비교하는 `O(n^2)` 구조가 아니다. 공간 복잡도는 `O(1)`이다. 두 풀이 모두 포인터(또는 남은 개수) 변수 몇 개만 쓰고, 입력 크기에 비례하는 추가 자료구조를 만들지 않는다. ## 이번 문제에서 배운 점 - 예제가 전부 통과해도 안심하면 안 된다. 특히 이 문제처럼 예제가 \"카드를 전부 쓰는\" 특수 케이스만 담고 있으면, 잘못된 방향의 풀이도 예제는 통과한다. - 제한사항의 `2 ≤ goal 길이 ≤ 전체 길이`처럼 \"안 써도 되는 경우\"를 알려주는 한 줄을 반드시 반례로 떠올려 봐야 한다. - 카드/스택처럼 \"한쪽 끝에서만 꺼낼 수 있는\" 문제는 **꺼내는 방향**이 곧 풀이의 정답/오답을 가른다. 투 포인터를 쓰느냐보다 어느 쪽 끝을 가리키느냐가 더 중요했다. - 두 뭉치의 단어가 서로 겹치지 않는다는 제한 덕분에, \"맞으면 바로 그 뭉치를 쓴다\"는 단순 그리디가 애매함 없이 항상 옳다는 점도 같이 챙기면 좋다."
+    - generic [ref=e55]:
+      - button "나가기" [ref=e56] [cursor=pointer]:
+        - img [ref=e57]
+        - generic [ref=e59]: 나가기
+      - generic [ref=e60]:
+        - button "임시저장" [ref=e61] [cursor=pointer]
+        - button "출간하기" [ref=e62] [cursor=pointer]
+  - generic [ref=e64]:
+    - heading "[알고리즘 3주차] 프로그래머스 카드 뭉치 - 카드는 앞에서부터 꺼내야 한다" [level=1] [ref=e66]
+    - generic [ref=e70]:
+      - paragraph [ref=e71]:
+        - text: 예제는 둘 다 통과했는데 제출하면 일부 케이스가 틀리는 문제였다. 처음에는
+        - code [ref=e72]: goal
+        - text: 을 거꾸로 돌면서 카드 뭉치의
+        - strong [ref=e73]: 뒤에서부터
+        - text: 맞춰봤는데, 알고 보니 이 문제의 핵심은
+        - strong [ref=e74]: 카드를 뭉치의 앞(맨 위)에서부터만 꺼낼 수 있다
+        - text: 는 점이었다. 방향을 반대로 잡으니 예제는 우연히 맞고 숨은 테스트에서 터졌다.
+      - paragraph [ref=e75]:
+        - text: "문제 링크:"
+        - link "https://school.programmers.co.kr/learn/courses/30/lessons/159994" [ref=e76] [cursor=pointer]:
+          - /url: https://school.programmers.co.kr/learn/courses/30/lessons/159994
+      - heading "문제 정보" [level=2] [ref=e77]
+      - list [ref=e78]:
+        - listitem [ref=e79]: "출처: 프로그래머스 코딩테스트 연습"
+        - listitem [ref=e80]: "난이도/유형 감각: Lv.1, 스택/큐 (그리디 + 투 포인터)"
+        - listitem [ref=e81]: "문제 번호: 159994"
+      - heading "문제 설명" [level=2] [ref=e82]
+      - paragraph [ref=e83]:
+        - text: 두 개의 카드 뭉치
+        - code [ref=e84]: cards1
+        - text: ","
+        - code [ref=e85]: cards2
+        - text: 가 있다. 각 뭉치의 카드는
+        - strong [ref=e86]: 맨 앞에서부터 순서대로 한 장씩만
+        - text: 사용할 수 있다.
+      - paragraph [ref=e87]: 규칙은 이렇다.
+      - list [ref=e88]:
+        - listitem [ref=e89]: 한 번 사용한 카드는 다시 사용할 수 없다.
+        - listitem [ref=e90]: 카드를 건너뛰고 더 뒤의 카드를 먼저 쓸 수 없다. (각 뭉치 안에서 순서 고정)
+        - listitem [ref=e91]: 두 뭉치 중 어느 쪽 카드를 쓸지는 자유롭게 고를 수 있다.
+      - paragraph [ref=e92]:
+        - text: 이 규칙을 지키면서 카드를 뽑아 목표 문자열 배열
+        - code [ref=e93]: goal
+        - text: 을 순서대로 만들 수 있으면
+        - code [ref=e94]: "\"Yes\""
+        - text: ", 만들 수 없으면"
+        - code [ref=e95]: "\"No\""
+        - text: 를 반환한다.
+      - heading "입력 / 제한사항" [level=2] [ref=e96]
+      - list [ref=e97]:
+        - listitem [ref=e98]:
+          - code [ref=e99]: 1 ≤ cards1의 길이, cards2의 길이 ≤ 10
+        - listitem [ref=e100]:
+          - code [ref=e101]: 1 ≤ 각 단어의 길이 ≤ 10
+        - listitem [ref=e102]:
+          - code [ref=e103]: cards1
+          - text: 과
+          - code [ref=e104]: cards2
+          - text: 에는 서로 다른 단어만 들어 있다. (중복 단어 없음)
+        - listitem [ref=e105]:
+          - code [ref=e106]: 2 ≤ goal의 길이 ≤ cards1의 길이 + cards2의 길이
+        - listitem [ref=e107]:
+          - code [ref=e108]: goal
+          - text: 의 원소는
+          - code [ref=e109]: cards1
+          - text: ","
+          - code [ref=e110]: cards2
+          - text: 의 원소들로만 이루어져 있다.
+        - listitem [ref=e111]: 모든 문자열은 소문자로만 구성된다.
+      - blockquote [ref=e112]:
+        - paragraph [ref=e113]:
+          - text: 여기서 가장 중요한 제한은
+          - code [ref=e114]: goal
+          - text: 의 길이가
+          - strong [ref=e115]: 두 뭉치 전체 길이보다 짧을 수 있다
+          - text: 는 점이다. 즉, 카드를 전부 쓰지 않고 앞쪽 일부만 써서
+          - code [ref=e116]: goal
+          - text: 을 만들 수도 있다. 이 한 줄을 놓치면 나처럼 뒤에서부터 맞추는 풀이를 짜게 된다.
+      - heading "출력 형식" [level=2] [ref=e117]
+      - list [ref=e118]:
+        - listitem [ref=e119]:
+          - code [ref=e120]: goal
+          - text: 을 규칙대로 만들 수 있으면
+          - code [ref=e121]: "\"Yes\""
+          - text: ", 아니면"
+          - code [ref=e122]: "\"No\""
+          - text: 를 반환한다.
+      - heading "예제 입력 / 출력" [level=2] [ref=e123]
+      - table [ref=e124]:
+        - rowgroup [ref=e125]:
+          - row "cards1 cards2 goal result" [ref=e126]:
+            - columnheader "cards1" [ref=e127]
+            - columnheader "cards2" [ref=e128]
+            - columnheader "goal" [ref=e129]
+            - columnheader "result" [ref=e130]
+        - rowgroup [ref=e131]:
+          - row "[\"i\", \"drink\", \"water\"] [\"want\", \"to\"] [\"i\", \"want\", \"to\", \"drink\", \"water\"] \"Yes\"" [ref=e132]:
+            - cell "[\"i\", \"drink\", \"water\"]" [ref=e133]:
+              - code [ref=e134]: "[\"i\", \"drink\", \"water\"]"
+            - cell "[\"want\", \"to\"]" [ref=e135]:
+              - code [ref=e136]: "[\"want\", \"to\"]"
+            - cell "[\"i\", \"want\", \"to\", \"drink\", \"water\"]" [ref=e137]:
+              - code [ref=e138]: "[\"i\", \"want\", \"to\", \"drink\", \"water\"]"
+            - cell "\"Yes\"" [ref=e139]:
+              - code [ref=e140]: "\"Yes\""
+          - row "[\"i\", \"water\", \"drink\"] [\"want\", \"to\"] [\"i\", \"want\", \"to\", \"drink\", \"water\"] \"No\"" [ref=e141]:
+            - cell "[\"i\", \"water\", \"drink\"]" [ref=e142]:
+              - code [ref=e143]: "[\"i\", \"water\", \"drink\"]"
+            - cell "[\"want\", \"to\"]" [ref=e144]:
+              - code [ref=e145]: "[\"want\", \"to\"]"
+            - cell "[\"i\", \"want\", \"to\", \"drink\", \"water\"]" [ref=e146]:
+              - code [ref=e147]: "[\"i\", \"want\", \"to\", \"drink\", \"water\"]"
+            - cell "\"No\"" [ref=e148]:
+              - code [ref=e149]: "\"No\""
+      - list [ref=e150]:
+        - listitem [ref=e151]:
+          - text: "예제 1:"
+          - code [ref=e152]: cards1
+          - text: 에서
+          - code [ref=e153]: i
+          - text: →
+          - code [ref=e154]: cards2
+          - text: 에서
+          - code [ref=e155]: want
+          - text: ","
+          - code [ref=e156]: to
+          - text: → 다시
+          - code [ref=e157]: cards1
+          - text: 에서
+          - code [ref=e158]: drink
+          - text: ","
+          - code [ref=e159]: water
+          - text: 순서로 꺼내면
+          - code [ref=e160]: goal
+          - text: 이 완성된다. →
+          - code [ref=e161]: "\"Yes\""
+        - listitem [ref=e162]:
+          - text: "예제 2:"
+          - code [ref=e163]: drink
+          - text: 보다
+          - code [ref=e164]: water
+          - text: 가
+          - code [ref=e165]: cards1
+          - text: 에서 먼저 나오기 때문에,
+          - code [ref=e166]: goal
+          - text: 이 요구하는
+          - code [ref=e167]: drink
+          - text: →
+          - code [ref=e168]: water
+          - text: 순서를 만들 수 없다. →
+          - code [ref=e169]: "\"No\""
+      - paragraph [ref=e170]:
+        - text: 두 예제 모두
+        - code [ref=e171]: goal
+        - text: 의 길이가
+        - code [ref=e172]: 3 + 2 = 5
+        - text: 로
+        - strong [ref=e173]: 카드를 전부 소진
+        - text: 한다는 점을 기억해두자. 뒤에서 설명할 내 오답이 예제만 통과한 이유가 바로 여기에 있다.
+      - heading "접근 아이디어" [level=2] [ref=e174]
+      - paragraph [ref=e175]: 각 뭉치는 앞에서부터만 꺼낼 수 있으므로, 두 뭉치에 각각 "지금 꺼낼 수 있는 맨 앞 카드"를 가리키는 포인터를 두면 된다.
+      - paragraph [ref=e176]:
+        - code [ref=e177]: goal
+        - text: 을 앞에서부터 한 단어씩 보면서,
+      - list [ref=e178]:
+        - listitem [ref=e179]:
+          - code [ref=e180]: cards1
+          - text: 의 현재 맨 앞 카드와 같으면 그 카드를 쓰고
+          - code [ref=e181]: cards1
+          - text: 포인터를 한 칸 앞으로,
+        - listitem [ref=e182]:
+          - text: 아니면
+          - code [ref=e183]: cards2
+          - text: 의 현재 맨 앞 카드와 같은지 보고 맞으면
+          - code [ref=e184]: cards2
+          - text: 포인터를 한 칸,
+        - listitem [ref=e185]:
+          - text: 둘 다 아니면 그 단어는 만들 수 없으므로 즉시
+          - code [ref=e186]: "\"No\""
+          - text: .
+      - paragraph [ref=e187]:
+        - text: 문제 제한에서
+        - strong [ref=e188]: 두 뭉치의 단어가 서로 겹치지 않는다
+        - text: 고 했기 때문에, 어떤 단어가 두 뭉치의 맨 앞과 동시에 일치하는 애매한 상황이 생기지 않는다. 그래서 "맞으면 바로 그 뭉치를 쓴다"는 단순 그리디가 항상 옳다.
+      - heading "원래 작성했던 코드 (오답)" [level=2] [ref=e189]
+      - paragraph [ref=e190]:
+        - text: 처음엔 "어차피 양쪽 끝을 맞춰가면 되겠지" 하고
+        - code [ref=e191]: goal
+        - text: 을
+        - strong [ref=e192]: 뒤에서부터
+        - text: 돌면서 각 뭉치의
+        - strong [ref=e193]: 마지막 카드
+        - text: 와 비교했다.
+      - code [ref=e195]: "def solution(cards1, cards2, goal): answer = '' c1 = len(cards1) # cards1에서 아직 안 쓴 카드 개수 (뒤에서부터 본다) c2 = len(cards2) # cards2에서 아직 안 쓴 카드 개수 for i in reversed(goal): # goal을 뒤에서부터 본다 if c1 > 0 and cards1[c1-1] == i: # cards1의 '마지막' 카드와 비교 c1 -= 1 elif c2 > 0 and cards2[c2-1] == i: # cards2의 '마지막' 카드와 비교 c2 -= 1 else: answer = 'No' break if answer == '': answer = 'Yes' return answer"
+      - heading "이 코드에서 하려던 것" [level=2] [ref=e196]
+      - paragraph [ref=e197]:
+        - text: 아이디어 자체는 투 포인터가 맞다.
+        - code [ref=e198]: goal
+        - text: 을 한 번 훑으면서 두 뭉치를 한 칸씩 줄여나가는 구조다.
+      - paragraph [ref=e199]:
+        - text: 문제는
+        - strong [ref=e200]: 방향
+        - text: 이었다. 카드는 뭉치의
+        - strong [ref=e201]: 앞(맨 위)
+        - text: 에서만 꺼낼 수 있는데, 이 코드는
+        - code [ref=e202]: reversed(goal)
+        - text: 로 뒤에서부터 보면서
+        - code [ref=e203]: cards1[c1-1]
+        - text: ", 즉 뭉치의"
+        - strong [ref=e204]: 마지막 카드
+        - text: 와 비교한다. 이건 "카드를 맨 뒤(맨 아래)에서부터 꺼낼 수 있다"고 가정한 셈이라, 실제 규칙과 정반대다.
+      - heading "약했던 점과 반례" [level=2] [ref=e205]
+      - paragraph [ref=e206]:
+        - text: 왜 예제는 통과했을까? 예제 1, 2는 모두
+        - code [ref=e207]: goal
+        - text: 이 두 뭉치를
+        - strong [ref=e208]: 전부
+        - text: 사용한다(
+        - code [ref=e209]: 길이 5 = 3 + 2
+        - text: ). 카드를 전부 쓰면 "앞에서부터 본 것"과 "뒤에서부터 본 것"이 결국 같은 카드 집합을 훑게 되어, 뒤에서 맞추는 풀이도 우연히 정답과 같은 결과를 낸다.
+      - paragraph [ref=e210]:
+        - text: 하지만
+        - code [ref=e211]: goal
+        - text: 이
+        - strong [ref=e212]: 앞쪽 일부 카드만
+        - text: 쓰는 경우엔 바로 깨진다.
+      - code [ref=e214]: cards1 = ["a", "b"] cards2 = ["c", "d"] goal = ["a", "c"]
+      - code [ref=e216]: "정답: Yes (cards1 앞에서 \"a\", cards2 앞에서 \"c\"를 꺼내면 됨) 오답 코드: No"
+      - paragraph [ref=e217]: 오답 코드를 그대로 따라가 보면,
+      - list [ref=e218]:
+        - listitem [ref=e219]:
+          - code [ref=e220]: reversed(goal)
+          - text: =
+          - code [ref=e221]: "[\"c\", \"a\"]"
+        - listitem [ref=e222]:
+          - text: 첫 단어
+          - code [ref=e223]: "\"c\""
+          - text: ":"
+          - code [ref=e224]: cards1
+          - text: 의 마지막 카드
+          - code [ref=e225]: "\"b\""
+          - text: ≠
+          - code [ref=e226]: "\"c\""
+          - text: ","
+          - code [ref=e227]: cards2
+          - text: 의 마지막 카드
+          - code [ref=e228]: "\"d\""
+          - text: ≠
+          - code [ref=e229]: "\"c\""
+          - text: → 곧바로
+          - code [ref=e230]: "\"No\""
+      - paragraph [ref=e231]:
+        - code [ref=e232]: goal
+        - text: 이 필요로 하는
+        - code [ref=e233]: a
+        - text: ","
+        - code [ref=e234]: c
+        - text: 는 두 뭉치의
+        - strong [ref=e235]: 앞쪽
+        - text: 에 있는데, 코드는
+        - strong [ref=e236]: 뒤쪽
+        - text: 부터 보니 첫 비교에서 바로 실패한다. 결국 이 문제는 "투 포인터를 쓰느냐"가 아니라
+        - strong [ref=e237]: "\"어느 쪽 끝에서 꺼내느냐\""
+        - text: 가 핵심이었다.
+      - 'heading "개선 풀이: 앞에서부터 보는 투 포인터 (정답)" [level=2] [ref=e238]'
+      - paragraph [ref=e239]:
+        - text: 방향만 바로잡으면 된다.
+        - code [ref=e240]: goal
+        - text: 을 앞에서부터 보고, 각 뭉치의
+        - strong [ref=e241]: 맨 앞 카드
+        - text: (
+        - code [ref=e242]: cards1[i]
+        - text: ","
+        - code [ref=e243]: cards2[j]
+        - text: )와 비교한다.
+      - code [ref=e245]: "def solution(cards1, cards2, goal): i = 0 # cards1에서 다음에 꺼낼 '맨 앞' 카드의 위치 j = 0 # cards2에서 다음에 꺼낼 '맨 앞' 카드의 위치 for word in goal: # goal을 앞에서부터 한 단어씩 if i < len(cards1) and cards1[i] == word: i += 1 # cards1의 맨 앞 카드를 사용 elif j < len(cards2) and cards2[j] == word: j += 1 # cards2의 맨 앞 카드를 사용 else: return \"No\" # 두 뭉치 맨 앞 어느 쪽도 못 맞추면 불가능 return \"Yes\""
+      - paragraph [ref=e246]:
+        - text: 핵심은 포인터가 항상
+        - strong [ref=e247]: 0에서 시작해 앞으로만 증가
+        - text: 한다는 점이다.
+        - code [ref=e248]: cards1[i]
+        - text: 는 언제나 "아직 안 쓴 카드 중 가장 위에 있는 카드"를 가리킨다. 카드를 꺼낸다는 행위가 포인터를
+        - code [ref=e249]: "+1"
+        - text: 하는 것과 정확히 같다.
+      - paragraph [ref=e250]:
+        - code [ref=e251]: i < len(cards1)
+        - text: 같은 범위 체크를 먼저 두는 이유는, 한 뭉치를 다 써버린 뒤에 인덱스를 벗어나 접근하는 것을 막기 위해서다. (이 검사를 빼면
+        - code [ref=e252]: IndexError
+        - text: 가 난다.)
+      - heading "시간 / 공간 복잡도" [level=2] [ref=e253]
+      - paragraph [ref=e254]:
+        - text: 여기서
+        - code [ref=e255]: "n"
+        - text: 은
+        - code [ref=e256]: goal
+        - text: 의 길이다. (제한상
+        - code [ref=e257]: "n"
+        - text: 은 최대
+        - code [ref=e258]: cards1 길이 + cards2 길이
+        - text: ", 즉 최대 20 정도로 아주 작다.)"
+      - list [ref=e259]:
+        - listitem [ref=e260]:
+          - text: "오답(뒤에서부터):"
+          - code [ref=e261]: O(n)
+        - listitem [ref=e262]:
+          - text: "정답(앞에서부터):"
+          - code [ref=e263]: O(n)
+      - paragraph [ref=e264]:
+        - text: 두 풀이 모두
+        - code [ref=e265]: goal
+        - text: 을 딱 한 번만 훑고, 각 단계에서 하는 일은 길이 10 이하의 단어 한두 번 비교가 전부다. 단어 비교는 길이가 상수(≤10)로 묶여 있어 상수 시간으로 본다. 그래서 입력이 커져도
+        - code [ref=e266]: goal
+        - text: 길이에 정비례하는
+        - code [ref=e267]: O(n)
+        - text: 이다. 입력이 대략 두 배가 되면 비교 횟수도 대략 두 배가 되는 정도이고, 중첩 반복으로 모든 쌍을 비교하는
+        - code [ref=e268]: O(n^2)
+        - text: 구조가 아니다.
+      - paragraph [ref=e269]:
+        - text: 공간 복잡도는
+        - code [ref=e270]: O(1)
+        - text: 이다. 두 풀이 모두 포인터(또는 남은 개수) 변수 몇 개만 쓰고, 입력 크기에 비례하는 추가 자료구조를 만들지 않는다.
+      - heading "이번 문제에서 배운 점" [level=2] [ref=e271]
+      - list [ref=e272]:
+        - listitem [ref=e273]: 예제가 전부 통과해도 안심하면 안 된다. 특히 이 문제처럼 예제가 "카드를 전부 쓰는" 특수 케이스만 담고 있으면, 잘못된 방향의 풀이도 예제는 통과한다.
+        - listitem [ref=e274]:
+          - text: 제한사항의
+          - code [ref=e275]: 2 ≤ goal 길이 ≤ 전체 길이
+          - text: 처럼 "안 써도 되는 경우"를 알려주는 한 줄을 반드시 반례로 떠올려 봐야 한다.
+        - listitem [ref=e276]:
+          - text: 카드/스택처럼 "한쪽 끝에서만 꺼낼 수 있는" 문제는
+          - strong [ref=e277]: 꺼내는 방향
+          - text: 이 곧 풀이의 정답/오답을 가른다. 투 포인터를 쓰느냐보다 어느 쪽 끝을 가리키느냐가 더 중요했다.
+        - listitem [ref=e278]: 두 뭉치의 단어가 서로 겹치지 않는다는 제한 덕분에, "맞으면 바로 그 뭉치를 쓴다"는 단순 그리디가 애매함 없이 항상 옳다는 점도 같이 챙기면 좋다.

@@ -1,0 +1,833 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e3]:
+    - generic [ref=e5]:
+      - link [ref=e9] [cursor=pointer]:
+        - /url: /
+        - img [ref=e10]
+      - generic [ref=e17]:
+        - navigation [ref=e18]:
+          - generic [ref=e19]:
+            - link "트렌딩" [ref=e20] [cursor=pointer]:
+              - /url: /trending/week
+              - img [ref=e21]
+              - generic [ref=e24]: 트렌딩
+            - link "추천" [ref=e25] [cursor=pointer]:
+              - /url: /curated
+              - img [ref=e26]
+              - generic [ref=e28]: 추천
+            - link "최신" [ref=e29] [cursor=pointer]:
+              - /url: /recent
+              - img [ref=e30]
+              - generic [ref=e34]: 최신
+            - link "피드" [ref=e35] [cursor=pointer]:
+              - /url: /feed
+              - img [ref=e36]
+              - generic [ref=e40]: 피드
+        - generic [ref=e42]:
+          - generic [ref=e43] [cursor=pointer]:
+            - text: 이번 주
+            - img [ref=e44]
+          - img [ref=e47] [cursor=pointer]
+    - generic [ref=e51]:
+      - link [ref=e55] [cursor=pointer]:
+        - /url: /
+        - img [ref=e56]
+      - generic [ref=e63]:
+        - navigation [ref=e64]:
+          - generic [ref=e65]:
+            - link "트렌딩" [ref=e66] [cursor=pointer]:
+              - /url: /trending/week
+              - img [ref=e67]
+              - generic [ref=e70]: 트렌딩
+            - link "추천" [ref=e71] [cursor=pointer]:
+              - /url: /curated
+              - img [ref=e72]
+              - generic [ref=e74]: 추천
+            - link "최신" [ref=e75] [cursor=pointer]:
+              - /url: /recent
+              - img [ref=e76]
+              - generic [ref=e80]: 최신
+            - link "피드" [ref=e81] [cursor=pointer]:
+              - /url: /feed
+              - img [ref=e82]
+              - generic [ref=e86]: 피드
+        - generic [ref=e88]:
+          - generic [ref=e89] [cursor=pointer]:
+            - text: 이번 주
+            - img [ref=e90]
+          - img [ref=e93] [cursor=pointer]
+      - main [ref=e97]:
+        - list [ref=e98]:
+          - listitem [ref=e99]:
+            - link "토스 미니앱 출시, 그리고 상금 기부까지 post" [ref=e100] [cursor=pointer]:
+              - /url: https://velog.io/@gaeroro/토스-미니앱-출시-그리고-상금-기부까지
+              - img "토스 미니앱 출시, 그리고 상금 기부까지 post" [ref=e102]
+            - generic [ref=e103]:
+              - link "토스 미니앱 출시, 그리고 상금 기부까지 강아지 응가 300개 줍다, 대표님 된 썰" [ref=e104] [cursor=pointer]:
+                - /url: https://velog.io/@gaeroro/토스-미니앱-출시-그리고-상금-기부까지
+                - heading "토스 미니앱 출시, 그리고 상금 기부까지" [level=4] [ref=e105]
+                - paragraph [ref=e107]: 강아지 응가 300개 줍다, 대표님 된 썰
+              - generic [ref=e108]:
+                - text: 2026년 5월 24일·
+                - generic [ref=e109]: 9개의 댓글
+            - generic [ref=e110]:
+              - link "user thumbnail of 개로로 by 개로로" [ref=e111] [cursor=pointer]:
+                - /url: /@gaeroro/posts
+                - img "user thumbnail of 개로로" [ref=e112]
+                - generic [ref=e113]: by 개로로
+              - generic [ref=e114]:
+                - img [ref=e115]
+                - text: "28"
+          - listitem [ref=e117]:
+            - link "(번역) Tailwind에서 벗어나기, 그리고 CSS 구조화 방법 배우기 post" [ref=e118] [cursor=pointer]:
+              - /url: https://velog.io/@tap_kim/moving-away-from-tailwind-and-learning-to-structure-my-css-
+              - img "(번역) Tailwind에서 벗어나기, 그리고 CSS 구조화 방법 배우기 post" [ref=e120]
+            - generic [ref=e121]:
+              - 'link "(번역) Tailwind에서 벗어나기, 그리고 CSS 구조화 방법 배우기 원문: https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/안녕하세요! 8년 전, 저는 Tailwind를 발견하고 신나서 글을 썼습니다.당시 저는..." [ref=e122] [cursor=pointer]':
+                - /url: https://velog.io/@tap_kim/moving-away-from-tailwind-and-learning-to-structure-my-css-
+                - heading "(번역) Tailwind에서 벗어나기, 그리고 CSS 구조화 방법 배우기" [level=4] [ref=e123]
+                - paragraph [ref=e125]: "원문: https://jvns.ca/blog/2026/05/15/moving-away-from-tailwind--and-learning-to-structure-my-css-/안녕하세요! 8년 전, 저는 Tailwind를 발견하고 신나서 글을 썼습니다.당시 저는..."
+              - generic [ref=e126]:
+                - text: 7일 전·
+                - generic [ref=e127]: 1개의 댓글
+            - generic [ref=e128]:
+              - link "user thumbnail of TapK by TapK" [ref=e129] [cursor=pointer]:
+                - /url: /@tap_kim/posts
+                - img "user thumbnail of TapK" [ref=e130]
+                - generic [ref=e131]: by TapK
+              - generic [ref=e132]:
+                - img [ref=e133]
+                - text: "6"
+          - listitem [ref=e135]:
+            - link "AI는 딱 \"당신만큼\"만 훌륭합니다. post" [ref=e136] [cursor=pointer]:
+              - /url: https://velog.io/@hbin12212/AI는-딱-당신만큼만-훌륭합니다
+              - img "AI는 딱 \"당신만큼\"만 훌륭합니다. post" [ref=e138]
+            - generic [ref=e139]:
+              - link "AI는 딱 \"당신만큼\"만 훌륭합니다. 🎁 6/5 까지 사용 가능한 할인 쿠폰을 드립니다!!" [ref=e140] [cursor=pointer]:
+                - /url: https://velog.io/@hbin12212/AI는-딱-당신만큼만-훌륭합니다
+                - heading "AI는 딱 \"당신만큼\"만 훌륭합니다." [level=4] [ref=e141]
+                - paragraph [ref=e143]: 🎁 6/5 까지 사용 가능한 할인 쿠폰을 드립니다!!
+              - generic [ref=e144]:
+                - text: 2026년 5월 21일·
+                - generic [ref=e145]: 6개의 댓글
+            - generic [ref=e146]:
+              - link "user thumbnail of hyobin by hyobin" [ref=e147] [cursor=pointer]:
+                - /url: /@hbin12212/posts
+                - img "user thumbnail of hyobin" [ref=e148]
+                - generic [ref=e149]: by hyobin
+              - generic [ref=e150]:
+                - img [ref=e151]
+                - text: "15"
+          - listitem [ref=e153]:
+            - link "Claude Opus 4.8 이 그새 또 나왔다 post" [ref=e154] [cursor=pointer]:
+              - /url: https://velog.io/@dbwls/Claude-Opus-4.8이-그새-또-나왔다
+              - img "Claude Opus 4.8 이 그새 또 나왔다 post" [ref=e156]
+            - generic [ref=e157]:
+              - link "Claude Opus 4.8 이 그새 또 나왔다 4.7 나온 지 얼마 안된 것 같은데 벌써 4.8이 나왔다. 근데 이번 타이밍이 좀 묘한 게 4월에 Opus 4.7로 코딩 1등 찍은 지 일주일 만에 OpenAI가 GPT-5.5를 던졌고, 그 뒤로 \"종합 점수는 GPT가 앞선다\", Claude가 이제 코딩으로도 밀리..." [ref=e158] [cursor=pointer]:
+                - /url: https://velog.io/@dbwls/Claude-Opus-4.8이-그새-또-나왔다
+                - heading "Claude Opus 4.8 이 그새 또 나왔다" [level=4] [ref=e159]
+                - paragraph [ref=e161]: 4.7 나온 지 얼마 안된 것 같은데 벌써 4.8이 나왔다. 근데 이번 타이밍이 좀 묘한 게 4월에 Opus 4.7로 코딩 1등 찍은 지 일주일 만에 OpenAI가 GPT-5.5를 던졌고, 그 뒤로 "종합 점수는 GPT가 앞선다", Claude가 이제 코딩으로도 밀리...
+              - generic [ref=e162]:
+                - text: 4일 전·
+                - generic [ref=e163]: 4개의 댓글
+            - generic [ref=e164]:
+              - link "user thumbnail of 유진 by 유진" [ref=e165] [cursor=pointer]:
+                - /url: /@dbwls/posts
+                - img "user thumbnail of 유진" [ref=e166]
+                - generic [ref=e167]: by 유진
+              - generic [ref=e168]:
+                - img [ref=e169]
+                - text: "14"
+          - listitem [ref=e171]:
+            - link "외부 API 검색 결과가 비어 있을 때, 백엔드에서 보완 검색하기 post" [ref=e172] [cursor=pointer]:
+              - /url: https://velog.io/@riverhee/외부-API-검색-결과가-비어-있을-때-백엔드에서-보완-검색하기
+              - img "외부 API 검색 결과가 비어 있을 때, 백엔드에서 보완 검색하기 post" [ref=e174]
+            - generic [ref=e175]:
+              - link "외부 API 검색 결과가 비어 있을 때, 백엔드에서 보완 검색하기 SQLD 시험을 앞두고 공부를 하던 중, 함께 프로젝트를 진행하고 있는 선배님께 연락이 왔다. 현재 진행 중인 프로젝트에는 선수 검색 기능이 있다.사용자가 선수 이름이나 키워드를 입력하면, 해당 키워드와 관련된 선수 목록을 외부 API를 통해 조회한 뒤 화면에 보여주는..." [ref=e176] [cursor=pointer]:
+                - /url: https://velog.io/@riverhee/외부-API-검색-결과가-비어-있을-때-백엔드에서-보완-검색하기
+                - heading "외부 API 검색 결과가 비어 있을 때, 백엔드에서 보완 검색하기" [level=4] [ref=e177]
+                - paragraph [ref=e179]: SQLD 시험을 앞두고 공부를 하던 중, 함께 프로젝트를 진행하고 있는 선배님께 연락이 왔다. 현재 진행 중인 프로젝트에는 선수 검색 기능이 있다.사용자가 선수 이름이나 키워드를 입력하면, 해당 키워드와 관련된 선수 목록을 외부 API를 통해 조회한 뒤 화면에 보여주는...
+              - generic [ref=e180]:
+                - text: 2026년 5월 25일·
+                - generic [ref=e181]: 1개의 댓글
+            - generic [ref=e182]:
+              - link "user thumbnail of 이강희 by 이강희" [ref=e183] [cursor=pointer]:
+                - /url: /@riverhee/posts
+                - img "user thumbnail of 이강희" [ref=e184]
+                - generic [ref=e185]: by 이강희
+              - generic [ref=e186]:
+                - img [ref=e187]
+                - text: "19"
+          - listitem [ref=e189]:
+            - link "프론트엔드계의 MSA, MFE에 대해 알아보자 post" [ref=e190] [cursor=pointer]:
+              - /url: https://velog.io/@zerone001/MFE
+              - img "프론트엔드계의 MSA, MFE에 대해 알아보자 post" [ref=e192]
+            - generic [ref=e193]:
+              - link "프론트엔드계의 MSA, MFE에 대해 알아보자 마이크로프론트엔드에 대해 알아보자" [ref=e194] [cursor=pointer]:
+                - /url: https://velog.io/@zerone001/MFE
+                - heading "프론트엔드계의 MSA, MFE에 대해 알아보자" [level=4] [ref=e195]
+                - paragraph [ref=e197]: 마이크로프론트엔드에 대해 알아보자
+              - generic [ref=e198]:
+                - text: 2026년 5월 26일·
+                - generic [ref=e199]: 0개의 댓글
+            - generic [ref=e200]:
+              - link "user thumbnail of 정현 by 정현" [ref=e201] [cursor=pointer]:
+                - /url: /@zerone001/posts
+                - img "user thumbnail of 정현" [ref=e202]
+                - generic [ref=e203]: by 정현
+              - generic [ref=e204]:
+                - img [ref=e205]
+                - text: "14"
+          - listitem [ref=e207]:
+            - link "Codex CLI 한 달 사용기 post" [ref=e208] [cursor=pointer]:
+              - /url: https://velog.io/@junjuny0227/44
+              - img "Codex CLI 한 달 사용기 post" [ref=e210]
+            - generic [ref=e211]:
+              - link "Codex CLI 한 달 사용기 삶이 풍요롭네요" [ref=e212] [cursor=pointer]:
+                - /url: https://velog.io/@junjuny0227/44
+                - heading "Codex CLI 한 달 사용기" [level=4] [ref=e213]
+                - paragraph [ref=e215]: 삶이 풍요롭네요
+              - generic [ref=e216]:
+                - text: 2026년 5월 21일·
+                - generic [ref=e217]: 0개의 댓글
+            - generic [ref=e218]:
+              - link "user thumbnail of 전준연 by 전준연" [ref=e219] [cursor=pointer]:
+                - /url: /@junjuny0227/posts
+                - img "user thumbnail of 전준연" [ref=e220]
+                - generic [ref=e221]: by 전준연
+              - generic [ref=e222]:
+                - img [ref=e223]
+                - text: "10"
+          - listitem [ref=e225]:
+            - link "[행사] AWS Summit 2026 후기 -1 post" [ref=e226] [cursor=pointer]:
+              - /url: https://velog.io/@hojun1209/행사-AWS-Summit-2026-후기
+              - img "[행사] AWS Summit 2026 후기 -1 post" [ref=e228]
+            - generic [ref=e229]:
+              - link "[행사] AWS Summit 2026 후기 -1 안녕하세요! AWS Summit 2026 참여 후기입니다.AWS Summit는 코엑스에서 매년 열리는 AWS의 대표 기술 컨퍼런스입니다.올해는 5월 20~21에 진행합니다.100개 이상의 세션이 있으며, 다양한 회사들이 자신들의 AWS를 사용한 경험과 성과를 세션을 통..." [ref=e230] [cursor=pointer]:
+                - /url: https://velog.io/@hojun1209/행사-AWS-Summit-2026-후기
+                - heading "[행사] AWS Summit 2026 후기 -1" [level=4] [ref=e231]
+                - paragraph [ref=e233]: 안녕하세요! AWS Summit 2026 참여 후기입니다.AWS Summit는 코엑스에서 매년 열리는 AWS의 대표 기술 컨퍼런스입니다.올해는 5월 20~21에 진행합니다.100개 이상의 세션이 있으며, 다양한 회사들이 자신들의 AWS를 사용한 경험과 성과를 세션을 통...
+              - generic [ref=e234]:
+                - text: 2026년 5월 20일·
+                - generic [ref=e235]: 0개의 댓글
+            - generic [ref=e236]:
+              - link "user thumbnail of ‍윤호준[학생](소프트웨어융합대학 컴퓨터공학부) by ‍윤호준[학생](소프트웨어융합대학 컴퓨터공학부)" [ref=e237] [cursor=pointer]:
+                - /url: /@hojun1209/posts
+                - img "user thumbnail of ‍윤호준[학생](소프트웨어융합대학 컴퓨터공학부)" [ref=e238]
+                - generic [ref=e239]: by ‍윤호준[학생](소프트웨어융합대학 컴퓨터공학부)
+              - generic [ref=e240]:
+                - img [ref=e241]
+                - text: "7"
+          - listitem [ref=e243]:
+            - link "답답해서 내가 뛴다 Next.js에서 Supabase까지 post" [ref=e244] [cursor=pointer]:
+              - /url: https://velog.io/@528528abcd/답답해서-내가-뛴다-Next.js에서-Supabase까지
+              - img "답답해서 내가 뛴다 Next.js에서 Supabase까지 post" [ref=e246]
+            - generic [ref=e247]:
+              - link "답답해서 내가 뛴다 Next.js에서 Supabase까지 달린다ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ" [ref=e248] [cursor=pointer]:
+                - /url: https://velog.io/@528528abcd/답답해서-내가-뛴다-Next.js에서-Supabase까지
+                - heading "답답해서 내가 뛴다 Next.js에서 Supabase까지" [level=4] [ref=e249]
+                - paragraph [ref=e251]: 달린다ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ
+              - generic [ref=e252]:
+                - text: 2026년 5월 20일·
+                - generic [ref=e253]: 0개의 댓글
+            - generic [ref=e254]:
+              - link "user thumbnail of 이현성 by 이현성" [ref=e255] [cursor=pointer]:
+                - /url: /@528528abcd/posts
+                - img "user thumbnail of 이현성" [ref=e256]
+                - generic [ref=e257]: by 이현성
+              - generic [ref=e258]:
+                - img [ref=e259]
+                - text: "6"
+          - listitem [ref=e261]:
+            - link "Claude Partner Basecamp 참여 후기 (미국 샌프란시스코) post" [ref=e262] [cursor=pointer]:
+              - /url: https://velog.io/@railgunofpku/claude-partner-basecamp
+              - img "Claude Partner Basecamp 참여 후기 (미국 샌프란시스코) post" [ref=e264]
+            - generic [ref=e265]:
+              - link "Claude Partner Basecamp 참여 후기 (미국 샌프란시스코) 회사돈으로 유익한 미국출장" [ref=e266] [cursor=pointer]:
+                - /url: https://velog.io/@railgunofpku/claude-partner-basecamp
+                - heading "Claude Partner Basecamp 참여 후기 (미국 샌프란시스코)" [level=4] [ref=e267]
+                - paragraph [ref=e269]: 회사돈으로 유익한 미국출장
+              - generic [ref=e270]:
+                - text: 2026년 5월 23일·
+                - generic [ref=e271]: 0개의 댓글
+            - generic [ref=e272]:
+              - link "user thumbnail of 한중일 개발자 by 한중일 개발자" [ref=e273] [cursor=pointer]:
+                - /url: /@railgunofpku/posts
+                - img "user thumbnail of 한중일 개발자" [ref=e274]
+                - generic [ref=e275]: by 한중일 개발자
+              - generic [ref=e276]:
+                - img [ref=e277]
+                - text: "8"
+          - listitem [ref=e279]:
+            - link "사람들이 사랑하는 제품을 만들고 싶은 개발자, 김성은입니다. post" [ref=e280] [cursor=pointer]:
+              - /url: https://velog.io/@smilechild7/사람들이-사랑하는-제품을-만들고-싶은-개발자-김성은입니다
+              - img "사람들이 사랑하는 제품을 만들고 싶은 개발자, 김성은입니다. post" [ref=e282]
+            - generic [ref=e283]:
+              - link "사람들이 사랑하는 제품을 만들고 싶은 개발자, 김성은입니다. 안녕하세요, 내년 졸업을 앞둔 컴공 대학생입니다. 포트폴리오 정리 차 지금까지 학교를 다니면서 경험해왔던 것들과 앞으로 경험할 것들에 대해서 기록을 남기고자 Velog를 시작했습니다." [ref=e284] [cursor=pointer]:
+                - /url: https://velog.io/@smilechild7/사람들이-사랑하는-제품을-만들고-싶은-개발자-김성은입니다
+                - heading "사람들이 사랑하는 제품을 만들고 싶은 개발자, 김성은입니다." [level=4] [ref=e285]
+                - paragraph [ref=e287]: 안녕하세요, 내년 졸업을 앞둔 컴공 대학생입니다. 포트폴리오 정리 차 지금까지 학교를 다니면서 경험해왔던 것들과 앞으로 경험할 것들에 대해서 기록을 남기고자 Velog를 시작했습니다.
+              - generic [ref=e288]:
+                - text: 2026년 5월 20일·
+                - generic [ref=e289]: 0개의 댓글
+            - generic [ref=e290]:
+              - link "user thumbnail of KIM SEONG EUN by KIM SEONG EUN" [ref=e291] [cursor=pointer]:
+                - /url: /@smilechild7/posts
+                - img "user thumbnail of KIM SEONG EUN" [ref=e292]
+                - generic [ref=e293]: by KIM SEONG EUN
+              - generic [ref=e294]:
+                - img [ref=e295]
+                - text: "4"
+          - listitem [ref=e297]:
+            - link "🏠 출시부터가 진짜다.. 이탈률과의 싸움부터 uibowl 공모전 수상까지 post" [ref=e298] [cursor=pointer]:
+              - /url: https://velog.io/@ah_yo_ninde_yo/출시부터가-진짜다..-이탈률과의-싸움부터-uibowl-공모전-수상까지
+              - img "🏠 출시부터가 진짜다.. 이탈률과의 싸움부터 uibowl 공모전 수상까지 post" [ref=e300]
+            - generic [ref=e301]:
+              - link "🏠 출시부터가 진짜다.. 이탈률과의 싸움부터 uibowl 공모전 수상까지 사이드 프로젝트로 시작한 서비스.. 출시 후 3달 동안 이탈률과의 싸움부터 uibowl 공모전 수상까지" [ref=e302] [cursor=pointer]:
+                - /url: https://velog.io/@ah_yo_ninde_yo/출시부터가-진짜다..-이탈률과의-싸움부터-uibowl-공모전-수상까지
+                - heading "🏠 출시부터가 진짜다.. 이탈률과의 싸움부터 uibowl 공모전 수상까지" [level=4] [ref=e303]
+                - paragraph [ref=e305]: 사이드 프로젝트로 시작한 서비스.. 출시 후 3달 동안 이탈률과의 싸움부터 uibowl 공모전 수상까지
+              - generic [ref=e306]:
+                - text: 7일 전·
+                - generic [ref=e307]: 0개의 댓글
+            - generic [ref=e308]:
+              - link "user thumbnail of 손아현 by 손아현" [ref=e309] [cursor=pointer]:
+                - /url: /@ah_yo_ninde_yo/posts
+                - img "user thumbnail of 손아현" [ref=e310]
+                - generic [ref=e311]: by 손아현
+              - generic [ref=e312]:
+                - img [ref=e313]
+                - text: "8"
+          - listitem [ref=e315]:
+            - link "[Flutter] 에어팟을 게임 컨트롤러처럼 쓸 수 있다고? post" [ref=e316] [cursor=pointer]:
+              - /url: https://velog.io/@locked/Flutter-에어팟을-게임-컨트롤러처럼-써보면-어떨까
+              - img "[Flutter] 에어팟을 게임 컨트롤러처럼 쓸 수 있다고? post" [ref=e318]
+            - generic [ref=e319]:
+              - link "[Flutter] 에어팟을 게임 컨트롤러처럼 쓸 수 있다고? 내 에어팟이 게임 컨트롤러가 될 수 있다고 한다." [ref=e320] [cursor=pointer]:
+                - /url: https://velog.io/@locked/Flutter-에어팟을-게임-컨트롤러처럼-써보면-어떨까
+                - heading "[Flutter] 에어팟을 게임 컨트롤러처럼 쓸 수 있다고?" [level=4] [ref=e321]
+                - paragraph [ref=e323]: 내 에어팟이 게임 컨트롤러가 될 수 있다고 한다.
+              - generic [ref=e324]:
+                - text: 2026년 5월 22일·
+                - generic [ref=e325]: 4개의 댓글
+            - generic [ref=e326]:
+              - link "user thumbnail of LOCKED by LOCKED" [ref=e327] [cursor=pointer]:
+                - /url: /@locked/posts
+                - img "user thumbnail of LOCKED" [ref=e328]
+                - generic [ref=e329]: by LOCKED
+              - generic [ref=e330]:
+                - img [ref=e331]
+                - text: "11"
+          - listitem [ref=e333]:
+            - link "일본 IT업계 분위기는 실제로 어떨까? post" [ref=e334] [cursor=pointer]:
+              - /url: https://velog.io/@nimbus9030/일본-IT업계-분위기는-실제로-어떨까
+              - img "일본 IT업계 분위기는 실제로 어떨까? post" [ref=e336]
+            - generic [ref=e337]:
+              - link "일본 IT업계 분위기는 실제로 어떨까? 안녕하세요. 18년 동안 일본 IT 업계에서 소프트웨어 엔지니어이자 PM으로 활동하고 있는 개발자입니다. 5년 전부터는 프리랜서로 전향해 도쿄에서 나름의 루틴을 만들며 즐겁게 일하고 있습니다.최근 일본 취업을 진지하게 고민하는 후배님들에게 제가 현장에서 직접 느끼고 경..." [ref=e338] [cursor=pointer]:
+                - /url: https://velog.io/@nimbus9030/일본-IT업계-분위기는-실제로-어떨까
+                - heading "일본 IT업계 분위기는 실제로 어떨까?" [level=4] [ref=e339]
+                - paragraph [ref=e341]: 안녕하세요. 18년 동안 일본 IT 업계에서 소프트웨어 엔지니어이자 PM으로 활동하고 있는 개발자입니다. 5년 전부터는 프리랜서로 전향해 도쿄에서 나름의 루틴을 만들며 즐겁게 일하고 있습니다.최근 일본 취업을 진지하게 고민하는 후배님들에게 제가 현장에서 직접 느끼고 경...
+              - generic [ref=e342]:
+                - text: 2026년 5월 25일·
+                - generic [ref=e343]: 0개의 댓글
+            - generic [ref=e344]:
+              - link "user thumbnail of code_riisu by code_riisu" [ref=e345] [cursor=pointer]:
+                - /url: /@nimbus9030/posts
+                - img "user thumbnail of code_riisu" [ref=e346]
+                - generic [ref=e347]: by code_riisu
+              - generic [ref=e348]:
+                - img [ref=e349]
+                - text: "3"
+          - listitem [ref=e351]:
+            - link "[우테코 레벨2 회고] 날카로움이 무기가 되지 않기를 post" [ref=e352] [cursor=pointer]:
+              - /url: https://velog.io/@vlmbuyd/우테코-레벨2-회고-날카로움이-무기가-되지-않기를
+              - img "[우테코 레벨2 회고] 날카로움이 무기가 되지 않기를 post" [ref=e354]
+            - generic [ref=e355]:
+              - link "[우테코 레벨2 회고] 날카로움이 무기가 되지 않기를 우아한테크코스 8기 FE 레벨2 1-4주차 회고" [ref=e356] [cursor=pointer]:
+                - /url: https://velog.io/@vlmbuyd/우테코-레벨2-회고-날카로움이-무기가-되지-않기를
+                - heading "[우테코 레벨2 회고] 날카로움이 무기가 되지 않기를" [level=4] [ref=e357]
+                - paragraph [ref=e359]: 우아한테크코스 8기 FE 레벨2 1-4주차 회고
+              - generic [ref=e360]:
+                - text: 2026년 5월 26일·
+                - generic [ref=e361]: 2개의 댓글
+            - generic [ref=e362]:
+              - link "user thumbnail of 유월 by 유월" [ref=e363] [cursor=pointer]:
+                - /url: /@vlmbuyd/posts
+                - img "user thumbnail of 유월" [ref=e364]
+                - generic [ref=e365]: by 유월
+              - generic [ref=e366]:
+                - img [ref=e367]
+                - text: "5"
+          - listitem [ref=e369]:
+            - link "쉬어가는 velog md 문법 공부 post" [ref=e370] [cursor=pointer]:
+              - /url: https://velog.io/@528528abcd/쉬어가는-velog-md-문법-공부
+              - img "쉬어가는 velog md 문법 공부 post" [ref=e372]
+            - generic [ref=e373]:
+              - link "쉬어가는 velog md 문법 공부 쉬는 것도 쉽지 않아" [ref=e374] [cursor=pointer]:
+                - /url: https://velog.io/@528528abcd/쉬어가는-velog-md-문법-공부
+                - heading "쉬어가는 velog md 문법 공부" [level=4] [ref=e375]
+                - paragraph [ref=e377]: 쉬는 것도 쉽지 않아
+              - generic [ref=e378]:
+                - text: 2026년 5월 23일·
+                - generic [ref=e379]: 0개의 댓글
+            - generic [ref=e380]:
+              - link "user thumbnail of 이현성 by 이현성" [ref=e381] [cursor=pointer]:
+                - /url: /@528528abcd/posts
+                - img "user thumbnail of 이현성" [ref=e382]
+                - generic [ref=e383]: by 이현성
+              - generic [ref=e384]:
+                - img [ref=e385]
+                - text: "6"
+          - listitem [ref=e387]:
+            - link "AWS Summit Seoul 2026 후기 post" [ref=e388] [cursor=pointer]:
+              - /url: https://velog.io/@iamtaekjun/AWS-Summit-Seoul-2026-후기
+              - img "AWS Summit Seoul 2026 후기 post" [ref=e390]
+            - generic [ref=e391]:
+              - link "AWS Summit Seoul 2026 후기 5월 20~21일에 열린 AWS Summit Seoul 2026에 다녀왔습니다!! 다녀온 후기를 작성하려고 합니다." [ref=e392] [cursor=pointer]:
+                - /url: https://velog.io/@iamtaekjun/AWS-Summit-Seoul-2026-후기
+                - heading "AWS Summit Seoul 2026 후기" [level=4] [ref=e393]
+                - paragraph [ref=e395]: 5월 20~21일에 열린 AWS Summit Seoul 2026에 다녀왔습니다!! 다녀온 후기를 작성하려고 합니다.
+              - generic [ref=e396]:
+                - text: 2026년 5월 25일·
+                - generic [ref=e397]: 0개의 댓글
+            - generic [ref=e398]:
+              - link "user thumbnail of TaekJun Jung by TaekJun Jung" [ref=e399] [cursor=pointer]:
+                - /url: /@iamtaekjun/posts
+                - img "user thumbnail of TaekJun Jung" [ref=e400]
+                - generic [ref=e401]: by TaekJun Jung
+              - generic [ref=e402]:
+                - img [ref=e403]
+                - text: "3"
+          - listitem [ref=e405]:
+            - generic [ref=e406]:
+              - link "[최신 AI 트렌드] OpenAI, 바이오방어·의료·평가로 적용면 넓혀 (5.29) 5월 29일 AI 흐름은 OpenAI의 공공보건·의료·개발도구·제3자 검증 발표가 중심이었다. Google은 워털루대 학생들의 교육·업무 AI 시제품을 공개했고, Anthropic·Stanford HAI는 모델 안전과 산업 지표를 살필 기준점을 제공했다." [ref=e407] [cursor=pointer]:
+                - /url: https://velog.io/@hyuckjin/ai-trends-ai-2026-05-29-ko
+                - heading "[최신 AI 트렌드] OpenAI, 바이오방어·의료·평가로 적용면 넓혀 (5.29)" [level=4] [ref=e408]
+                - paragraph [ref=e410]: 5월 29일 AI 흐름은 OpenAI의 공공보건·의료·개발도구·제3자 검증 발표가 중심이었다. Google은 워털루대 학생들의 교육·업무 AI 시제품을 공개했고, Anthropic·Stanford HAI는 모델 안전과 산업 지표를 살필 기준점을 제공했다.
+              - generic [ref=e411]:
+                - text: 3일 전·
+                - generic [ref=e412]: 0개의 댓글
+            - generic [ref=e413]:
+              - link "user thumbnail of 김혁진 by 김혁진" [ref=e414] [cursor=pointer]:
+                - /url: /@hyuckjin/posts
+                - img "user thumbnail of 김혁진" [ref=e415]
+                - generic [ref=e416]: by 김혁진
+              - generic [ref=e417]:
+                - img [ref=e418]
+                - text: "0"
+          - listitem [ref=e420]:
+            - link "데이터베이스가 없던 시절엔 어떻게 데이터를 저장했을까? post" [ref=e421] [cursor=pointer]:
+              - /url: https://velog.io/@fire_918/데이터베이스가-없던-시절엔-어떻게-데이터를-저장했을까
+              - img "데이터베이스가 없던 시절엔 어떻게 데이터를 저장했을까? post" [ref=e423]
+            - generic [ref=e424]:
+              - link "데이터베이스가 없던 시절엔 어떻게 데이터를 저장했을까? SQL과 데이터베이스가 없던 시절 개발자들은 데이터를 어떻게 저장하고 관리했을까요? 파일 처리 시스템부터 DBMS의 등장 배경까지 정리해 보았습니다." [ref=e425] [cursor=pointer]:
+                - /url: https://velog.io/@fire_918/데이터베이스가-없던-시절엔-어떻게-데이터를-저장했을까
+                - heading "데이터베이스가 없던 시절엔 어떻게 데이터를 저장했을까?" [level=4] [ref=e426]
+                - paragraph [ref=e428]: SQL과 데이터베이스가 없던 시절 개발자들은 데이터를 어떻게 저장하고 관리했을까요? 파일 처리 시스템부터 DBMS의 등장 배경까지 정리해 보았습니다.
+              - generic [ref=e429]:
+                - text: 약 3시간 전·
+                - generic [ref=e430]: 0개의 댓글
+            - generic [ref=e431]:
+              - link "user thumbnail of FIRE-918 by FIRE-918" [ref=e432] [cursor=pointer]:
+                - /url: /@fire_918/posts
+                - img "user thumbnail of FIRE-918" [ref=e433]
+                - generic [ref=e434]: by FIRE-918
+              - generic [ref=e435]:
+                - img [ref=e436]
+                - text: "2"
+          - listitem [ref=e438]:
+            - link "멋사 프론트엔드 7주차(1학기 마지막 스터디) 회고록 post" [ref=e439] [cursor=pointer]:
+              - /url: https://velog.io/@sloth_slys/멋사-프론트엔드-7주차1학기-마지막-스터디-회고록
+              - img "멋사 프론트엔드 7주차(1학기 마지막 스터디) 회고록 post" [ref=e441]
+            - generic [ref=e442]:
+              - link "멋사 프론트엔드 7주차(1학기 마지막 스터디) 회고록 1. 수정사항 2. 배포 3. 이번 1학기 스터디 동안 느낀점" [ref=e443] [cursor=pointer]:
+                - /url: https://velog.io/@sloth_slys/멋사-프론트엔드-7주차1학기-마지막-스터디-회고록
+                - heading "멋사 프론트엔드 7주차(1학기 마지막 스터디) 회고록" [level=4] [ref=e444]
+                - paragraph [ref=e446]: 1. 수정사항 2. 배포 3. 이번 1학기 스터디 동안 느낀점
+              - generic [ref=e447]:
+                - text: 7일 전·
+                - generic [ref=e448]: 5개의 댓글
+            - generic [ref=e449]:
+              - link "user thumbnail of 26 정통 by 26 정통" [ref=e450] [cursor=pointer]:
+                - /url: /@sloth_slys/posts
+                - img "user thumbnail of 26 정통" [ref=e451]
+                - generic [ref=e452]: by 26 정통
+              - generic [ref=e453]:
+                - img [ref=e454]
+                - text: "6"
+          - listitem [ref=e456]:
+            - generic [ref=e457]:
+              - link "[News Briefing] Major Wires Anchor Thin News File (5.29) The May 29 briefing rests on four broad wire-service references rather than a full set of dated story records. Reuters, Associated Press, BBC and AFP provide…" [ref=e458] [cursor=pointer]:
+                - /url: https://velog.io/@hyuckjin/news-briefing-2026-05-29-en
+                - heading "[News Briefing] Major Wires Anchor Thin News File (5.29)" [level=4] [ref=e459]
+                - paragraph [ref=e461]: The May 29 briefing rests on four broad wire-service references rather than a full set of dated story records. Reuters, Associated Press, BBC and AFP provide…
+              - generic [ref=e462]:
+                - text: 3일 전·
+                - generic [ref=e463]: 0개의 댓글
+            - generic [ref=e464]:
+              - link "user thumbnail of 김혁진 by 김혁진" [ref=e465] [cursor=pointer]:
+                - /url: /@hyuckjin/posts
+                - img "user thumbnail of 김혁진" [ref=e466]
+                - generic [ref=e467]: by 김혁진
+              - generic [ref=e468]:
+                - img [ref=e469]
+                - text: "0"
+          - listitem [ref=e471]:
+            - generic [ref=e472]:
+              - 'link "7차시 회고록 7차시 과제: 완성된 자기소개 페이지 배포하기" [ref=e473] [cursor=pointer]':
+                - /url: https://velog.io/@jiyoeo/7차시-회고록
+                - heading "7차시 회고록" [level=4] [ref=e474]
+                - paragraph [ref=e476]: "7차시 과제: 완성된 자기소개 페이지 배포하기"
+              - generic [ref=e477]:
+                - text: 2026년 5월 26일·
+                - generic [ref=e478]: 8개의 댓글
+            - generic [ref=e479]:
+              - link "user thumbnail of 김지연 by 김지연" [ref=e480] [cursor=pointer]:
+                - /url: /@jiyoeo/posts
+                - img "user thumbnail of 김지연" [ref=e481]
+                - generic [ref=e482]: by 김지연
+              - generic [ref=e483]:
+                - img [ref=e484]
+                - text: "7"
+          - listitem [ref=e486]:
+            - generic [ref=e487]:
+              - link "[뉴스 브리핑] 주요 통신사 기준으로 본 5월 29일 뉴스 수집 공백 (5.29) 5월 29일 뉴스 브리핑은 개별 사건보다 출처 검증 기준이 핵심이었다. Reuters, Associated Press, BBC, AFP가 모두 기준 출처로 남았지만, 날짜별 수집 결과는 독립 보도 묶음으로 확장하기에 충분하지 않았다." [ref=e488] [cursor=pointer]:
+                - /url: https://velog.io/@hyuckjin/news-briefing-2026-05-29-ko
+                - heading "[뉴스 브리핑] 주요 통신사 기준으로 본 5월 29일 뉴스 수집 공백 (5.29)" [level=4] [ref=e489]
+                - paragraph [ref=e491]: 5월 29일 뉴스 브리핑은 개별 사건보다 출처 검증 기준이 핵심이었다. Reuters, Associated Press, BBC, AFP가 모두 기준 출처로 남았지만, 날짜별 수집 결과는 독립 보도 묶음으로 확장하기에 충분하지 않았다.
+              - generic [ref=e492]:
+                - text: 3일 전·
+                - generic [ref=e493]: 0개의 댓글
+            - generic [ref=e494]:
+              - link "user thumbnail of 김혁진 by 김혁진" [ref=e495] [cursor=pointer]:
+                - /url: /@hyuckjin/posts
+                - img "user thumbnail of 김혁진" [ref=e496]
+                - generic [ref=e497]: by 김혁진
+              - generic [ref=e498]:
+                - img [ref=e499]
+                - text: "0"
+          - listitem [ref=e501]:
+            - link "QR 스캔, 기본 앱은 재미없잖아 post" [ref=e502] [cursor=pointer]:
+              - /url: https://velog.io/@528528abcd/QR-스캔-기본-앱은-재미없잖아
+              - img "QR 스캔, 기본 앱은 재미없잖아 post" [ref=e504]
+            - generic [ref=e505]:
+              - link "QR 스캔, 기본 앱은 재미없잖아 사실 재미로 하는 건 아니고 기본 카메라 앱 켜기 귀찮을텐데 어디까지나 UX적인 측면에서 웅얼웅얼.." [ref=e506] [cursor=pointer]:
+                - /url: https://velog.io/@528528abcd/QR-스캔-기본-앱은-재미없잖아
+                - heading "QR 스캔, 기본 앱은 재미없잖아" [level=4] [ref=e507]
+                - paragraph [ref=e509]: 사실 재미로 하는 건 아니고 기본 카메라 앱 켜기 귀찮을텐데 어디까지나 UX적인 측면에서 웅얼웅얼..
+              - generic [ref=e510]:
+                - text: 7일 전·
+                - generic [ref=e511]: 0개의 댓글
+            - generic [ref=e512]:
+              - link "user thumbnail of 이현성 by 이현성" [ref=e513] [cursor=pointer]:
+                - /url: /@528528abcd/posts
+                - img "user thumbnail of 이현성" [ref=e514]
+                - generic [ref=e515]: by 이현성
+              - generic [ref=e516]:
+                - img [ref=e517]
+                - text: "3"
+          - listitem [ref=e519]:
+            - link "ROS2 오픈소스 기여하기 - rclpy 정정 백포트 post" [ref=e520] [cursor=pointer]:
+              - /url: https://velog.io/@dbwls/ROS2-오픈소스-기여하기-rclpy-정정-백포트
+              - img "ROS2 오픈소스 기여하기 - rclpy 정정 백포트 post" [ref=e522]
+            - generic [ref=e523]:
+              - link "ROS2 오픈소스 기여하기 - rclpy 정정 백포트 메인테이너 두 명이 리뷰한 내 PR이 사실은 아무것도 안 고쳤다고?!" [ref=e524] [cursor=pointer]:
+                - /url: https://velog.io/@dbwls/ROS2-오픈소스-기여하기-rclpy-정정-백포트
+                - heading "ROS2 오픈소스 기여하기 - rclpy 정정 백포트" [level=4] [ref=e525]
+                - paragraph [ref=e527]: 메인테이너 두 명이 리뷰한 내 PR이 사실은 아무것도 안 고쳤다고?!
+              - generic [ref=e528]:
+                - text: 2026년 5월 20일·
+                - generic [ref=e529]: 0개의 댓글
+            - generic [ref=e530]:
+              - link "user thumbnail of 유진 by 유진" [ref=e531] [cursor=pointer]:
+                - /url: /@dbwls/posts
+                - img "user thumbnail of 유진" [ref=e532]
+                - generic [ref=e533]: by 유진
+              - generic [ref=e534]:
+                - img [ref=e535]
+                - text: "6"
+          - listitem [ref=e537]:
+            - generic [ref=e538]:
+              - 'link "[AI Trends] OpenAI Moves AI From Safety to Hospitals (5.29) OpenAI’s May 29 source set put frontier AI into four practical lanes: biodefense access, hospital diagnosis, third-party evaluations and coding workflows.…" [ref=e539] [cursor=pointer]':
+                - /url: https://velog.io/@hyuckjin/ai-trends-ai-2026-05-29-en
+                - heading "[AI Trends] OpenAI Moves AI From Safety to Hospitals (5.29)" [level=4] [ref=e540]
+                - paragraph [ref=e542]: "OpenAI’s May 29 source set put frontier AI into four practical lanes: biodefense access, hospital diagnosis, third-party evaluations and coding workflows.…"
+              - generic [ref=e543]:
+                - text: 3일 전·
+                - generic [ref=e544]: 0개의 댓글
+            - generic [ref=e545]:
+              - link "user thumbnail of 김혁진 by 김혁진" [ref=e546] [cursor=pointer]:
+                - /url: /@hyuckjin/posts
+                - img "user thumbnail of 김혁진" [ref=e547]
+                - generic [ref=e548]: by 김혁진
+              - generic [ref=e549]:
+                - img [ref=e550]
+                - text: "0"
+          - listitem [ref=e552]:
+            - link "7주차 과제 post" [ref=e553] [cursor=pointer]:
+              - /url: https://velog.io/@kny337/7주차-과제
+              - img "7주차 과제 post" [ref=e555]
+            - generic [ref=e556]:
+              - link "7주차 과제 kny-introduction.vercel.app" [ref=e557] [cursor=pointer]:
+                - /url: https://velog.io/@kny337/7주차-과제
+                - heading "7주차 과제" [level=4] [ref=e558]
+                - paragraph [ref=e560]: kny-introduction.vercel.app
+              - generic [ref=e561]:
+                - text: 2026년 5월 26일·
+                - generic [ref=e562]: 8개의 댓글
+            - generic [ref=e563]:
+              - link "user thumbnail of 김남윤 by 김남윤" [ref=e564] [cursor=pointer]:
+                - /url: /@kny337/posts
+                - img "user thumbnail of 김남윤" [ref=e565]
+                - generic [ref=e566]: by 김남윤
+              - generic [ref=e567]:
+                - img [ref=e568]
+                - text: "5"
+          - listitem [ref=e570]:
+            - generic [ref=e571]:
+              - link "[AI Trends] OpenAI Governance, AI Agents Shape May 28 (5.28) OpenAI’s governance framework supplied the strongest primary-source item in a thin May 28 AI cycle, while Google and Stanford HAI provided broader trend…" [ref=e572] [cursor=pointer]:
+                - /url: https://velog.io/@hyuckjin/ai-trends-ai-2026-05-28-en
+                - heading "[AI Trends] OpenAI Governance, AI Agents Shape May 28 (5.28)" [level=4] [ref=e573]
+                - paragraph [ref=e575]: OpenAI’s governance framework supplied the strongest primary-source item in a thin May 28 AI cycle, while Google and Stanford HAI provided broader trend…
+              - generic [ref=e576]:
+                - text: 4일 전·
+                - generic [ref=e577]: 0개의 댓글
+            - generic [ref=e578]:
+              - link "user thumbnail of 김혁진 by 김혁진" [ref=e579] [cursor=pointer]:
+                - /url: /@hyuckjin/posts
+                - img "user thumbnail of 김혁진" [ref=e580]
+                - generic [ref=e581]: by 김혁진
+              - generic [ref=e582]:
+                - img [ref=e583]
+                - text: "0"
+          - listitem [ref=e585]:
+            - link "폼에 UX 챙길수록 코드가 더러워지길래 formdraft를 만들었습니다 post" [ref=e586] [cursor=pointer]:
+              - /url: https://velog.io/@mayrang/폼에-UX-챙길수록-코드가-더러워지길래-formdraft를-만들었습니다-ri4zcwgf
+              - img "폼에 UX 챙길수록 코드가 더러워지길래 formdraft를 만들었습니다 post" [ref=e588]
+            - generic [ref=e589]:
+              - link "폼에 UX 챙길수록 코드가 더러워지길래 formdraft를 만들었습니다 회원가입 폼 새로고침에 20분 입력이 날아간 적 있나요? React 폼에 자동저장 + 오프라인 + 멀티탭 충돌 + 비번 reentry까지 챙기는 라이브러리 만들었습니다. 5.8 KB, 의존성 0개. npm에 올린 formdraft" [ref=e590] [cursor=pointer]:
+                - /url: https://velog.io/@mayrang/폼에-UX-챙길수록-코드가-더러워지길래-formdraft를-만들었습니다-ri4zcwgf
+                - heading "폼에 UX 챙길수록 코드가 더러워지길래 formdraft를 만들었습니다" [level=4] [ref=e591]
+                - paragraph [ref=e593]: 회원가입 폼 새로고침에 20분 입력이 날아간 적 있나요? React 폼에 자동저장 + 오프라인 + 멀티탭 충돌 + 비번 reentry까지 챙기는 라이브러리 만들었습니다. 5.8 KB, 의존성 0개. npm에 올린 formdraft
+              - generic [ref=e594]:
+                - text: 5일 전·
+                - generic [ref=e595]: 2개의 댓글
+            - generic [ref=e596]:
+              - link "user thumbnail of 박건상 by 박건상" [ref=e597] [cursor=pointer]:
+                - /url: /@mayrang/posts
+                - img "user thumbnail of 박건상" [ref=e598]
+                - generic [ref=e599]: by 박건상
+              - generic [ref=e600]:
+                - img [ref=e601]
+                - text: "5"
+          - listitem [ref=e603]:
+            - generic [ref=e604]:
+              - link "좋은 개발자는 기능을 만드는 사람이 아니라, 흐름을 설계하는 사람 처음 개발을 시작했을 때는 “기능을 구현하는 것” 자체가 굉장히 멋있어 보였다.API를 만들고, 데이터를 저장하고, 화면에 결과가 나오면 정말 신기했다.내가 만든 코드가 실제로 동작한다는 사실 자체가 재미있었다.그런데 개발 경험이 쌓일수록 생각이 조금씩 바뀌기 시작했다..." [ref=e605] [cursor=pointer]:
+                - /url: https://velog.io/@kpeel5839/좋은-개발자는-기능을-만드는-사람이-아니라-흐름을-설계하는-사람
+                - heading "좋은 개발자는 기능을 만드는 사람이 아니라, 흐름을 설계하는 사람" [level=4] [ref=e606]
+                - paragraph [ref=e608]: 처음 개발을 시작했을 때는 “기능을 구현하는 것” 자체가 굉장히 멋있어 보였다.API를 만들고, 데이터를 저장하고, 화면에 결과가 나오면 정말 신기했다.내가 만든 코드가 실제로 동작한다는 사실 자체가 재미있었다.그런데 개발 경험이 쌓일수록 생각이 조금씩 바뀌기 시작했다...
+              - generic [ref=e609]:
+                - text: 2026년 5월 24일·
+                - generic [ref=e610]: 2개의 댓글
+            - generic [ref=e611]:
+              - link "user thumbnail of 김재연 by 김재연" [ref=e612] [cursor=pointer]:
+                - /url: /@kpeel5839/posts
+                - img "user thumbnail of 김재연" [ref=e613]
+                - generic [ref=e614]: by 김재연
+              - generic [ref=e615]:
+                - img [ref=e616]
+                - text: "5"
+          - listitem [ref=e618]:
+            - 'link "[우테코 11~12주차: 페이먼츠 3단계 미션 & useEffect 원정대] 미션이 생각보다 빡세네요.. 살려주세요 post" [ref=e619] [cursor=pointer]':
+              - /url: https://velog.io/@gamjaismine02/우테코-1112주차-페이먼츠-3단계-미션-useEffect-원정대-미션이-생각보다-빡세네요-살려주세요
+              - 'img "[우테코 11~12주차: 페이먼츠 3단계 미션 & useEffect 원정대] 미션이 생각보다 빡세네요.. 살려주세요 post" [ref=e621]'
+            - generic [ref=e622]:
+              - 'link "[우테코 11~12주차: 페이먼츠 3단계 미션 & useEffect 원정대] 미션이 생각보다 빡세네요.. 살려주세요 시간이 너무 빠른데 내가 뭘 할 수 있을까?" [ref=e623] [cursor=pointer]':
+                - /url: https://velog.io/@gamjaismine02/우테코-1112주차-페이먼츠-3단계-미션-useEffect-원정대-미션이-생각보다-빡세네요-살려주세요
+                - 'heading "[우테코 11~12주차: 페이먼츠 3단계 미션 & useEffect 원정대] 미션이 생각보다 빡세네요.. 살려주세요" [level=4] [ref=e624]'
+                - paragraph [ref=e626]: 시간이 너무 빠른데 내가 뭘 할 수 있을까?
+              - generic [ref=e627]:
+                - text: 2026년 5월 24일·
+                - generic [ref=e628]: 2개의 댓글
+            - generic [ref=e629]:
+              - link "user thumbnail of 피트 by 피트" [ref=e630] [cursor=pointer]:
+                - /url: /@gamjaismine02/posts
+                - img "user thumbnail of 피트" [ref=e631]
+                - generic [ref=e632]: by 피트
+              - generic [ref=e633]:
+                - img [ref=e634]
+                - text: "4"
+          - listitem [ref=e636]:
+            - generic [ref=e637]:
+              - link "[AI 도구 업데이트] GitHub, Copilot 사용 지표에 AI 도입 단계 추가 (5.29) 5월 29일 AI 도구 업데이트는 운영 지표와 에이전트 실행 환경 쪽에 무게가 실렸다. GitHub는 Copilot 사용 API에 도입 단계 코호트를 넣었고, Cursor와 Vercel은 더 긴 에이전트 실행과 격리된 빌드 환경을 각각 보강했다." [ref=e638] [cursor=pointer]:
+                - /url: https://velog.io/@hyuckjin/ai-tool-updates-ai-2026-05-29-ko
+                - heading "[AI 도구 업데이트] GitHub, Copilot 사용 지표에 AI 도입 단계 추가 (5.29)" [level=4] [ref=e639]
+                - paragraph [ref=e641]: 5월 29일 AI 도구 업데이트는 운영 지표와 에이전트 실행 환경 쪽에 무게가 실렸다. GitHub는 Copilot 사용 API에 도입 단계 코호트를 넣었고, Cursor와 Vercel은 더 긴 에이전트 실행과 격리된 빌드 환경을 각각 보강했다.
+              - generic [ref=e642]:
+                - text: 3일 전·
+                - generic [ref=e643]: 0개의 댓글
+            - generic [ref=e644]:
+              - link "user thumbnail of 김혁진 by 김혁진" [ref=e645] [cursor=pointer]:
+                - /url: /@hyuckjin/posts
+                - img "user thumbnail of 김혁진" [ref=e646]
+                - generic [ref=e647]: by 김혁진
+              - generic [ref=e648]:
+                - img [ref=e649]
+                - text: "0"
+          - listitem [ref=e651]:
+            - link "우아한테크코스 8기 프론트엔드 레벨2 절반 회고, 잘 나가는 음식점에서 산다는것.. post" [ref=e652] [cursor=pointer]:
+              - /url: https://velog.io/@antoliny0919/우아한테크코스-8기-프론트엔드-레벨2-절반-회고-잘-나가는-음식점에서-산다는것
+              - img "우아한테크코스 8기 프론트엔드 레벨2 절반 회고, 잘 나가는 음식점에서 산다는것.. post" [ref=e654]
+            - generic [ref=e655]:
+              - link "우아한테크코스 8기 프론트엔드 레벨2 절반 회고, 잘 나가는 음식점에서 산다는것.. 나의 한달간의 레벨2 생활은 어땠을까 ? 그리고 나의 나머지 레벨2 생활은 어떻게 될까 ?" [ref=e656] [cursor=pointer]:
+                - /url: https://velog.io/@antoliny0919/우아한테크코스-8기-프론트엔드-레벨2-절반-회고-잘-나가는-음식점에서-산다는것
+                - heading "우아한테크코스 8기 프론트엔드 레벨2 절반 회고, 잘 나가는 음식점에서 산다는것.." [level=4] [ref=e657]
+                - paragraph [ref=e659]: 나의 한달간의 레벨2 생활은 어땠을까 ? 그리고 나의 나머지 레벨2 생활은 어떻게 될까 ?
+              - generic [ref=e660]:
+                - text: 2026년 5월 26일·
+                - generic [ref=e661]: 2개의 댓글
+            - generic [ref=e662]:
+              - link "user thumbnail of Antoliny Lee by Antoliny Lee" [ref=e663] [cursor=pointer]:
+                - /url: /@antoliny0919/posts
+                - img "user thumbnail of Antoliny Lee" [ref=e664]
+                - generic [ref=e665]: by Antoliny Lee
+              - generic [ref=e666]:
+                - img [ref=e667]
+                - text: "4"
+          - listitem [ref=e669]:
+            - link "23년 동안 살아남은 동네슈퍼를 데이터로 분석해보려 합니다. (1편) post" [ref=e670] [cursor=pointer]:
+              - /url: https://velog.io/@minority_report/23년-동안-망하지-않은-동네슈퍼를-데이터로-분석해보려-합니다.-1편
+              - img "23년 동안 살아남은 동네슈퍼를 데이터로 분석해보려 합니다. (1편) post" [ref=e672]
+            - generic [ref=e673]:
+              - link "23년 동안 살아남은 동네슈퍼를 데이터로 분석해보려 합니다. (1편) 동네 슈퍼마켓에서 자란 내가, 장사의 현장을 데이터와 AI로 다시 읽어보려는 이유" [ref=e674] [cursor=pointer]:
+                - /url: https://velog.io/@minority_report/23년-동안-망하지-않은-동네슈퍼를-데이터로-분석해보려-합니다.-1편
+                - heading "23년 동안 살아남은 동네슈퍼를 데이터로 분석해보려 합니다. (1편)" [level=4] [ref=e675]
+                - paragraph [ref=e677]: 동네 슈퍼마켓에서 자란 내가, 장사의 현장을 데이터와 AI로 다시 읽어보려는 이유
+              - generic [ref=e678]:
+                - text: 3일 전·
+                - generic [ref=e679]: 0개의 댓글
+            - generic [ref=e680]:
+              - link "user thumbnail of 이서진 by 이서진" [ref=e681] [cursor=pointer]:
+                - /url: /@minority_report/posts
+                - img "user thumbnail of 이서진" [ref=e682]
+                - generic [ref=e683]: by 이서진
+              - generic [ref=e684]:
+                - img [ref=e685]
+                - text: "3"
+          - listitem [ref=e687]:
+            - link "PR의 숲 post" [ref=e688] [cursor=pointer]:
+              - /url: https://velog.io/@528528abcd/PR의-숲
+              - img "PR의 숲 post" [ref=e690]
+            - generic [ref=e691]:
+              - link "PR의 숲 인내 끈기 그리고" [ref=e692] [cursor=pointer]:
+                - /url: https://velog.io/@528528abcd/PR의-숲
+                - heading "PR의 숲" [level=4] [ref=e693]
+                - paragraph [ref=e695]: 인내 끈기 그리고
+              - generic [ref=e696]:
+                - text: 2026년 5월 20일·
+                - generic [ref=e697]: 0개의 댓글
+            - generic [ref=e698]:
+              - link "user thumbnail of 이현성 by 이현성" [ref=e699] [cursor=pointer]:
+                - /url: /@528528abcd/posts
+                - img "user thumbnail of 이현성" [ref=e700]
+                - generic [ref=e701]: by 이현성
+              - generic [ref=e702]:
+                - img [ref=e703]
+                - text: "3"
+          - listitem [ref=e705]:
+            - link "Debezium schema isn't known to this connector 해결 방법 post" [ref=e706] [cursor=pointer]:
+              - /url: https://velog.io/@dodobird1/Debezium-schema-isnt-known-to-this-connector-해결-방법
+              - img "Debezium schema isn't known to this connector 해결 방법 post" [ref=e708]
+            - generic [ref=e709]:
+              - link "Debezium schema isn't known to this connector 해결 방법 운영중인 서버에 Flyway 도입했는데 갑자기 Debezium이 터져요 🎊 Debezium schema isn't known to this connector 해결방법" [ref=e710] [cursor=pointer]:
+                - /url: https://velog.io/@dodobird1/Debezium-schema-isnt-known-to-this-connector-해결-방법
+                - heading "Debezium schema isn't known to this connector 해결 방법" [level=4] [ref=e711]
+                - paragraph [ref=e713]: 운영중인 서버에 Flyway 도입했는데 갑자기 Debezium이 터져요 🎊 Debezium schema isn't known to this connector 해결방법
+              - generic [ref=e714]:
+                - text: 2026년 5월 20일·
+                - generic [ref=e715]: 0개의 댓글
+            - generic [ref=e716]:
+              - link "user thumbnail of 변도휘 by 변도휘" [ref=e717] [cursor=pointer]:
+                - /url: /@dodobird1/posts
+                - img "user thumbnail of 변도휘" [ref=e718]
+                - generic [ref=e719]: by 변도휘
+              - generic [ref=e720]:
+                - img [ref=e721]
+                - text: "7"
+          - listitem [ref=e723]:
+            - link "AI 에이전트가 맨날 같은 실수를 반복하는 이유 — 하네스 엔지니어링 입문 post" [ref=e724] [cursor=pointer]:
+              - /url: https://velog.io/@ssafy_elonmusk/하네스-엔지니어링-Harness-Engineering-이란
+              - img "AI 에이전트가 맨날 같은 실수를 반복하는 이유 — 하네스 엔지니어링 입문 post" [ref=e726]
+            - generic [ref=e727]:
+              - link "AI 에이전트가 맨날 같은 실수를 반복하는 이유 — 하네스 엔지니어링 입문 코딩 에이전트를 쓰다 보면 자연스럽게 드는 의문이 있다.\"왜 이 에이전트는 맨날 같은 실수를 반복하지?\"세션이 바뀌면 에이전트는 리셋된다. 어제 고쳐준 것도, 아키텍처 규칙도, \"이건 하지 마\"라고 했던 것도 전부 사라진다. 그래서 사람들은 프롬프트를 더 정교하게 쓰려..." [ref=e728] [cursor=pointer]:
+                - /url: https://velog.io/@ssafy_elonmusk/하네스-엔지니어링-Harness-Engineering-이란
+                - heading "AI 에이전트가 맨날 같은 실수를 반복하는 이유 — 하네스 엔지니어링 입문" [level=4] [ref=e729]
+                - paragraph [ref=e731]: 코딩 에이전트를 쓰다 보면 자연스럽게 드는 의문이 있다."왜 이 에이전트는 맨날 같은 실수를 반복하지?"세션이 바뀌면 에이전트는 리셋된다. 어제 고쳐준 것도, 아키텍처 규칙도, "이건 하지 마"라고 했던 것도 전부 사라진다. 그래서 사람들은 프롬프트를 더 정교하게 쓰려...
+              - generic [ref=e732]:
+                - text: 7일 전·
+                - generic [ref=e733]: 0개의 댓글
+            - generic [ref=e734]:
+              - link "user thumbnail of Novel by Novel" [ref=e735] [cursor=pointer]:
+                - /url: /@ssafy_elonmusk/posts
+                - img "user thumbnail of Novel" [ref=e736]
+                - generic [ref=e737]: by Novel
+              - generic [ref=e738]:
+                - img [ref=e739]
+                - text: "2"
+          - listitem [ref=e741]:
+            - generic [ref=e742]:
+              - link "[AI Tool Updates] OpenAI, GitHub Add Controls for AI Workflows (5.29) OpenAI widened controlled access to GPT-Rosalind for biodefense work, while GitHub, Cursor and Vercel shipped changes aimed at measuring, supervising and…" [ref=e743] [cursor=pointer]:
+                - /url: https://velog.io/@hyuckjin/ai-tool-updates-ai-2026-05-29-en
+                - heading "[AI Tool Updates] OpenAI, GitHub Add Controls for AI Workflows (5.29)" [level=4] [ref=e744]
+                - paragraph [ref=e746]: OpenAI widened controlled access to GPT-Rosalind for biodefense work, while GitHub, Cursor and Vercel shipped changes aimed at measuring, supervising and…
+              - generic [ref=e747]:
+                - text: 3일 전·
+                - generic [ref=e748]: 0개의 댓글
+            - generic [ref=e749]:
+              - link "user thumbnail of 김혁진 by 김혁진" [ref=e750] [cursor=pointer]:
+                - /url: /@hyuckjin/posts
+                - img "user thumbnail of 김혁진" [ref=e751]
+                - generic [ref=e752]: by 김혁진
+              - generic [ref=e753]:
+                - img [ref=e754]
+                - text: "0"
+          - listitem [ref=e756]:
+            - generic [ref=e757]:
+              - link "[개발 상식] OAuth란? 카카오, 구글 로그인이 어떻게 동작하는지 궁금했는데 이번에 이해가 됐다.내가 만든 서비스에서 카카오 계정으로 로그인하는 기능을 만들고 싶을 때가장 쉬운 방법은 사용자한테 카카오 아이디/비밀번호를 직접 받아서 저장하는 거다.근데 이건 너무 위험하다. 서비스가 해킹당하면 ..." [ref=e758] [cursor=pointer]:
+                - /url: https://velog.io/@jjun012/개발-상식-OAuth란
+                - heading "[개발 상식] OAuth란?" [level=4] [ref=e759]
+                - paragraph [ref=e761]: 카카오, 구글 로그인이 어떻게 동작하는지 궁금했는데 이번에 이해가 됐다.내가 만든 서비스에서 카카오 계정으로 로그인하는 기능을 만들고 싶을 때가장 쉬운 방법은 사용자한테 카카오 아이디/비밀번호를 직접 받아서 저장하는 거다.근데 이건 너무 위험하다. 서비스가 해킹당하면 ...
+              - generic [ref=e762]:
+                - text: 2026년 5월 19일·
+                - generic [ref=e763]: 0개의 댓글
+            - generic [ref=e764]:
+              - link "user thumbnail of 여준 by 여준" [ref=e765] [cursor=pointer]:
+                - /url: /@jjun012/posts
+                - img "user thumbnail of 여준" [ref=e766]
+                - generic [ref=e767]: by 여준
+              - generic [ref=e768]:
+                - img [ref=e769]
+                - text: "6"
+          - listitem [ref=e771]:
+            - link "[멋사] 7주차 회고록 post" [ref=e772] [cursor=pointer]:
+              - /url: https://velog.io/@_zn_/멋사-7주차-회고록
+              - img "[멋사] 7주차 회고록 post" [ref=e774]
+            - generic [ref=e775]:
+              - link "[멋사] 7주차 회고록 자기소개 페이지 배포하기" [ref=e776] [cursor=pointer]:
+                - /url: https://velog.io/@_zn_/멋사-7주차-회고록
+                - heading "[멋사] 7주차 회고록" [level=4] [ref=e777]
+                - paragraph [ref=e779]: 자기소개 페이지 배포하기
+              - generic [ref=e780]:
+                - text: 7일 전·
+                - generic [ref=e781]: 4개의 댓글
+            - generic [ref=e782]:
+              - link "user thumbnail of 김아현 by 김아현" [ref=e783] [cursor=pointer]:
+                - /url: /@_zn_/posts
+                - img "user thumbnail of 김아현" [ref=e784]
+                - generic [ref=e785]: by 김아현
+              - generic [ref=e786]:
+                - img [ref=e787]
+                - text: "5"
+          - listitem [ref=e789]:
+            - heading [level=4] [ref=e793]
+  - alert [ref=e821]

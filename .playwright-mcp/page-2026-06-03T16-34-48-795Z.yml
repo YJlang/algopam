@@ -1,0 +1,430 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e6]:
+      - generic [ref=e7]:
+        - generic [ref=e9]:
+          - textbox "제목을 입력하세요" [ref=e10]: "[알고팜 3주차] 프로그래머스 마법의 엘리베이터 - 예제는 맞는데 제출하면 틀리는 '5'의 함정"
+          - generic [ref=e13]:
+            - generic [ref=e74] [cursor=pointer]: Python
+            - generic [ref=e76] [cursor=pointer]: Greedy
+            - generic [ref=e77] [cursor=pointer]: Programmers
+            - generic [ref=e78] [cursor=pointer]: Algorithm
+            - textbox "태그를 입력하세요" [ref=e14]
+        - generic [ref=e15]:
+          - button "H1" [ref=e16] [cursor=pointer]:
+            - generic [ref=e17]: H1
+          - button "H2" [ref=e18] [cursor=pointer]:
+            - generic [ref=e19]: H2
+          - button "H3" [ref=e20] [cursor=pointer]:
+            - generic [ref=e21]: H3
+          - button "H4" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: H4
+          - button [ref=e25] [cursor=pointer]:
+            - img [ref=e26]
+          - button [ref=e28] [cursor=pointer]:
+            - img [ref=e29]
+          - button [ref=e31] [cursor=pointer]:
+            - img [ref=e32]
+          - button [ref=e35] [cursor=pointer]:
+            - img [ref=e36]
+          - button [ref=e38] [cursor=pointer]:
+            - img [ref=e39]
+          - button [ref=e41] [cursor=pointer]:
+            - img [ref=e42]
+          - button [ref=e44] [cursor=pointer]:
+            - img [ref=e45]
+        - generic [ref=e48]:
+          - textbox [ref=e49]
+          - generic [ref=e52]: "예제 입력(16, 2554)은 둘 다 정확히 맞았는데, 제출하면 일부 케이스에서 틀리는 문제였다. 원인은 딱 하나, **끝자리가 정확히 5일 때**의 처리였다. 이 글은 그 한 줄짜리 실수를 추적하고, 그리디와 DP 두 가지 풀이로 다시 정리한 오답 노트다. 문제 링크: https://school.programmers.co.kr/learn/courses/30/lessons/148653 ## 문제 정보 - 분류 감각: 그리디(Greedy), 자릿수 분해 — 프로그래머스 Lv.2 - 제한사항: `1 ≤ storey ≤ 100,000,000` (최대 1억, 즉 최대 9자리) ## 문제 설명"
+      - generic [ref=e55]:
+        - button "나가기" [ref=e56] [cursor=pointer]:
+          - img [ref=e57]
+          - generic [ref=e59]: 나가기
+        - generic [ref=e60]:
+          - button "임시저장" [ref=e61] [cursor=pointer]
+          - button "출간하기" [ref=e62] [cursor=pointer]
+    - generic [ref=e64]:
+      - heading "[알고팜 3주차] 프로그래머스 마법의 엘리베이터 - 예제는 맞는데 제출하면 틀리는 '5'의 함정" [level=1] [ref=e73]
+      - generic [ref=e82]:
+        - paragraph [ref=e83]:
+          - text: 예제 입력(16, 2554)은 둘 다 정확히 맞았는데, 제출하면 일부 케이스에서 틀리는 문제였다. 원인은 딱 하나,
+          - strong [ref=e84]: 끝자리가 정확히 5일 때
+          - text: 의 처리였다. 이 글은 그 한 줄짜리 실수를 추적하고, 그리디와 DP 두 가지 풀이로 다시 정리한 오답 노트다.
+        - paragraph [ref=e85]:
+          - text: "문제 링크:"
+          - link "https://school.programmers.co.kr/learn/courses/30/lessons/148653" [ref=e86] [cursor=pointer]:
+            - /url: https://school.programmers.co.kr/learn/courses/30/lessons/148653
+        - heading "문제 정보" [level=2] [ref=e87]
+        - list [ref=e88]:
+          - listitem [ref=e89]: "분류 감각: 그리디(Greedy), 자릿수 분해 — 프로그래머스 Lv.2"
+          - listitem [ref=e90]:
+            - text: "제한사항:"
+            - code [ref=e91]: 1 ≤ storey ≤ 100,000,000
+            - text: (최대 1억, 즉 최대 9자리)
+        - heading "문제 설명" [level=2] [ref=e92]
+        - paragraph [ref=e93]:
+          - text: 마법의 엘리베이터에는
+          - code [ref=e94]: "-1, +1, -10, +10, -100, +100 …"
+          - text: 처럼
+          - strong [ref=e95]: 절댓값이 10의 거듭제곱(10^c, c ≥ 0)
+          - text: 인 버튼들이 있다. 버튼을 누르면 현재 층수에 그 값을 더한 층으로 이동하고,
+          - strong [ref=e96]: 버튼 한 번을 누를 때마다 마법의 돌을 1개
+          - text: 쓴다. (단, 더한 결과가 0보다 작으면 움직이지 않는다.)
+        - paragraph [ref=e97]:
+          - code [ref=e98]: storey
+          - text: 층에서
+          - strong [ref=e99]: 0층까지 내려가는 데 필요한 마법의 돌의 최소 개수
+          - text: 를 구하면 된다.
+        - paragraph [ref=e100]:
+          - text: 핵심 포인트는
+          - strong [ref=e101]: 버튼 비용이 크기와 무관
+          - text: 하다는 것이다.
+          - code [ref=e102]: "-1"
+          - text: 을 누르든
+          - code [ref=e103]: "-100"
+          - text: 을 누르든 똑같이 돌 1개다. 그래서 "거리"가 아니라 "버튼을 누른 횟수"를 최소화하는 문제다.
+        - heading "입력 형식" [level=2] [ref=e104]
+        - list [ref=e105]:
+          - listitem [ref=e106]:
+            - code [ref=e107]: storey
+            - text: ": 민수가 있는 층을 나타내는 정수 ("
+            - code [ref=e108]: 1 ≤ storey ≤ 100,000,000
+            - text: )
+        - heading "출력 형식" [level=2] [ref=e109]
+        - list [ref=e110]:
+          - listitem [ref=e111]:
+            - text: 0층까지 가는 데 필요한 마법의 돌(버튼 누름)의 최소 개수를 정수로
+            - code [ref=e112]: return
+        - heading "예제 입력 1" [level=2] [ref=e113]
+        - code [ref=e115]: storey = 16
+        - heading "예제 출력 1" [level=2] [ref=e116]
+        - code [ref=e118]: "6"
+        - blockquote [ref=e119]:
+          - paragraph [ref=e120]:
+            - code [ref=e121]: "+1"
+            - text: 을 4번(16→20),
+            - code [ref=e122]: "-10"
+            - text: 을 2번(20→0) → 총 6번. (
+            - code [ref=e123]: "-1"
+            - text: 을 6번 +
+            - code [ref=e124]: "-10"
+            - text: 을 1번 = 7번보다 적다.)
+        - heading "예제 입력 2" [level=2] [ref=e125]
+        - code [ref=e127]: storey = 2554
+        - heading "예제 출력 2" [level=2] [ref=e128]
+        - code [ref=e130]: "16"
+        - heading "접근 아이디어" [level=2] [ref=e131]
+        - paragraph [ref=e132]:
+          - text: 버튼은
+          - code [ref=e133]: ±1, ±10, ±100 …
+          - text: 즉
+          - strong [ref=e134]: 각 자릿수만 건드린다
+          - text: .
+          - code [ref=e135]: "+1"
+          - text: 을 계속 누르다 일의 자리가 10이 되면 → 십의 자리로
+          - strong [ref=e136]: 받아올림(+1)
+          - text: 이 넘어간다. 그리고 받아올림은 항상
+          - strong [ref=e137]: 아래 자리 → 위 자리
+          - text: 한 방향으로만 흐른다.
+        - paragraph [ref=e138]:
+          - text: 그래서
+          - strong [ref=e139]: 일의 자리부터
+          - text: 한 자리씩 처리하면 된다. 어떤 자리의 숫자
+          - code [ref=e140]: d
+          - text: 를 0으로 만드는 방법은 딱 두 가지다.
+        - table [ref=e141]:
+          - rowgroup [ref=e142]:
+            - row "선택 동작 비용" [ref=e143]:
+              - columnheader "선택" [ref=e144]
+              - columnheader "동작" [ref=e145]
+              - columnheader "비용" [ref=e146]
+          - rowgroup [ref=e147]:
+            - row "내림(↓) -1을 d번 → 그 자리 0으로 d" [ref=e148]:
+              - cell "내림(↓)" [ref=e149]
+              - cell "-1을 d번 → 그 자리 0으로" [ref=e150]:
+                - code [ref=e151]: "-1"
+                - text: 을
+                - code [ref=e152]: d
+                - text: 번 → 그 자리 0으로
+              - cell "d" [ref=e153]:
+                - code [ref=e154]: d
+            - row "올림(↑) +1을 10 - d번 → 10을 채워 윗자리로 +1 받아올림 10 - d" [ref=e155]:
+              - cell "올림(↑)" [ref=e156]
+              - cell "+1을 10 - d번 → 10을 채워 윗자리로 +1 받아올림" [ref=e157]:
+                - code [ref=e158]: "+1"
+                - text: 을
+                - code [ref=e159]: 10 - d
+                - text: 번 → 10을 채워 윗자리로 +1 받아올림
+              - cell "10 - d" [ref=e160]:
+                - code [ref=e161]: 10 - d
+        - list [ref=e162]:
+          - listitem [ref=e163]:
+            - code [ref=e164]: d < 5
+            - text: →
+            - code [ref=e165]: d < 10 - d
+            - text: 이므로
+            - strong [ref=e166]: 내림이 이득
+          - listitem [ref=e167]:
+            - code [ref=e168]: d > 5
+            - text: →
+            - code [ref=e169]: 10 - d < d
+            - text: 이므로
+            - strong [ref=e170]: 올림이 이득
+            - text: (윗자리에 +1 떠넘기는 비용은 많아야 1이고, 올림으로 아끼는 양은 최소 2라 항상 안전하다)
+          - listitem [ref=e171]:
+            - code [ref=e172]: d == 5
+            - text: → 이번 자리만 보면 내림(5)·올림(5)
+            - strong [ref=e173]: 비용이 같다
+            - text: . 그래서
+            - strong [ref=e174]: 윗자리를 봐야 한다.
+            - text: ← 여기가 함정
+        - heading "원래 작성했던 코드" [level=2] [ref=e175]
+        - paragraph [ref=e176]: 처음엔 "5보다 크면 올리고, 아니면 내린다"로 단순하게 분기했다. 예제 16, 2554가 둘 다 맞길래 통과인 줄 알았다.
+        - code [ref=e178]: "def solution(storey): answer = 0 while storey > 0: digit = storey % 10 if digit > 5: # 5 '초과'일 때만 올림 answer += 10 - digit storey += 10 # +10 후 //10 → 윗자리로 +1 받아올림 (이 부분은 정상) else: # 0~5는 전부 내림 처리 ← digit == 5도 여기로 빠진다 (버그) answer += digit storey //= 10 return answer"
+        - heading "이 코드에서 하려던 것" [level=2] [ref=e179]
+        - paragraph [ref=e180]:
+          - text: 의도 자체는 위 접근 아이디어와 같았다. 그리고 사실
+          - strong [ref=e181]: 두 부분은 맞게 짰다.
+        - list [ref=e182]:
+          - listitem [ref=e183]:
+            - code [ref=e184]: digit > 5
+            - text: 일 때
+            - code [ref=e185]: answer += 10 - digit
+            - text: 로 올림 비용을 더한 것 — 맞다.
+          - listitem [ref=e186]:
+            - code [ref=e187]: storey += 10
+            - text: 후 루프 끝에서
+            - code [ref=e188]: storey //= 10
+            - text: 하는 것 —
+            - code [ref=e189]: (storey + 10) // 10 == storey // 10 + 1
+            - text: 이라
+            - strong [ref=e190]: 받아올림(+1)이 정확히 반영
+            - text: 된다. 맞다.
+        - paragraph [ref=e191]:
+          - text: 진짜 문제는 단 하나,
+          - strong [ref=e192]:
+            - code [ref=e193]: digit == 5
+            - text: 가
+            - code [ref=e194]: else
+            - text: 로 빠져서 "무조건 내림"으로 처리
+          - text: 된다는 점이다.
+          - code [ref=e195]: if digit > 5
+          - text: 는 5를 포함하지 않으므로 5는 항상 내려버린다.
+        - heading "약했던 점과 반례" [level=2] [ref=e196]
+        - paragraph [ref=e197]:
+          - code [ref=e198]: d == 5
+          - text: 일 때 윗자리가 5 이상이면
+          - strong [ref=e199]: 올리는 게 이득
+          - text: 인데, 원래 코드는 이 경우를 절대 잡지 못한다. 예제(16, 2554)에는 마침 이 상황이 없어서 통과했을 뿐이다.
+        - code [ref=e201]: 입력 storey = 65
+        - code [ref=e203]: "잘못된 출력: 10 정답: 9"
+        - paragraph [ref=e204]: "원래 코드의 실행을 따라가 보면:"
+        - code [ref=e206]: 65 | digit 5 → else(내림) +5 (=5) → storey 6 6 | digit 6 → 올림 +4 (=9), +10→16 → //10 → 1 1 | digit 1 → else(내림) +1 (=10) → 0 → 10
+        - paragraph [ref=e207]:
+          - text: 하지만 65는
+          - code [ref=e208]: "+1"
+          - text: 을 5번 눌러 70으로 올리고(받아올림), 70 → 100 → 0으로 가면
+          - code [ref=e209]: 5 + 3 + 1 = 9
+          - text: 번이면 된다. 일의 자리 5에서
+          - strong [ref=e210]: 올렸어야
+          - text: 했다.
+        - paragraph [ref=e211]:
+          - text: 같은 이유로
+          - code [ref=e212]: "555"
+          - text: 도 깨진다.
+        - code [ref=e214]: 입력 storey = 555
+        - code [ref=e216]: "잘못된 출력: 15 (5+5+5, 전부 내림) 정답: 14 (555→56→6→1: 5+4+4+1)"
+        - 'heading "개선 풀이 1: 그리디 + d==5일 때 윗자리 확인" [level=2] [ref=e217]'
+        - paragraph [ref=e218]:
+          - code [ref=e219]: d == 5
+          - text: 인 경우만 분리해서,
+          - strong [ref=e220]: 바로 윗자리 숫자가 5 이상이면 올림
+          - text: ", 아니면 내림으로 처리한다. (윗자리도 5 이상이면 어차피 올라갈 자리라, 미리 +1 받아두는 쪽이 더 싸기 때문이다.)"
+        - code [ref=e222]: "def solution(storey): answer = 0 while storey > 0: d = storey % 10 # 맨 끝자리 if d < 5: # 작으면 → 내림 answer += d storey //= 10 # 올림 없이 윗자리로 elif d > 5: # 크면 → 올림 answer += 10 - d storey = storey // 10 + 1 # 윗자리로 +1 받아올림 else: # d == 5 if (storey // 10) % 10 >= 5: # 윗자리도 크면 올리는 게 이득 answer += 5 storey = storey // 10 + 1 else: # 아니면 그냥 내림 answer += 5 storey //= 10 return answer"
+        - paragraph [ref=e223]:
+          - text: 핵심은
+          - code [ref=e224]: storey // 10
+          - text: (올림 없음) vs
+          - code [ref=e225]: storey // 10 + 1
+          - text: (올림 있음)의 차이다. 코드가 짧고 직관적이지만,
+          - code [ref=e226]: d == 5
+          - text: 의 타이브레이크를 직접 다뤄야 해서 처음 실수한 바로 그 지점이다.
+        - 'heading "개선 풀이 2: DP — \"올림을 내보낼지\" 두 상태로 들고 가기" [level=2] [ref=e227]'
+        - paragraph [ref=e228]:
+          - code [ref=e229]: "5"
+          - text: 의 타이브레이크가 찜찜하다면,
+          - strong [ref=e230]: 각 자리에서 내림/올림 둘 다 고려
+          - text: 하고 최솟값만 들고 가는 DP가 더 안전하다. 자릿수를 낮은 자리부터 보면서 두 상태를 유지한다.
+        - list [ref=e231]:
+          - listitem [ref=e232]:
+            - code [ref=e233]: keep
+            - text: ": 지금까지 처리한 아랫자리들이"
+            - strong [ref=e234]: 윗자리로 올림을 내보내지 않은
+            - text: 경우의 최소 비용
+          - listitem [ref=e235]:
+            - code [ref=e236]: up
+            - text: ": 아랫자리들이"
+            - strong [ref=e237]: 윗자리로 +1 올림을 내보낸
+            - text: 경우의 최소 비용
+        - code [ref=e239]: "def solution(storey): keep, up = 0, float('inf') # keep: 올림 없음, up: 윗자리로 +1 올림 for ch in reversed(str(storey)): # 낮은 자리 → 높은 자리 d = int(ch) # 올림이 들어오면 이 자리의 실제 값은 d+1이 된다 new_keep = min(keep + d, up + (d + 1)) # 이 자리에서 올림을 안 내보냄 new_up = min(keep + (10 - d), up + (10 - (d + 1))) # 이 자리에서 윗자리로 올림 keep, up = new_keep, new_up return min(keep, up + 1) # 최상위에서 올림이 남으면 -10^k 한 번 더(+1)"
+        - paragraph [ref=e240]:
+          - text: 마지막에
+          - code [ref=e241]: up + 1
+          - text: "을 비교하는 이유: 최상위 자리에서까지 올림이 남으면(예: 95 → 100) 한 자리 위로 올라간 셈이라"
+          - code [ref=e242]: "-10^k"
+          - text: "를 한 번 더 눌러야 하기 때문이다. (예:"
+          - code [ref=e243]: 95 → +1×5 → 100 → -100 → 0
+          - text: ", 6번.)"
+        - paragraph [ref=e244]:
+          - code [ref=e245]: d == 5
+          - text: 같은 특수 분기가 전혀 없다. 매 자리에서 "내림/올림"을 모두 펼쳐 min을 취하므로,
+          - strong [ref=e246]: 올림이 윗자리에 미치는 영향까지 자동으로 반영
+          - text: 된다. 그리디의 타이브레이크 규칙을 외우지 않아도 된다는 게 장점이고, 대신 상태 두 개를 들고 가는 점화식을 세워야 한다.
+        - heading "시간 복잡도와 공간 복잡도" [level=2] [ref=e247]
+        - paragraph [ref=e248]:
+          - text: 여기서
+          - code [ref=e249]: "n"
+          - text: 은
+          - strong [ref=e250]:
+            - code [ref=e251]: storey
+            - text: 의 자릿수
+          - text: (= ⌊log₁₀(storey)⌋ + 1)다.
+          - code [ref=e252]: storey ≤ 1억
+          - text: 이므로
+          - code [ref=e253]: n ≤ 9
+          - text: .
+        - table [ref=e254]:
+          - rowgroup [ref=e255]:
+            - row "풀이 시간 복잡도 공간 복잡도 한 줄 메모" [ref=e256]:
+              - columnheader "풀이" [ref=e257]
+              - columnheader "시간 복잡도" [ref=e258]
+              - columnheader "공간 복잡도" [ref=e259]
+              - columnheader "한 줄 메모" [ref=e260]
+          - rowgroup [ref=e261]:
+            - row "처음 (틀린) 풀이 O(log₁₀ N) O(1) 복잡도는 정상, 정답성이 틀림 (d==5 미처리)" [ref=e262]:
+              - cell "처음 (틀린) 풀이" [ref=e263]
+              - cell "O(log₁₀ N)" [ref=e264]:
+                - code [ref=e265]: O(log₁₀ N)
+              - cell "O(1)" [ref=e266]:
+                - code [ref=e267]: O(1)
+              - cell "복잡도는 정상, 정답성이 틀림 (d==5 미처리)" [ref=e268]
+            - 'row "개선 1: 그리디 O(log₁₀ N) O(1) 코드 짧음, 5 타이브레이크 직접 처리" [ref=e269]':
+              - 'cell "개선 1: 그리디" [ref=e270]'
+              - cell "O(log₁₀ N)" [ref=e271]:
+                - code [ref=e272]: O(log₁₀ N)
+              - cell "O(1)" [ref=e273]:
+                - code [ref=e274]: O(1)
+              - cell "코드 짧음, 5 타이브레이크 직접 처리" [ref=e275]
+            - 'row "개선 2: DP O(log₁₀ N) O(log₁₀ N) str 변환 때문에 자릿수만큼 공간, 특수분기 없음" [ref=e276]':
+              - 'cell "개선 2: DP" [ref=e277]'
+              - cell "O(log₁₀ N)" [ref=e278]:
+                - code [ref=e279]: O(log₁₀ N)
+              - cell "O(log₁₀ N)" [ref=e280]:
+                - code [ref=e281]: O(log₁₀ N)
+              - cell "str 변환 때문에 자릿수만큼 공간, 특수분기 없음" [ref=e282]
+        - paragraph [ref=e283]: "유도를 자세히 보면:"
+        - list [ref=e284]:
+          - listitem [ref=e285]:
+            - strong [ref=e286]: 그리디
+            - text: ":"
+            - code [ref=e287]: while
+            - text: 루프가 매 회전마다
+            - code [ref=e288]: storey
+            - text: 를
+            - code [ref=e289]: //10
+            - text: (또는
+            - code [ref=e290]: //10 + 1
+            - text: )로 줄인다. 즉 한 회전에 자리 하나씩 사라지므로
+            - strong [ref=e291]:
+              - text: 반복 횟수 = 자릿수 =
+              - code [ref=e292]: O(log₁₀ N)
+            - text: . 각 회전 안은 나머지·나눗셈·비교뿐이라
+            - code [ref=e293]: O(1)
+            - text: . 추가 메모리는
+            - code [ref=e294]: answer
+            - text: 하나라
+            - code [ref=e295]: O(1)
+            - text: . 병목은 이 단일
+            - code [ref=e296]: while
+            - text: 루프다.
+          - listitem [ref=e297]:
+            - strong [ref=e298]: DP
+            - text: ":"
+            - code [ref=e299]: str(storey)
+            - text: 로 자릿수만큼 문자를 만들고(
+            - code [ref=e300]: O(n)
+            - text: 시간·공간), 그 길이만큼 루프를 돈다. 매 단계는
+            - code [ref=e301]: min
+            - text: 두 번이라
+            - code [ref=e302]: O(1)
+            - text: . 합쳐서
+            - strong [ref=e303]:
+              - text: 시간
+              - code [ref=e304]: O(n) = O(log₁₀ N)
+            - text: ", 공간은 문자열 때문에"
+            - code [ref=e305]: O(n)
+            - text: . (
+            - code [ref=e306]: str
+            - text: 대신
+            - code [ref=e307]: "% 10"
+            - text: /
+            - code [ref=e308]: // 10
+            - text: 정수 연산으로 짜면 공간을
+            - code [ref=e309]: O(1)
+            - text: 로 줄일 수 있다.)
+          - listitem [ref=e310]:
+            - strong [ref=e311]:
+              - text: 세 풀이 모두 시간은
+              - code [ref=e312]: O(log₁₀ N)
+            - text: 으로 같다. 처음 풀이가 틀린 건 느려서가 아니라
+            - strong [ref=e313]: 답이 틀려서
+            - text: 였다는 점이 이 문제의 교훈이다.
+        - paragraph [ref=e314]:
+          - text: 제한과 연결해 보면, 만약 "
+          - code [ref=e315]: "-1"
+          - text: 을 한 번씩 눌러 0까지 시뮬레이션"하는
+          - code [ref=e316]: O(N)
+          - text: 풀이를 짰다면 최악의 입력에서 약
+          - code [ref=e317]: "1e8"
+          - text: 번을 돌아
+          - strong [ref=e318]: 시간 초과
+          - text: 위험이 있다. 반면 자릿수 기반 풀이는
+          - code [ref=e319]: "N"
+          - text: 이 1억이어도
+          - strong [ref=e320]: 단 9번
+          - text: 의 반복이면 끝난다("입력 자릿수가 1개 늘어야 반복이 1번 는다" = 로그 증가). 그래서 자릿수 분해가 핵심이다.
+        - heading "이번 문제에서 배운 점" [level=2] [ref=e321]
+        - list [ref=e322]:
+          - listitem [ref=e323]:
+            - strong [ref=e324]:
+              - text: 경계값(
+              - code [ref=e325]: ">"
+              - text: vs
+              - code [ref=e326]: ">="
+              - text: )을 흘려보내지 말자.
+            - code [ref=e327]: if digit > 5
+            - text: 는 5를 빼먹는다. 비용이 같은 타이(
+            - code [ref=e328]: d == 5
+            - text: )에서는 "그다음에 미치는 영향"으로 결정해야 한다.
+          - listitem [ref=e329]:
+            - strong [ref=e330]: 예제 통과 ≠ 정답.
+            - text: 주어진 예제(16, 2554)에는 우연히 함정 케이스가 없었다. 손으로 작은 반례(
+            - code [ref=e331]: "65"
+            - text: ","
+            - code [ref=e332]: "555"
+            - text: )를 만들어 보는 습관이 제출 전 검증에 강력하다.
+          - listitem [ref=e333]:
+            - strong [ref=e334]: 그리디의 타이브레이크가 불안하면 DP로 안전하게.
+            - text: 같은
+            - code [ref=e335]: O(log N)
+            - text: 이라도, 매 자리에서 두 선택을 모두 펼쳐 min을 취하면 특수 분기 없이 받아올림 효과까지 자동 반영된다.
+          - listitem [ref=e336]:
+            - strong [ref=e337]: 버튼 비용이 크기와 무관
+            - text: 하다는 문제의 성질이 "자릿수 분해 + 로그 시간" 풀이의 출발점이었다. 시뮬레이션(
+            - code [ref=e338]: O(N)
+            - text: ) 대신 자릿수(
+            - code [ref=e339]: O(log N)
+            - text: )로 보는 시각 전환이 제한(1억)을 통과시킨다.
+  - generic [ref=e341] [cursor=pointer]:
+    - alert [ref=e342]: 포스트가 임시저장되었습니다.
+    - button "close" [ref=e343]: ✖︎

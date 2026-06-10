@@ -1,0 +1,4 @@
+[    1191ms] [WARNING] [GPT] PubAdsService.clearTargeting is deprecated, use googletag.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://static.velog.io/static/js/20.72815531.chunk.js:1
+[   61568ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+https://goo.gle/gpt-message#155 @ https://static.velog.io/static/js/20.72815531.chunk.js:1
